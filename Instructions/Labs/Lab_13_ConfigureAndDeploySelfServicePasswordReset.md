@@ -67,7 +67,7 @@ SSPR の構成が完了したので、作成したユーザーの携帯電話番
 
     これは、ユーザー認証を求めるメッセージが表示されるようにするためです。
 
-2. **AlexW@** `<<organization-domain-name>>.onmicrosoft.com` として、パスワード = **pass@word123** を使ってサイン インします。
+2. **AlexW@** `<<organization-domain-name>>.onmicrosoft.com` として、パスワード = **管理者と同じ** を使ってサイン インします。
 
     **注** - organization-domain-name は実際のドメイン名に置き換えます。
 
