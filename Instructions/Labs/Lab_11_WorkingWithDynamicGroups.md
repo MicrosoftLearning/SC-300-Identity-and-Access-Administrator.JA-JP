@@ -63,7 +63,7 @@ lab:
 ### タスク 3 - 別のルールを試す
 
 1. **ゲスト** ユーザーのみが含まれ得るグループを作成してみます。
-   - (user.objectid -ne null) と (user.userType -eq "Guest")
+   - (user.objectid -ne null)and(user.userType -eq "Guest")
 
 2. Azure AD ユーザーの**メンバー**のみが含まれるグループを作成してみます。
-   - (user.objectid -ne null) と (user.userType -eq "Member")
+   - (user.objectid -ne null)and(user.userType -eq "Member")
