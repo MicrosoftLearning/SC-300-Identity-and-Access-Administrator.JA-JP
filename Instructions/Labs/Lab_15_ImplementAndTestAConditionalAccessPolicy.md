@@ -24,7 +24,7 @@ lab:
     | 設定 | 値 |
     | :--- | :--- |
     | ユーザー名 | **DebraB@** `<<your lab domain>>.onmicrosoft.com` |
-    | パスワード | **pass@word123** |
+    | パスワード | **管理者と同じ** |
     
 4. Yammer アイコンをクリックして、正しく読み込まれることを確認します。
 
@@ -80,7 +80,7 @@ Azure Active Directory 条件付きアクセスは Azure AD の高度な機能�
     | 設定 | 値 |
     | :--- | :--- |
     | ユーザー名 | **DebraB@** `<<your lab domain>>.onmicrosoft.com` |
-    | パスワード | **pass@word123** |
+    | パスワード | **管理者と同じ** |
       
 2. Microsoft Yammer に正常にアクセスできないことを確認します。
 
