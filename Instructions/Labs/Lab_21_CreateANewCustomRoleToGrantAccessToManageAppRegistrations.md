@@ -3,12 +3,12 @@ lab:
   title: 21 - 新しいカスタム ロールを作成してアプリ登録を管理するためのアクセス権を付与する
   learning path: "03"
   module: Module 03 - Implement Access Management for Apps
-ms.openlocfilehash: a33acee3b79aeb2324777e68c64fd5bdea830753
-ms.sourcegitcommit: 448f935ad266989a6f0086019e0c0e0785ad162b
+ms.openlocfilehash: a80b99071c24eb4efac616c45c4a8468a33d21bd
+ms.sourcegitcommit: a2dd8d3f669d7b7f1c97c87a5b01afd61eb36380
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "138421328"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "141368736"
 ---
 # <a name="lab-21---create-a-custom-role-to-manage-app-registration"></a>ラボ 21 - カスタム ロールを作成してアプリ登録を管理する
 

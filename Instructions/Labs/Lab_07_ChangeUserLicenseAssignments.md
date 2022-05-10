@@ -3,12 +3,12 @@ lab:
   title: 07 - ユーザー アカウントのライセンス割り当てを変更する
   learning path: "01"
   module: Module 01 - Implement an identity management solution
-ms.openlocfilehash: 5926db4909933fe31574632ff625a45717bfa9ee
-ms.sourcegitcommit: 448f935ad266989a6f0086019e0c0e0785ad162b
+ms.openlocfilehash: ec8653774b6dce9624e517c939d6a783bae58390
+ms.sourcegitcommit: a2dd8d3f669d7b7f1c97c87a5b01afd61eb36380
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "138421373"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "141368733"
 ---
 # <a name="lab-07-change-user-account-license-assignments"></a>ラボ 07: ユーザー ライセンス割り当てを変更する
 
@@ -34,7 +34,7 @@ ms.locfileid: "138421373"
     **警告** - ユーザーにライセンスを割り当てるには、ユーザーに使用場所が割り当てられている必要があります。
 
 6. 左側のメニューの **「ライセンス」** メニュー項目をクリックします。
-7. Rual に "ライセンスの割り当てが見つかりません" と表示されていることを確認します。
+7. Raul に "ライセンスの割り当てが見つかりません" と表示されていることを確認します。
 
 #### <a name="task-2---update-user-license-assignments"></a>タスク2 - ユーザー ライセンスの割り当てを更新する
 
@@ -48,7 +48,7 @@ ms.locfileid: "138421373"
 
 5. **「+ 割り当て」** ボタンを選択します。 
 
-6. 「ライセンスの割り当ての更新」ブレードで、1 **Windows 10 Enterprise E3** ライセンスのチェック ボックスをオンにします。
+6. 「ライセンスの割り当ての更新」ブレードで、**Windows 10/11 Enterprise E3** ライセンスのチェック ボックスをオンにします。
 
     ![「ライセンスの割り当ての更新」ページとライセンス オプションが強調表示されている画面イメージ](./media/lp1-mod2-assign-user-license-options.png)
 

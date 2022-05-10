@@ -3,12 +3,12 @@ lab:
   title: オプション 30 - Privileged Identity Management で Azure リソース ロールを割り当てる演習を行う
   learning path: "04"
   module: Module 04 - Plan and Implement and Identity Governance Strategy
-ms.openlocfilehash: ee85cbac686207499a2cb08c24a645f0e89a60b4
-ms.sourcegitcommit: 9b012e1ac4c54de05b1071142dd5a8e418133c0f
+ms.openlocfilehash: 3baeb4982316d86e2717ca5c1f8cb8079c423585
+ms.sourcegitcommit: a2dd8d3f669d7b7f1c97c87a5b01afd61eb36380
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "138476446"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "141368739"
 ---
 # <a name="lab-30---optional-assign-azure-resource-roles-in-privileged-identity-management"></a>ラボ 30 - オプション:Privileged Identity Management で Azure リソース ロールを割り当てる
 
@@ -49,7 +49,7 @@ Azure Active Directory (Azure AD) Privileged Identity Management (PIM) では、
 
 7. オンボードが完了したら、[Azure リソース - 検出] ブレードを閉じます。
 
-8. [Azure リソース] ブレードで、追加したリソースを選択します。
+8. [Azure リソース] ブレードで、サブスクリプションを選びます。
 
     ![最近追加された Azure リソースを表示している画面イメージ](./media/lp4-mod3-pim-az-resource-overview.png)
 
@@ -85,7 +85,7 @@ Azure Active Directory (Azure AD) Privileged Identity Management (PIM) では、
 
 2. **[Azure リソース]** を選択します。
 
-3. 管理するリソースを選択して、その概要ページを開きます。
+3. 管理するサブスクリプションを選択して、その概要ページを開きます。
 
 4. **[管理]** で、 **[割り当て]** を選択します。
 

@@ -3,12 +3,12 @@ lab:
   title: 02 - テナントのプロパティを操作する
   learning path: "01"
   module: Module 01 - Implement an Identity Management Solution
-ms.openlocfilehash: de8e11bfc7042577bcf8e5411cac1f4149101bdb
-ms.sourcegitcommit: 448f935ad266989a6f0086019e0c0e0785ad162b
+ms.openlocfilehash: 36c7cdf2641017f0d9a15cfc2118f2d0bbeb1548
+ms.sourcegitcommit: a60b8d48791d600c44fa5fa617b6a9b2c0edaa71
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "138421442"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "141368854"
 ---
 # <a name="lab-02-working-with-tenant-properties"></a>ラボ 02: テナントのプロパティを操作する
 
@@ -101,9 +101,9 @@ Microsoft では、社内の従業員と外部のゲストがポリシーを確�
 
      **新しいブラウザー タブが自動的に開きます。**
 
-4. **「設定とプライバシー」** カードで、 **「設定とプライバシーを表示 >」** を選択します。
+4. 左側のメニューで **[設定とプライバシー]**  を選びます。
 5. **[プライバシー]** を選択します。
-6. ユーザー **組織の通知** - Contoso マーケティング組織のプライバシーに関する声明の横にある **「表示」** アイテムをクリックします。
+6. **[組織の通知]** で、Contoso マーケティング組織のプライバシーに関する声明の横にある **[表示]** 項目を選びます。
 
      **リンクしたプライバシー PDF ファイルが表示された新しいブラウザー タブが開きます。**
 

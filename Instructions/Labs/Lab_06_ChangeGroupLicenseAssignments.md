@@ -3,12 +3,12 @@ lab:
   title: 06 - グループ ライセンス割り当てを変更する
   learning path: "01"
   module: Module 01 - Implement an identity management solution
-ms.openlocfilehash: 43274c8456dd760022efd09fc7cbb0efcac1037f
-ms.sourcegitcommit: 533d012d39c31518af43d4a1d4bc091ea485d27c
+ms.openlocfilehash: a76182eb79197a26a692c5bab7bfcde1080a97c2
+ms.sourcegitcommit: a60b8d48791d600c44fa5fa617b6a9b2c0edaa71
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "138690103"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "141368857"
 ---
 # <a name="lab-06-change-group-license-assignments"></a>ラボ 06:グループ ライセンス割り当てを変更する
 
@@ -34,7 +34,7 @@ ms.locfileid: "138690103"
 
     ![現在のライセンスと「割り当て」メニューオプションが強調表示されている、選択されたグループ ライセンス オプションを表示した画面イメージ](./media/lp1-mod2-change-group-license.png)
 
-6. 「ライセンスの割り当ての更新」ブレードで、**Windows 10 Enterprise E3** ライセンスを選択するか、既存のライセンスの選択を解除するか、ライセンス オプションを追加または削除します。これらを組み合わせることもできます。
+6. [ライセンスの割り当ての更新] ブレードで、**Windows 10/11 Enterprise E3** ライセンスを選択、既存のライセンスを選択解除、ライセンス オプションの追加または削除のいずれかを選びます。またはこれらを組み合わせることもできます。
 
 7. 完了したら、**[保存]** を選択します。
 

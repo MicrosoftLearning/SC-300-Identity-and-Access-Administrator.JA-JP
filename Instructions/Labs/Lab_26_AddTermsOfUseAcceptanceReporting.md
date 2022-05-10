@@ -3,12 +3,12 @@ lab:
   title: 26 - 利用規約と同意レポートを追加する
   learning path: "04"
   module: Module 04 - Plan and Implement and Identity Governance Strategy
-ms.openlocfilehash: bb8be227870d16d1743a23206ef94fd24b5a7ef2
-ms.sourcegitcommit: 448f935ad266989a6f0086019e0c0e0785ad162b
+ms.openlocfilehash: 2fc11e4fc38cbde5b7e517486450b16b0cea6195
+ms.sourcegitcommit: a2dd8d3f669d7b7f1c97c87a5b01afd61eb36380
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "138421388"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "141368742"
 ---
 # <a name="lab-26-add-terms-of-use-and-acceptance-reporting"></a>ラボ 26: 利用規約と同意レポートを追加する 
 
@@ -161,13 +161,9 @@ ToU ポリシーを作成して組織に適用する必要があります。
 
     ![同意したユーザーを一覧表示する [利用規約の同意] ウィンドウ](./media/accepted-tou.png)
 
-4. 個々のユーザーの履歴を表示するには、ユーザー名の右側にある省略記号を選択して、**[履歴の表示]** を選択します。
+4. **[利用規約の同意]** ページで、 **[ダウンロード]** を選択して同意レポートをダウンロードします。
 
-    ![ユーザーの [履歴の表示] コンテキスト メニュー](./media/view-history-menu.png)
-
-5. 履歴の表示ウィンドウでは、すべての同意、拒否、および有効期限切れの履歴を確認できます。
-
-    ![[履歴の表示] ウィンドウには、ユーザーの同意、拒否、有効期限切れの履歴が一覧表示されます](./media/view-history-pane.png)
+5. **[Identity Governance | 使用条件]** ページで、 **[テストの使用条件]** を強調表示し、 **[選択した監査ログの表示]** を選択して監査ログ アクティビティを表示します。
 
 #### <a name="task-4---what-terms-of-use-looks-like-for-users"></a>タスク 4 - ユーザーに表示される利用規約の外観
 
@@ -189,7 +185,7 @@ ToU ポリシーを作成して組織に適用する必要があります。
 
 1. [https://myapps.microsoft.com](https://myapps.microsoft.com/) を参照し、自分のユーザー アカウントを使用してサインインします。
 
-2. [概要] ページで、[VIEW SETTINGS AND PRIVACY]\(設定とプライバシーの表示\) を選択します。
+2. ユーザー プロファイルの写真を選択し、 **[アカウントの表示]** を選択します。 [概要] ページで、[VIEW SETTINGS AND PRIVACY]\(設定とプライバシーの表示\) を選択します。
 
     ![[View settings and privacy]\(設定とプライバシーの表示\) と表示されているポップアップの画面イメージ](./media/lp4-mod1-myaccount-setting-and-privacy.png)
 
