@@ -30,7 +30,7 @@ ms.locfileid: "138421382"
 
 5. **[アプリケーションの登録]** ブレードで既定値を使用して、"**デモ アプリ**" という名前のアプリを登録します。 リダイレクト URI を入力する必要はありません。
 
-    ![「アプリケーションの登録」ブレードで名前と既定の設定が強調表示されている画面イメージ](./media/lp3-mod3-register-an-application.png)
+    ![[アプリケーションの登録] ブレードで名前と既定の設定が強調表示されている画面イメージ](./media/lp3-mod3-register-an-application.png)
 
 6. 完了すると、**[デモ アプリ]** ブレードが表示されます。
 
@@ -54,7 +54,7 @@ ms.locfileid: "138421382"
 
 4. **[プラットフォームの構成]** で、アプリケーションの種類 (プラットフォーム) のタイルを選択して、その設定を構成します。
 
-    ![Azure portal の「プラットフォームの構成」ウィンドウのスクリーンショット](./media/configure-platforms.png)
+    ![Azure portal の [プラットフォームの構成] ウィンドウのスクリーンショット](./media/configure-platforms.png)
 
     | プラットフォーム| 構成設定|
     | :--- | :--- |
@@ -72,7 +72,7 @@ ms.locfileid: "138421382"
 
 証明書とクライアント シークレット (文字列) の両方を資格情報として Confidential クライアント アプリの登録に追加できます。
 
-![アプリの登録の「証明書およびシークレット」ウィンドウを示す Azure portal のスクリーンショット](./media/portal-05-app-reg-04-credentials.png)
+![アプリの登録の [証明書およびシークレット] ウィンドウを示す Azure portal のスクリーンショット](./media/portal-05-app-reg-04-credentials.png)
 
 #### <a name="task-5---add-a-certificate"></a>タスク 5 - 証明書を追加する
 

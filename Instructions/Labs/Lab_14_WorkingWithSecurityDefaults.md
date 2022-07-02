@@ -38,7 +38,7 @@ ms.locfileid: "138421364"
 
 2. **[ポータル メニューの表示]** ハンバーガー アイコンを選択し、**[Azure Active Directory]** を選択します。
 
-    ![「Azure Active Directory」が選択された Azure portal メニュー](./media/azure-portal-menu-aad.png)
+    ![[Azure Active Directory] が選択された Azure portal メニュー](./media/azure-portal-menu-aad.png)
 
 3. 左側のナビゲーションの [管理] セクションで **[プロパティ]** を選択します。
 

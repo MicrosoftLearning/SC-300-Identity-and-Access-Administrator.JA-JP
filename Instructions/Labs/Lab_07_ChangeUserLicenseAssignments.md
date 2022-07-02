@@ -24,33 +24,33 @@ ms.locfileid: "141368733"
 
 1. [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview) にアクセスします。
 
-2. 左側のナビゲーション メニューの **「管理」** で、 **「ユーザー」** を選択します。
+2. 左側のナビゲーション メニューの **[管理]** で、**[ユーザー]** を選択します。
 
-3. 「ユーザー」ブレードで、検索ボックスに **「Raul」** と入力します。
+3. [ユーザー] ブレードで、検索ボックスに「**Raul**」と入力します。
 
-4. **「Raul Razo」** をクリックします
+4. **[Raul Razo]** をクリックします
 5. Raul のプロファイルを確認し、Usage Location が設定されていることを確認します。
 
     **警告** - ユーザーにライセンスを割り当てるには、ユーザーに使用場所が割り当てられている必要があります。
 
-6. 左側のメニューの **「ライセンス」** メニュー項目をクリックします。
+6. 左側のメニューの **[ライセンス]** メニュー項目をクリックします。
 7. Raul に "ライセンスの割り当てが見つかりません" と表示されていることを確認します。
 
 #### <a name="task-2---update-user-license-assignments"></a>タスク2 - ユーザー ライセンスの割り当てを更新する
 
 1. [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview) にアクセスします。
 
-2. 左側のナビゲーション メニューの **「管理」** で、 **「ユーザー」** を選択します
+2. 左側のナビゲーション メニューの **[管理]** で、**[ユーザー]** を選択します
 
-3. 「ユーザー」ブレードで、**Raul Razo** を選択します。
+3. [ユーザー] ブレードで、**[Raul Razo]** を選択します。
 
 4. 左側のナビゲーションで、**[ライセンス]** を選択します。
 
-5. **「+ 割り当て」** ボタンを選択します。 
+5. **[+ 割り当て]** ボタンを選択します。 
 
 6. 「ライセンスの割り当ての更新」ブレードで、**Windows 10/11 Enterprise E3** ライセンスのチェック ボックスをオンにします。
 
-    ![「ライセンスの割り当ての更新」ページとライセンス オプションが強調表示されている画面イメージ](./media/lp1-mod2-assign-user-license-options.png)
+    ![[ライセンスの割り当ての更新] ページとライセンス オプションが強調表示されている画面イメージ](./media/lp1-mod2-assign-user-license-options.png)
 
 7. 完了したら、**[保存]** を選択します。
 8. 画面上部の [`Home > Contoso Marketing > User >` **Raul Razo**] をクリックします
