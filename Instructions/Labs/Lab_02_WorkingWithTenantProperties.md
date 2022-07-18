@@ -3,12 +3,12 @@ lab:
   title: 02 - テナントのプロパティを操作する
   learning path: "01"
   module: Module 01 - Implement an Identity Management Solution
-ms.openlocfilehash: 54efa50e86365359e3a7686c47ffbeca2a28bbe4
-ms.sourcegitcommit: b5fc07c53b5663eaa1883cf38b70c57cd88470ca
+ms.openlocfilehash: f43e996adefddcf01f7feb5e01056582faab35eb
+ms.sourcegitcommit: bc5c47a39782e94c249ec4bce01ba0da9249ec61
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "146741408"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "146822631"
 ---
 # <a name="lab-02-working-with-tenant-properties"></a>ラボ 02: テナントのプロパティを操作する
 
@@ -39,7 +39,6 @@ ms.locfileid: "146741408"
     ```
 
 1. **[ドメインの追加]** を選択して、サブドメインを追加します。
-# <a name="roberts----you-do-get-a-complete-screen-that-allows-you-to-make-primary-or-delete--we-dont-want-to-do-either-of-these-but-might-want-to-mention-in-the-lab-steps"></a>RobertS --> [主キーにする] または [削除] を行うことができる完全な画面が表示されます。  これらはどちらも行いたくありませんが、ラボの手順で言及する必要がある場合があります。
 
 
 ### <a name="exercise-2---changing-the-tenant-display-name"></a>演習 2 - テナントの表示名を変更する
