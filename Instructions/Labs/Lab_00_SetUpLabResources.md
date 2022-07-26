@@ -1,34 +1,45 @@
 ---
 lab:
-    title: '00 - ラボのセットアップ'
-    learning path: '01'
-    module: 'モジュール 01 - ID 管理ソリューションを実装する'
+  title: 00 - ラボのセットアップ
+  learning path: "01"
+  module: Module 01 - Implement an identity management solution
+ms.openlocfilehash: 44eb050a0c0feaf62b268827c2c8ed28ef31606d
+ms.sourcegitcommit: 6a3052f2349143633a201735968cba0002e6788a
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "137893299"
 ---
+# <a name="lab-00-lab-environment-setup"></a>ラボ 00:ラボ環境のセットアップ
 
-# ラボ 00: ラボ環境のセットアップ
-
-## ラボ シナリオ
+## <a name="lab-scenario"></a>ラボのシナリオ
 
 今後のラボを完了する準備をするには、新しい Azure サブスクリプションを作成し、Azure AD P2 ライセンスを要求する必要があります。
 
-#### 推定時間: 5 分
+#### <a name="estimated-time-5-minutes"></a>推定時間:5 分
 
-## Azure アカウントを作成し、Azure Active Directory Premium P2 試用版ライセンスを追加する
+## <a name="create-an-azure-account-and-add-azure-active-directory-premium-p2-trial-licenses"></a>Azure アカウントを作成し、Azure Active Directory Premium P2 試用版ライセンスを追加する
 
-事前に Azure Pass を有効化して、サブスクリプションをアクティベートしておいてください。
+この演習のタスクとこのラーニング パスの演習では、使用できる Azure サブスクリプションを既に所有しているか、Azure 試用版アカウントにサインアップすることが必要です。 自分の Azure サブスクリプションを既に所有している場合は、このタスクをスキップし、次の手順に進むことができます。
 
-1. Web ブラウザーで [https://portal.azure.com/](https://portal.azure.com/) にアクセスします。
+1. Web ブラウザーで、[https://azure.microsoft.com/free](https://azure.microsoft.com/free) にアクセスします。
 
-1. 一部の演習では、完了するために Azure AD P2 ライセンスが必要です。**Azure Active Directory** を検索してから選択します。
+1. 利用可能な特典と無料サービスの詳細については、ページを下までスクロールしてご覧ください。
 
-1. 左側のナビゲーション メニューで **「ランセンス」** を選択します。
+1. **[開始 (無料)]** を選択します。
 
-1. 画面の右側で「**無償試用版を入手する**」を選択します。
+1. ウィザードを使用して Azure 試用版サブスクリプションにサインアップします。
 
-1. 「アクティブ化」ウィンドウの **AZURE AD PREMIUM P2** で **「無料試用版」** を選択し、 **「アクティブ化」** を選択します。
+1. 一部の演習では、完了するために Azure AD P2 ライセンスが必要です。 作成した組織で、**[Azure Active Directory]** を検索してから選択します。
 
-1. 左側のナビゲーション メニューで **「すべての製品」** を選択します。
+1. 左側のナビゲーション メニューで **[作業の開始]** を選択します。
 
-1. 組織名の下に Azure AD Premium P2 が表示されるまで、ブラウザーを更新します。これには数分かかることがあります。
+1. [Azure AD を使い始める] の下にある **[Azure AD Premium の無料試用版を入手する]** を選択します。
+
+1. [アクティブ化] ペインの **[AZURE AD PREMIUM P2]** で **[無料試用版]** を選択し、**[アクティブ化]** を選択します。
+
+1. 左側のナビゲーション メニューで **[概要]** を選択します。
+
+1. 組織名の下に [Azure AD Premium P2] が表示されるまで、ブラウザーを更新します。 これには数分かかることがあります。
 
 1. 問題が発生して、目的の機能が使用できない場合は、サインアウトしてから Microsoft Azure に再度サインインする必要があることがあります。
