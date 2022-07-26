@@ -67,8 +67,8 @@ ms.locfileid: "138421421"
 
 #### <a name="task-3---experiment-with-alternate-rules"></a>タスク 3 - 別のルールを試す
 
-1. **ゲスト** ユーザーのみでグループを作成してみます。
-   - (user.objectid -ne null) と (user.userType -eq "Guest")
+1. **ゲスト** ユーザーのみが含まれ得るグループを作成してみます。
+   - (user.objectid -ne null)and(user.userType -eq "Guest")
 
-2. Azure AD ユーザーの **メンバー** のみでグループを作成してみます。
-   - (user.objectid -ne null) と (user.userType -eq "Member")
+2. Azure AD ユーザーの**メンバー**のみが含まれるグループを作成してみます。
+   - (user.objectid -ne null)and(user.userType -eq "Member")
