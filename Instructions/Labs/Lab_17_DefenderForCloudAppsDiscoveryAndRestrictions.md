@@ -3,12 +3,12 @@ lab:
   title: 17 - Defender for Cloud Apps アプリケーション検出と制限適用
   learning path: "03"
   module: Module 03 - Implement Access Management for Apps
-ms.openlocfilehash: d56b645457452aa3ab36a9a78ec668d270db150f
-ms.sourcegitcommit: b5fc07c53b5663eaa1883cf38b70c57cd88470ca
+ms.openlocfilehash: 2810d72197e31241d7a3c30d85b40cc5682be0bf
+ms.sourcegitcommit: fa8ae52be1e809ca81d07036fefeebffb54c1861
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "146741611"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "147521461"
 ---
 # <a name="lab-17---defender-for-cloud-apps-application-discovery-and-enforcing-restrictions"></a>ラボ 17 - Defender for Cloud Apps アプリケーション検出と制限適用
 
@@ -28,7 +28,7 @@ Microsoft Defender for Cloud Apps では、ユーザーがアクセスしてい�
 
 1. **[その他のリソース]** ウィンドウの **[Microsoft Defender for Cloud Apps]** で **[開く]** を見つけて選択します。  Microsoft 365 アカウント内で **Microsoft Defender for Cloud Apps** ポータルに異動します。
 
-1. 左側のメニューで **[検出]** ドロップダウンを選択し、 **[検出されたアプリ]** を選択します。
+1. 左側のメニューで **[検出]** ドロップダウンを選択し、 **[クラウド アプリ カタログ]** を選択します。
 
 1. **[カテゴリ別に参照]** で **[クラウド ストレージ]** を選択します。
 
