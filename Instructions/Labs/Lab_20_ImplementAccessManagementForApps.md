@@ -3,12 +3,12 @@ lab:
   title: 20 - アプリのアクセス管理を実装する
   learning path: "03"
   module: Module 03 - Implement Access Management for Apps
-ms.openlocfilehash: f8d53310a4d18df9e7ec184b0507024f207eaadd
-ms.sourcegitcommit: b5fc07c53b5663eaa1883cf38b70c57cd88470ca
+ms.openlocfilehash: d1c505f5cf844f5acc1ffa6e8f912e89cbd0de66
+ms.sourcegitcommit: dfc500fdfe49349ca42c60b125dd6c59a71661c0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "146741387"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "147548906"
 ---
 # <a name="lab-20---implement-access-management-for-apps"></a>ラボ 20 - アプリのアクセス管理を実装する
 
@@ -18,7 +18,7 @@ ms.locfileid: "146741387"
 
 #### <a name="estimated-time-5-minutes"></a>推定時間:5 分
 
-### <a name="exercise-1---configure-and-enterprise-app"></a>演習 1 - Enterprise アプリを構成する
+### <a name="exercise-1---configure-an-enterprise-app"></a>演習 1 - Enterprise アプリを構成する
 
 #### <a name="task-1---add-an-app-to-your-azure-ad-tenant"></a>タスク 1 - Azure AD テナントにアプリを追加する
 
