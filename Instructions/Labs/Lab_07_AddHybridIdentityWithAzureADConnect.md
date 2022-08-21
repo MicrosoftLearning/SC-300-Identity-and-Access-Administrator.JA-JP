@@ -3,16 +3,20 @@ lab:
   title: 07 - Azure AD Connect を使用してハイブリッド ID を追加する
   learning path: "01"
   module: Module 01 - Implement an identity management solution
-ms.openlocfilehash: 9c612bb17543a7bc6535a5ba923f205999cfaa45
-ms.sourcegitcommit: 80c5c0ef60c1d74fcc58c034fe6be67623013cc0
+ms.openlocfilehash: dfb0bbb4416be0984784f159833f1873dfa5ff0d
+ms.sourcegitcommit: 3125be5da88aa4b5fee51cf653c13bc9ee0bb799
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "146823194"
+ms.lasthandoff: 08/15/2022
+ms.locfileid: "147573427"
 ---
 # <a name="lab-07-add-hybrid-identity-with-azure-ad-connect"></a>ラボ 07:Azure AD Connect を使用してハイブリッド ID を追加する
 
 **注** - このラボでは Azure Pass が必要です。 手順については、ラボ 00 を参照してください。
+
+**注 2** - このラボは、以前に Azure AD Connect を使用したことがある場合は、省略可能として扱う必要があります。  このラボでは、スクリプトを使用して Domain Controler をデプロイして構成するために、少なくとも 30 分のセットアップ時間が必要です。  ラボを実行する場合は、スクリプトを起動し、バックグラウンドで実行されている間に他のアクティビティで作業することをお勧めします。
+
+
 
 ## <a name="lab-scenario"></a>ラボのシナリオ
 
