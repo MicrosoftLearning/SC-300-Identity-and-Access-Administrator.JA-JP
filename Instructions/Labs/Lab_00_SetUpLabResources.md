@@ -3,12 +3,12 @@ lab:
   title: 00 - ラボのセットアップ
   learning path: "01"
   module: Module 01 - Implement an identity management solution
-ms.openlocfilehash: 44eb050a0c0feaf62b268827c2c8ed28ef31606d
-ms.sourcegitcommit: 6a3052f2349143633a201735968cba0002e6788a
+ms.openlocfilehash: c791b7ae0b00044577e88fd6e032f743bbf2788c
+ms.sourcegitcommit: b5fc07c53b5663eaa1883cf38b70c57cd88470ca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "137893299"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "146741415"
 ---
 # <a name="lab-00-lab-environment-setup"></a>ラボ 00:ラボ環境のセットアップ
 
@@ -43,3 +43,29 @@ ms.locfileid: "137893299"
 1. 組織名の下に [Azure AD Premium P2] が表示されるまで、ブラウザーを更新します。 これには数分かかることがあります。
 
 1. 問題が発生して、目的の機能が使用できない場合は、サインアウトしてから Microsoft Azure に再度サインインする必要があることがあります。
+
+#### <a name="redeem-azure-pass"></a>Azure Pass を引き換える
+
+1. ブラウザーを開き、[www.microsoftazurepass.com](www.microsoftazurepass.com) に移動します。
+
+1. すべてのブラウザーを閉じて、新しい InPrivate ブラウザー セッションを開くことをお勧めします。 アクティブ化手順中に他のログインが保持され、エラーの原因になる可能性があります。
+
+1. **[開始]** ボタンを選んで、作業を始めます。
+
+1. ユーザー名がラボ プロバイダー テナント アカウントと同じであることを確認します。
+
+1. **[プロモーション コードの入力]** フィールドに Azure Pass のバウチャー コードを入力 します。 
+
+1. **[プロファイル]** フィールドに住所情報を入力します。
+    - **住所行 1**:1 Microsoft Way
+    - **市区町村**:レドモンド
+    - **[状態]** :ワシントン
+    - **郵便番号**:98052
+
+1. サブスクリプション契約に同意するボックスを選択し、 **[サインアップ]** を選択します。
+
+    ![サブスクリプション契約に同意してサインアップする](media/azurepassactivation.png)
+
+1. ディレクトリのグローバル管理者アカウントを使用して、[https://portal.azure.com](https://portal.azure.com) にアクセスし、サインインします。
+
+1. **[サブスクリプション]** に移動し、 **[Azure Pass - Sponsorship]\(Azure Pass - スポンサーシップ\)** に **アクティブ** 状態が表示されていることを確認します。 

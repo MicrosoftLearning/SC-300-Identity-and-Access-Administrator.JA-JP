@@ -1,1 +1,1 @@
-Use this folder to store supplemental files for the labs or demos provided.
+このフォルダーを使用して、提供されているラボまたはデモの補足ファイルを格納します。
