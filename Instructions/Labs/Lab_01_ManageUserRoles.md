@@ -152,8 +152,8 @@ Azure Active Directory (Azure AD) を使用して、特権が低いロールで 
 6. Allfiles/Lab1 フォルダーには、サンプルのコンマ区切りファイル (**SC300BulkUser.csv**) が用意されています。
    1. 以下のリンクにCSVファイルが保存されているので、すべてをコピーして、メモ帳にペーストします。
 https://raw.githubusercontent.com/junichia/SC-300-Identity-and-Access-Administrator.JA-JP/main/Allfiles/Labs/Lab1/SC300BulkUser.csv
-   3. **<<<enter your domain name>>>** を Azure ラボ環境のドメインに変更します。
-   4. ファイルを保存します。
+   3. **enter your domain name** を Azure ラボ環境のドメインに変更します。
+   4. ファイルを SC300BulkUser.csv という名前で保存します。
 
 7. **[ユーザーの一括作成]** ダイアログの手順 3 で [ファイル フォルダー] アイコンを選択します。
 
