@@ -63,5 +63,3 @@ Microsoft Graph API にアプリケーション許可のための管理者の同
 
 5. **[要求されたアクセス許可]** ダイアログボックスで情報を確認し、**[同意する]** を選択します。
 
-
-### <a name="exercise-2---azure-ad-identity-governance-settings"></a>演習 2 - Azure AD Identity Governance の設定
