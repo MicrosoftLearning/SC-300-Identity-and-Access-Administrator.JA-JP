@@ -1,1 +1,1 @@
-Placeholder file for the SC-300 lab-2
+SC-300 lab-2 のプレースホルダー ファイル
