@@ -1,1 +1,1 @@
-このフォルダーを使用して、このコースのデモをサポートするために必要な補足デモ ファイルを格納します。
+Use this folder to store any supplemental demo files needed to support demos in this course.
