@@ -1,1 +1,1 @@
-このフォルダーを使用して、このコースのデモをサポートするために必要な補足ラボ ファイルを格納します。
+Use this folder to store any supplemental lab files needed to support demos in this course.
