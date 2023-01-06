@@ -35,7 +35,7 @@ ms.locfileid: "147400404"
     | ユーザー名| ChrisG|
     | 名前| Chris Green|
     | 名| Chris|
-    | 姓| [緑]|
+    | 姓| Green|
 
 5. **[自分でパスワードを作成する]** をマークします
 
@@ -50,14 +50,14 @@ ms.locfileid: "147400404"
 1. 新しい InPrivate ブラウザー ウィンドウを開きます。
 2. Azure portal [https://portal.azure.com](https://portal.azure.com) を Chris Green として開きます。
 
-    | **設定**| **Value**|
+    | **設定**| **値**|
     | :--- | :--- |
     | ユーザー名| ChrisG@`your domain name.com`|
     | パスワード| Pass@word1|
 
 3. パスワードを更新します。
 
-    | **設定**| **Value**|
+    | **設定**| **値**|
     | :--- | :--- |
     | 現在のパスワード| Pass@word1|
     | 新しいパスワード| Pa$$w.rd1234|
@@ -99,7 +99,7 @@ Azure Active Directory (Azure AD) を使用して、特権が低いロールで 
 1. 新しい InPrivate ブラウザー ウィンドウを開きます。
 2. Azure portal [https://portal.azure.com](https://portal.azure.com) を Chris Green として開きます。
 
-    | **設定**| **Value**|
+    | **設定**| **値**|
     | :--- | :--- |
     | ユーザー名| ChrisG@`your domain name.com`|
     | パスワード| Pa$$w.rd1234|
