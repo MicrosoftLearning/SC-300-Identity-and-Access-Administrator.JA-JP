@@ -39,7 +39,7 @@ Azure Active Directory (Azure AD) Privileged Identity Management (PIM) では、
 
 3. [Privileged Identity Management] ページの左側のナビゲーションで **[Azure リソース]** を選択します。
 
-4. 上部のメニューで **[リソースの探索]** を選択します。
+4. 上部のメニューで **[リソースを検出する]** を選択します。
 
 5. [Azure リソース - 検出] ページでサブスクリプションを選択し、上部のメニューで **[リソースの管理]** を選択します。
 

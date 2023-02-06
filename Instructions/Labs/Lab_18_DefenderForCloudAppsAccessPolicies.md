@@ -36,11 +36,11 @@ Microsoft Defender for Cloud Apps では、監視しているクラウド アプ
 
 1. ラボ テナントの管理者ユーザー アカウントを選択し、 **[選択]** を選択します。
 
-1. **[クラウド* アプリ*またはアクション*]** で、 **[No cloud apps, action, or authentication contexts selected](クラウド* アプリ*、アクション*、または認証*コンテキスト*が選択されません)** を選択します。
+1. **[クラウド* アプリ*または操作*]** で、 **クラウド アプリ、アクション、または認証コンテキストが選択されません** を選択します。
 
 1. **[アプリを選択]** を選択し、 **[Microsoft Cloud App Security]** 、 **[Office 365 Exchange Online]** 、 **[Office 365]** を選択して **[選択]** を選択します。 
 
-1. **[アクセスの制御]** で、 **[セッション]** と **[個のコントロールが選択されました]** を選択します。
+1. **[アクセスの制御]** で、 **[セッション]** と **[0 個のコントロールが選択されました]** を選択します。
 
 1. **[アプリの条件付きアクセス制御を使う]** ボックスを選択し、既定の **[監視のみ]** のままにして、 **[選択]** を選択します。
 
@@ -57,25 +57,25 @@ Microsoft Defender for Cloud Apps では、監視しているクラウド アプ
 
 1. **[その他のリソース]** ウィンドウの **[Microsoft Defender for Cloud Apps]** で **[開く]** を見つけて選択します。  Microsoft 365 アカウント内で **Microsoft Defender for Cloud Apps** ポータルに異動します。
 
-1. **Microsoft Defender for Cloud Apps** ポータル メニューで、 **[制御]** のドロップダウン矢印を選択し、 **[ポリシー]** を選択します。
+1. **Microsoft Defender for Cloud Apps** ポータル メニューで、 **[Control/制御]** のドロップダウン矢印を選択し、 **[Policies/ポリシー]** を選択します。
 
-1. **[+ ポリシーの作成]** を選びます。 **[アクセス ポリシー]** を選択します。
+1. **[+ Create Policy/ポリシーの作成]** を選びます。 **[Access Policy/アクセス ポリシー]** を選択します。
 
 1. "**管理されていないデバイスからのアクセスをブロックする**" など、ポリシーの名前を入力します。
 
-1. **[カテゴリ]** は **[アクセス制御]** のままにします。
+1. **[Category/カテゴリ]** は **[Access control/アクセス制御]** のままにします。
 
-1. **[Activities matching all of the following]\(次のすべてに一致するアクティビティ\)** で、 **[Intune compliant, Hybrid Azure AD joined]\(Intune 準拠、ハイブリッド Azure AD 参加済み\)** のドロップダウンを選択し、 **[Hybrid Azure AD 参加済み]** の選択を解除します。
+1. **[Activities matching all of the following]\ 次のすべてに一致するアクティビティ ** で、 **[Intune compliant, Hybrid Azure AD joined]\ Intune 準拠、ハイブリッド Azure AD 参加済み)** のドロップダウンを選択し、 **[Hybrid Azure AD Joined]** の選択を解除します。
 
-1. **[アプリを選択]** のドロップダウンを選択します。  **[Microsoft OneDrive for Business]** を選択します。
+1. **[Select Apps / アプリを選択]** のドロップダウンを選択します。  **[Microsoft OneDrive for Business]** を選択します。もし存在しない場合は **[Microsoft Online Services]**を選択します。
 
 1. **[アクション]** を **[テスト]** のままにします。
 
-1. **[通知]** で、 **[通知の作成]** をオンのままにして、 **[Sent alert as email]\(電子メールとして送信済みの通知\)** を選択します。
+1. **[Alert / 通知]** で、 **[Create an alert / 通知の作成]** をオンのままにして、 **[Sent alert as email]\ 電子メールとして送信済みの通知** を選択します。
 
 1. ラボ管理者の電子メール アドレスを入力し、キーボードで **Enter** キーを押します。
 
-1. **[作成]** を選択してアクセス ポリシーを作成します。
+1. **[Create / 作成]** を選択してアクセス ポリシーを作成します。
 
 1. 別のブラウザー タブで <login.microsoftonline.com> に移動し、ページの右上にあるアプリの選択から **[OneDrive]** を選択します。
 
