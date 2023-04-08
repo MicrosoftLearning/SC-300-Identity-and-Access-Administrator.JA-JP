@@ -1,7 +1,7 @@
 # <a name="sc-300-identity-and-access-administrator"></a>SC-300:ID およびアクセス管理者
 
-- **[ラボへのリンク (HTML 形式)](https://microsoftlearning.github.io/SC-300-Identity-and-Access-Administrator.JA-JP/)**
-- **あなたは MCT ですか?** - [MCT 向けの GitHub ユーザー ガイド](https://microsoftlearning.github.io/MCT-User-Guide-JA/)をご覧ください
+- **[ラボへのリンク (HTML 形式)](https://microsoftlearning.github.io/SC-300-Identity-and-Access-Administrator/)**
+- **あなたは MCT ですか?** - [MCT 向けの GitHub ユーザー ガイド](https://microsoftlearning.github.io/MCT-User-Guide/)をご覧ください
 - **ラボの手順を手動で作成する必要がありますか?** - 手順は、[MicrosoftLearning/Docker-Build](https://github.com/MicrosoftLearning/Docker-Build) リポジトリで確認できます
 
 ## <a name="what-are-we-doing"></a>説明
