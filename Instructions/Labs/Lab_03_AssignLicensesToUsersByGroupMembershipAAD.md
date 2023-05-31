@@ -1,26 +1,21 @@
 ---
 lab:
   title: 03 - グループ メンバーシップを使用してライセンスを割り当てる
-  learning path: "01"
+  learning path: '01'
   module: Module 01 - Implement an identity management solution
-ms.openlocfilehash: bf32962c7594a36532476d3af378d767ba981017
-ms.sourcegitcommit: 80c5c0ef60c1d74fcc58c034fe6be67623013cc0
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "146823206"
 ---
-# <a name="lab-03-assigning-licenses-using-group-membership"></a>ラボ 03:グループ メンバーシップを使用してライセンスを割り当てる
 
-## <a name="lab-scenario"></a>ラボのシナリオ
+# ラボ 03:グループ メンバーシップを使用してライセンスを割り当てる
+
+## ラボのシナリオ
 
 あなたの組織は Azure AD のセキュリティ グループを使用してライセンスを管理することに決めました。 新しいセキュリティ グループを設定し、そのグループにライセンスを割り当て、グループ メンバーのライセンスが更新されたことを確認する必要があります。
 
-#### <a name="estimated-time-25-minutes"></a>推定時間:25 分
+#### 推定時間: 25 分
 
-### <a name="exercise-1---create-a-security-group-and-add-a-user"></a>演習 1 - セキュリティ グループを作成してユーザーを追加する
+### 演習 1 - セキュリティ グループを作成してユーザーを追加する
 
-#### <a name="task-1---check-to-see-if-delia-dennis-has-access-to-office-365"></a>タスク 1 - Delia Dennis が Office 365 にアクセスできるかどうかを確認する
+#### タスク 1 - Delia Dennis が Office 365 にアクセスできるかどうかを確認する
 
 1. 新しい InPrivate ブラウザー ウィンドウを開きます。
 2. [https://www.office.com](https://www.office.com) に接続します。
@@ -37,11 +32,11 @@ ms.locfileid: "146823206"
     
 5. ブラウザー ウィンドウを閉じます。
 
-#### <a name="task-2----create-a-security-group-in-azure-active-directory"></a>タスク2 - Azure Active Directory でセキュリティ グループを作成する
+#### タスク2 - Azure Active Directory でセキュリティ グループを作成する
 
 1. [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview) を参照します。
 
-2. 左側のナビゲーションの **[管理]** で、**[グループ]** を選択します。
+2. 左側のナビゲーション メニューの **[管理]** で、**[グループ]** を選択します。
 3. [グループ] ページのメニューで、 **[新しいグループ]** を選択します。
 4. 次の情報を使用して、グループを作成します。
 
@@ -61,7 +56,7 @@ ms.locfileid: "146823206"
 8. **[作成]** ボタンを選択します。
 9. 完了したら、**sg-SC300-O365** という名前のグループが **「すべてのグループ」** リストに表示されていることを確認します。
 
-#### <a name="task-3---assign-a-license-to-a-group"></a>タスク3 - グループにライセンスを割り当てる
+#### タスク3 - グループにライセンスを割り当てる
 
 1. **「すべてのグループ」** リストで **sg-SC300-O365** を選択します。
 2. [マーケティング] ページの **[管理]** で **[ライセンス]** を選択します。
@@ -74,7 +69,7 @@ ms.locfileid: "146823206"
 
 6. **[保存]** を選択します。
 
-#### <a name="taks-4---confirm-the-office-365-license"></a>タスク 4 - Office 365 ライセンスを確認する
+#### タスク 4 - Office 365 ライセンスを確認する
 
 1. 新しい InPrivate ブラウザー ウィンドウを開きます。
 2. [https://www.office.com](https://www.office.com) に接続します。
@@ -91,15 +86,15 @@ ms.locfileid: "146823206"
     
 5. ブラウザー ウィンドウを閉じます。 
 
-### <a name="exercise-2---create-an-microsoft-365-group-in-azure-active-directory"></a>演習 2 - Azure Active Directory で Microsoft 365 グループを作成する
+### 演習 2 - Azure Active Directory で Microsoft 365 グループを作成する
 
-#### <a name="task-1---create-the-group"></a>タスク 1 - グループを作成する
+#### タスク 1 - グループを作成する
 
 Azure AD 管理者としての職務の一環として、さまざまな種類のグループを作成することがあります。 組織の営業部門用に新しい Microsoft 365 グループを作成する必要があります。
 
 1. [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview) にアクセスします。
 
-2. 左側のナビゲーションの **[管理]** で、**[グループ]** を選択します。
+2. 左側のナビゲーション メニューの **[管理]** で、**[グループ]** を選択します。
 
 3. [グループ] ページのメニューで、 **[新しいグループ]** を選択します。
 
@@ -117,9 +112,9 @@ Azure AD 管理者としての職務の一環として、さまざまな種類�
 
 5. 完了したら、**Northwest sales** という名前のグループが **[すべてのグループ]** リストに表示されていることを確認します。
 
-### <a name="exercise-3---creating-a-dynamic-group-with-all-users-as-members"></a>演習 3 - すべてのユーザーをメンバーとして持つ動的グループを作成する
+### 演習 3 - すべてのユーザーをメンバーとして持つ動的グループを作成する
 
-#### <a name="task-1---create-the-dynamic-group"></a>タスク 1 - 動的グループを作成する
+#### タスク 1 - 動的グループを作成する
 
 会社の規模が大きくなると、手作業でのグループ管理は時間がかかりすぎます。 ディレクトリを標準化したことで、動的グループを活用できるようになりました。 運用環境で動的グループを作成できるようにするためには、新しい動的グループを作成する必要があります。
 
@@ -127,15 +122,15 @@ Azure AD 管理者としての職務の一環として、さまざまな種類�
 
 2. **[Azure Active Directory]** を選択します。
 
-3. **[管理]** の下の **[グループ]** を選択し、**[新しいグループ]** を選択します。
+3. **[管理]** の下の **[グループ]** を選択し、 **[新しいグループ]** を選択します。
 
-4. [新しいグループ] ページで、**[グループの種類]** の下の **[セキュリティ]** を選択します。
+4. [新しいグループ] ページで、 **[グループの種類]** の下の **[セキュリティ]** を選択します。
 
 5. **「グループ名」** ボックスに、 **「SC300-myDynamicGroup」** と入力します。
 
 6. **[メンバーシップの種類]** メニューを選択し、**[動的ユーザー]** を選択します。
 
-7. グループの **所有者** を選択します。
+7. グループの**所有者**を選択します。
 
 7. **[動的なユーザー メンバー]** で、**[動的クエリの追加]** を選択します。
 
@@ -157,7 +152,7 @@ Azure AD 管理者としての職務の一環として、さまざまな種類�
 
 12. [新規グループ] ページで **[作成]** を選択して、グループを作成します。
 
-#### <a name="task-2---verify-the-members-have-been-added"></a>タスク 2 - メンバーが追加されたことを確認する
+#### タスク 2 - メンバーが追加されたことを確認する
 
 **注**: 動的グループ メンバーシップの作成には、最大 15 分かかる場合があります。
 
@@ -170,12 +165,12 @@ Azure AD 管理者としての職務の一環として、さまざまな種類�
 7. **[管理]** メニューの **[メンバー]** を選択します。
 8. メンバーを確認します。
 
-#### <a name="task-3---experiment-with-alternate-rules"></a>タスク 3 - 別のルールを試す
+#### タスク 3 - 別のルールを試す
 
 1. **ゲスト** ユーザーのみでグループを作成してみます。
 
    - (user.objectid -ne null) と (user.userType -eq "Guest")
 
-2. Azure AD ユーザーの **メンバー** のみでグループを作成してみます。
+2. Azure AD ユーザーの**メンバー**のみでグループを作成してみます。
 
    - (user.objectid -ne null) と (user.userType -eq "Member")
