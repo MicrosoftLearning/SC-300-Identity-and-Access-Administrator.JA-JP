@@ -1,28 +1,23 @@
 ---
 lab:
   title: 10 - Windows および Linux Virtual Machines に対する Azure AD Authentication
-  learning path: "02"
+  learning path: '02'
   module: Module 02 - Implement an Authentication and Access Management Solution
-ms.openlocfilehash: 82dcb43bdae3df54a80625dc29134d4497207d8c
-ms.sourcegitcommit: 80c5c0ef60c1d74fcc58c034fe6be67623013cc0
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "146823188"
 ---
-# <a name="lab-10---azure-ad-authentication-for-windows-and-linux-virtual-machines"></a>ラボ 10 - Windows および Linux Virtual Machines に対する Azure AD Authentication
+
+# ラボ 10 - Windows および Linux Virtual Machines に対する Azure AD Authentication
 
 **注** - このラボでは Azure Pass が必要です。 手順については、ラボ 00 を参照してください。
 
-## <a name="lab-scenario"></a>ラボのシナリオ
+## ラボのシナリオ
 
 会社は、リモート アクセス用の仮想マシンへのログインに Azure Active Directory を使用することを決定しました。  このラボでは、Windows および Linux 仮想マシンに対してこれをセットアップする方法について示します。
 
-#### <a name="estimated-time-30-minutes"></a>予想所要時間: 30 分
+#### 予想所要時間: 30 分
 
-### <a name="exercise-1---login-to-windows-virtual-machines-in-azure-with-azure-ad"></a>演習 1 - Azure AD を使用して Azure の Windows Virtual Machines にログインする
+### 演習 1 - Azure AD を使用して Azure の Windows Virtual Machines にログインする
 
-#### <a name="task-1---create-a-windows-virtual-machine-with-azure-ad-login-enabled"></a>タスク 1 - Azure AD ログインを有効にして Windows 仮想マシンを作成する
+#### タスク 1 - Azure AD ログインを有効にして Windows 仮想マシンを作成する
 
 1. [https://portal.azure.com](https://portal.azure.com) を参照します
 
@@ -30,35 +25,135 @@ ms.locfileid: "146823188"
 
 1. [マーケットプレースを検索] 検索バーに「**Windows Server**」と入力します。
 
-1. **[Windows Server]** を選択して、次に [ソフトウェア プランの選択] ドロップダウンから **[Windows Server 2019 Datacenter]** を選択します。
+1. **[Windows Server]** を選択し、[ソフトウェア プランの選択] ドロップダウンから **[Windows Server 2022 Datacenter]** を選びます。
 
 1. [基本] タブで VM 用の管理者ユーザー名とパスワードを作成する必要があります。
+   - ユーザー名 (覚えておく必要があります) とセキュリティで保護されたパスワードを使用します。
 
 1. **[管理]** タブで、[Azure AD] セクションの [Azure AD でログインする] のチェックボックスをオンにします。
 
-1. [ID] セクションの **[システム割り当てマネージド ID]** がチェックされていることを確認します。 Azure AD を使用してログインを有効にすると、この操作は自動的に行われます。
+1. [ID] セクションの **[システム割り当てマネージド ID]** のチェック ボックスが自動的にオンになり、灰色に変わることがわかります。 Azure AD を使用してログインを有効にすると、この操作は自動的に行われます。
 
 1. 仮想マシンの作成エクスペリエンスの残りの部分に移動します。 
 
 1. [作成] を選択します。
 
-#### <a name="task-2---azure-ad-login-for-existing-azure-virtual-machines"></a>タスク 2 - 既存の Azure Virtual Machines に対する Azure AD ログイン
+#### タスク 2 - 既存の Azure Virtual Machines に対する Azure AD ログイン
 
 1. [https://portal.azure.com](https://portal.azure.com) で **[Virtual Machines]** を参照します。
 
 1. **[アクセス制御 (IAM)]** を選択します。
 
-1. **[追加]** 、 **[ロールの割り当ての追加]** の順に選択して、[ロールの割り当ての追加] ページを開きます。
+1. **[+ 追加]** 、 **[ロールの割り当ての追加]** の順に選択して、[ロールの割り当ての追加] ページを開きます。
 
-1. 次のロールを割り当てます。 
-    - **ロール**:仮想マシンの管理者ログインまたは仮想マシンのユーザー ログイン
-    - **アクセスの割り当て先**:ユーザー、グループ、サービス プリンシパル、またはマネージド ID
+1. 次の設定を割り当てます。
+    - **割り当ての種類**: 職務権限ロール
+    - **ロール**: 仮想マシンの管理者ログイン
+    - **メンバー**: ユーザー、グループ、またはサービス プリンシパルを選びます。  その後、 **[+ メンバーの選択]** を使用して、**Joni Sherman** を VM の特定のユーザーとして追加します。
 
-1. 詳細な手順については、「Azure portal を使用して Azure ロールを割り当てる」を参照してください。
+1. **[確認と割り当て]** を選択して、プロセスを完了します
 
-### <a name="exercise-2---login-to-linux-virtual-machines-in-azure-with-azure-ad"></a>演習 2 - Azure AD を使用して Azure の Linux Virtual Machines にログインする
+#### タスク 3 - Azure AD ログインをサポートするようにサーバー VM を更新する
 
-#### <a name="task-1---create-a-linux-vm-with-system-assigned-managed-identity"></a>タスク 1 - システム割り当てマネージド ID を使用して Linux VM を作成する
+1. **[接続]** メニュー項目を選択します。
+
+1. **[RDP]** タブで、 **[RDP ファイルのダウンロード]** を選択します。  メッセージが表示されたら、ファイルの **[保持]** オプションを選びます。  ダウンロード フォルダーに保存されます。
+
+1. ファイル マネージャーで **[ダウンロード]** フォルダーを開きます。
+
+1. RDP を開きます。
+
+1. 代替ユーザーとしてログインすることを選びます。
+
+1. 仮想マシンの設定時に作成する管理ユーザー名とパスワードを使用します。
+   - メッセージが表示されたら、[はい] と答え、仮想マシンまたは RDP セッションへのアクセスを許可します。
+
+1. サーバーが開き、サーバー マネージャー ダッシュボードなど、すべてのソフトウェアが読み込まれるのを待ちます。
+
+1. 仮想マシンで **[スタート] ボタン**を選択します。
+
+1. 「**コントロール パネル**」と入力し、コントロール パネル アプリを起動します。
+
+1. 設定のリストから **[システムとセキュリティ]** を選択します。
+
+1. **[システム]** 設定で、 **[リモート アクセスの許可]** オプションを選択します。
+
+1. 開いたダイアログ ボックスの下部に、 **[リモート デスクトップ]** セクションが表示されます。
+
+1. **[ネットワーク レベル認証でリモート デスクトップを実行しているコンピューターからのみ接続を許可する]** というラベルのチェックボックスを**オフ**にします。
+
+1. **[Apply](適用)** 、 **[OK]** の順に選択します。
+
+1. 仮想マシンの RDP セッションを**終了**します。
+
+
+#### タスク 4 - Azure AD ログインをサポートするように RDP ファイルを変更する
+
+1. ファイル マネージャーで **[ダウンロード]** フォルダーを開きます。
+
+1. RDP ファイルの**コピーを作成**し、ファイル名の末尾に **-AzureAD** を追加します。
+
+1. メモ帳を使用して、先ほどコピーした RDP ファイルの新しいバージョンを編集します。 これらの 2 行のテキストをファイルの下部に追加します。
+     ```
+        enablecredsspsupport:i:0
+        authentication level:i:2
+     ```
+ 
+ 1. RDP ファイルを**保存**します。  これで、次の 2 つのバージョンのファイルが表示されるはずです。
+      - <<virtual machine name>>.RDP
+      - <<virtual machine name>>-AzureAD.RDP
+
+#### タスク 5 - Azure AD ログインを使用して Windows Server 2022 Datacenter に接続する
+
+1. **<<virtual machine name>>-AzureAD.RDP を開きます
+
+1. ダイアログが開いたら、 **[接続]** を選択します。
+
+1. ログインに使用するユーザー アカウントの確認を求めるメッセージではなく、リモート コンピューターに接続するかどうかを確認するメッセージが表示されるはずです。
+
+1. 画面の下部で、 **[はい]** を選択します。
+
+1. リモート デスクトップ セッションが開くはずです。Windows Server ログイン画面が表示されます。  [OK] ボタンがある **[その他のユーザー]** が表示されるはずです。
+
+1. **[OK]** を選択します。
+
+1. ログイン ダイアログで、次の情報を入力します。
+   - ユーザー名 = **AzureAD\JoniS@<<your lab domainname>>
+   - パスワード = ラボ プロバイダーによって提供されるパスワードを入力します
+
+   注: JoniS は、タスク 1 で管理者としてログインするアクセス権を付与したユーザーです。
+
+1. Windows Server でログインが確認され、通常のサーバー マネージャー ダッシュボードが開くはずです。
+
+#### タスク 6 -- Azure AD ログインを調べるための省略可能なテスト
+
+1. JoniS が Administrators グループに追加された唯一のユーザーであることを確認します。
+
+1. サーバー マネージャー ダッシュボードで、左上の **[ツール]** メニューを選択します。
+
+1. **[コンピューターの管理]** ツールを起動します。
+
+1. **[ローカル ユーザーとグループ]** を開いてから、 **[グループ]、[Administrators]** の順に移動します。
+
+1. リストに **[Azure\JoniSherman....]** が表示されるはずです。
+
+1. 他の Azure AD メンバーがログインできるかどうかを確認します。
+
+1. リモート デスクトップ セッションを終了します。
+
+1. **<<server name>>-AzureAD.RDP** ファイルをもう一度起動します。
+
+1. AdeleV、AlexW、DiegoS などの他の Azure AD メンバーとしてログインしてみます。
+
+1. これらの各ユーザーのアクセスが拒否されていることがわかるはずです。
+
+
+
+
+
+### 省略可能な演習 2 - Azure AD を使用して Azure の Linux Virtual Machines にログインする
+
+#### タスク 1 - システム割り当てマネージド ID を使用して Linux VM を作成する
 
 1. [https://portal.azure.com](https://portal.azure.com) を参照します
 
@@ -72,7 +167,7 @@ ms.locfileid: "146823188"
 
 1. 仮想マシンの作成エクスペリエンスの残りの部分に移動します。 このプレビュー期間中は、ユーザー名とパスワードまたは SSH 公開キーで管理者アカウントを作成する必要があります。
 
-#### <a name="task-2---azure-ad-login-for-existing-azure-virtual-machines"></a>タスク 2 - 既存の Azure Virtual Machines に対する Azure AD ログイン
+#### タスク 2 - 既存の Azure Virtual Machines に対する Azure AD ログイン
 
 1. [https://portal.azure.com](https://portal.azure.com) で **[Virtual Machines]** を参照します。
 

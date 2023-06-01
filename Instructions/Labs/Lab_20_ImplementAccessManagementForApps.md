@@ -1,30 +1,25 @@
 ---
 lab:
   title: 20 - アプリのアクセス管理を実装する
-  learning path: "03"
+  learning path: '03'
   module: Module 03 - Implement Access Management for Apps
-ms.openlocfilehash: d1c505f5cf844f5acc1ffa6e8f912e89cbd0de66
-ms.sourcegitcommit: dfc500fdfe49349ca42c60b125dd6c59a71661c0
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "147548906"
 ---
-# <a name="lab-20---implement-access-management-for-apps"></a>ラボ 20 - アプリのアクセス管理を実装する
 
-## <a name="lab-scenario"></a>ラボのシナリオ
+# ラボ 20 - アプリのアクセス管理を実装する
+
+## ラボのシナリオ
 
 組織では、特定のユーザーまたはグループのみがエンタープライズ アプリケーションにアクセスできる必要があります。 ユーザーを特定のアプリケーションに割り当てる必要があります。
 
-#### <a name="estimated-time-5-minutes"></a>推定時間:5 分
+#### 推定時間:5 分
 
-### <a name="exercise-1---configure-an-enterprise-app"></a>演習 1 - Enterprise アプリを構成する
+### 演習 1 - Enterprise アプリを構成する
 
-#### <a name="task-1---add-an-app-to-your-azure-ad-tenant"></a>タスク 1 - Azure AD テナントにアプリを追加する
+#### タスク 1 - Azure AD テナントにアプリを追加する
 
-1. グローバル管理者アカウントを使用して、[https://portal.azure.com](https://portal.azure.com) にサインインします。
+1. グローバル管理者アカウントを使用して、 [https://portal.azure.com](https://portal.azure.com)  にサインインします。
 
-2. ポータル メニューを開き、**[Azure Active Directory]** を選択します。
+2. ポータル メニューを開いてから、 **[Azure Active Directory]** を選択します。
 
 3. [Azure Active Directory] ページの **[管理]** で、 **[エンタープライズ アプリケーション]** を選択します。
 
@@ -42,7 +37,7 @@ ms.locfileid: "147548906"
 
 8. 作成されると、[GitHub Enterprise Cloud – エンタープライズ アカウント] ページにリダイレクトされます。
 
-#### <a name="task-2---assign-users-to-an-app"></a>タスク 2 - アプリにユーザーを割り当てる
+#### タスク 2 - アプリにユーザーを割り当てる
 
 1. [GitHub Enterprise Cloud - エンタープライズ アカウント] ページの [概要] ページで、 **[はじめに]** の下にある **[1. ユーザーとグループの割り当て]** を選択します。
 

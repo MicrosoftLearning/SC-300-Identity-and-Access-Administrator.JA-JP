@@ -1,30 +1,25 @@
 ---
 lab:
   title: 26 - Azure AD ロール用に Privileged Identity Management を構成する
-  learning path: "04"
+  learning path: '04'
   module: Module 04 - Plan and Implement and Identity Governance Strategy
-ms.openlocfilehash: 129d26f994f732e94568b2b0d69383ad4b7c3031
-ms.sourcegitcommit: 80c5c0ef60c1d74fcc58c034fe6be67623013cc0
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "146823239"
 ---
-# <a name="lab-26-configure-privileged-identity-management-for-azure-ad-roles"></a>ラボ 26: Azure AD ロール用に Privileged Identity Management を構成する
 
-## <a name="lab-scenario"></a>ラボのシナリオ
+# ラボ 26: Azure AD ロール用に Privileged Identity Management を構成する
+
+## ラボのシナリオ
 
 特権ロール管理者は、ロール候補の割り当てをアクティブ化しているユーザーの操作性を変更するなど、Azure Active Directory (Azure AD) 組織の Privileged Identity Management (PIM) をカスタマイズできます。 PIM の構成について理解する必要があります。
 
-#### <a name="estimated-time-30-minutes"></a>予想所要時間: 30 分
+#### 予想所要時間: 30 分
 
-### <a name="exercise-1---configure-azure-ad-role-settings"></a>演習 1 - Azure AD ロールの設定を構成する
+### 演習 1 - Azure AD ロールの設定を構成する
 
-#### <a name="task-1---open-role-settings"></a>タスク 1 - ロールの設定を開く
+#### タスク 1 - ロールの設定を開く
 
 次の手順を実行して、Azure AD ロールの設定を開きます。
 
-1. [https://portal.azure.com](https://portal.azure.com) にグローバル管理者としてサインインします。
+1. グローバル管理者として、 [https://portal.azure.com](https://portal.azure.com)  にサインインします。
 
 2. **[Azure AD Privileged Identity Management]** を検索してから選択します。
 
@@ -40,7 +35,7 @@ ms.locfileid: "146823239"
 
 7. ロール設定の詳細情報を確認します。
 
-#### <a name="task-2---require-approval-to-activate"></a>タスク 2 - 有効化の承認を要件とする
+#### タスク 2 - 有効化の承認を要件とする
 
 複数の承認者を設定した場合、承認は、承認者が 1 人でも承認または拒否すると直ちに完了します。 2 人以上のユーザーからの承認を要求することはできません。 ロールをアクティブ化するために承認を必須にする場合は、次の手順を実行します。
 
@@ -58,9 +53,9 @@ ms.locfileid: "146823239"
 
 5. ロール設定を構成したら、 **[更新]** を選択して変更を保存します。
 
-### <a name="exercise-2---pim-with-azure-ad-roles"></a>演習 2 - Azure AD ロールを使用した PIM
+### 演習 2 - Azure AD ロールを使用した PIM
 
-#### <a name="task-1---assign-a-role"></a>タスク 1 - ロールを割り当てる
+#### タスク 1 - ロールを割り当てる
 
 全体管理者は、Azure Active Directory (Azure AD) を使用して、永続的な Azure AD 管理者ロールの割り当てを行うことができます。 こうしたロールの割り当ては、Azure portal または PowerShell のコマンド を使用して作成できます。
 
@@ -101,7 +96,7 @@ ms.locfileid: "146823239"
 
 13. 残りの設定を確認してから、**[割り当て]** を選択します。
 
-#### <a name="task-2---log-in-with-miriam"></a>タスク 2 - Miriam でログインする
+#### タスク 2 - Miriam でログインする
 
 1. InPrivate ブラウザー ウィンドウを開きます。
 2. Azure portal (https://portal.azure.com) に接続します。
@@ -113,14 +108,14 @@ ms.locfileid: "146823239"
    | ユーザー名 | **MiriamG@** `<<your domain.onmicrosoft.com>>` |
    | パスワード |  テナントの管理者パスワードを入力します (テナントの管理者パスワードを取得するには、[ラボ リソース] タブを参照してください) |
 
-5. **[Azure へようこそ] ダイアログ** を閉じます。
+5. **[Azure へようこそ] ダイアログ**を閉じます。
 6. **[リソース、サービス、ドキュメントの検索]** バーから、Azure Active Directory を探し、ページを開きます。
 7. **[概要]** ページで、**[自分のフィード]** を探します。
 8. Miriam Graham の名前の下で **[プロフィールを表示する]** を選択します。これにより、Miriam のプロフィール ページが開きます。
 9. **[割り当てられたロール]** を選択してから、**[適格な割り当て]** を選択します。
-10. Miriam が **コンプライアンス管理者** のロールを利用できるようになったことに注意してください。
+10. Miriam が**コンプライアンス管理者**のロールを利用できるようになったことに注意してください。
 
-#### <a name="task-3---activate-your-azure-ad-roles"></a>タスク 3 - Azure AD ロールをアクティブにする
+#### タスク 3 - Azure AD ロールをアクティブにする
 
 Azure AD ロールを想定する必要がある場合は、Privileged Identity Management で **[自分のロール]** を開いてアクティブ化を要求できます。
 
@@ -146,7 +141,7 @@ Azure AD ロールを想定する必要がある場合は、Privileged Identity 
 
 8. **[アクティブ化]** を選びます。
 
-#### <a name="task-4---assign-a-role-with-restricted-scope"></a>タスク 4 - 制限スコープがあるロールを割り当てる
+#### タスク 4 - 制限スコープがあるロールを割り当てる
 
 特定のロールでは、付与されるアクセス許可の範囲を 1 つの管理単位、サービス プリンシパル、またはアプリケーションに制限することができます。 この手順は、管理単位のスコープを持つロールを割り当てる場合の例です。
 
@@ -163,7 +158,7 @@ Azure AD ロールを想定する必要がある場合は、Privileged Identity 
 
 7. 制限されたスコープを使用せずにロールを割り当てたときと同様に、メンバーを追加し、設定オプションを完了します。 ここでは、**[キャンセル]** を選択します。
 
-#### <a name="task-5---update-or-remove-an-existing-role-assignment"></a>タスク 5 - 既存のロールの割り当てを更新または削除する
+#### タスク 5 - 既存のロールの割り当てを更新または削除する
 
 既存のロールの割り当てを更新または削除するには、次の手順を実行します。
 

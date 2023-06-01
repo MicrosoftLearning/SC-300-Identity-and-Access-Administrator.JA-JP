@@ -1,28 +1,23 @@
 ---
 lab:
   title: 13 - 条件付きアクセス ポリシーの実装とテストを行う
-  learning path: "02"
+  learning path: '02'
   module: Module 02 - Implement an Authentication and Access Management Solution
-ms.openlocfilehash: 495af1fb6b24a421754f186f445aca78a6f9f15c
-ms.sourcegitcommit: 80c5c0ef60c1d74fcc58c034fe6be67623013cc0
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "146823200"
 ---
-# <a name="lab-13---implement-and-test-a-conditional-access-policy"></a>ラボ 13 - 条件付きアクセス ポリシーの実装とテストを行う
 
-## <a name="lab-scenario"></a>ラボのシナリオ
+# ラボ 13 - 条件付きアクセス ポリシーの実装とテストを行う
+
+## ラボのシナリオ
 
 組織では、内部アプリケーションへのユーザーのアクセスを制限する必要があります。 Azure Active Directory 条件付きアクセス ポリシーをデプロイする必要があります。
 
 **注** - 条件付きアクセス ポリシーについては、セキュリティの既定値群をオフにできます。覚えておくべき重要なポイントはトレーニングの内容です。  セキュリティの既定値群の詳細については、次のリンクを参照してください: <https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/concept-fundamentals-security-defaults>
 
-#### <a name="estimated-time-30-minutes"></a>予想所要時間: 30 分
+#### 予想所要時間: 30 分
 
-### <a name="exercise-1---set-a-conditional-access-policy-to-block-debrab-from-accessing-yammer"></a>演習 1 - DebraB が Yammer にアクセスするのをブロックする条件付きアクセス ポリシーを設定する
+### 演習 1 - DebraB が Yammer にアクセスするのをブロックする条件付きアクセス ポリシーを設定する
 
-#### <a name="task-1----confirm-debrab-has-access-to-yammer"></a>タスク 1 - DebraB が Yammer にアクセスできることを確認する
+#### タスク 1 - DebraB が Yammer にアクセスできることを確認する
 
 
 1. 新しい InPrivate ブラウザー ウィンドウを開きます。
@@ -36,19 +31,19 @@ ms.locfileid: "146823200"
     
 4. [Yammer] アイコンを選択して、正しく読み込まれることを確認します。
 
-#### <a name="task-2----create-a-conditional-access-policy"></a>タスク 2 - 条件付きアクセスポリシーを作成する
+#### タスク 2 - 条件付きアクセスポリシーを作成する
 
 Azure Active Directory 条件付きアクセスは Azure AD の高度な機能です。これにより、どのユーザーがリソースにアクセスできるかを制御する詳細なポリシーを指定できます。 条件付きアクセスを使用すると、グループ、デバイスの種類、場所、ロールなどに基づいてユーザーのアクセスを制限することでアプリケーションを保護できます。
 
 1. ディレクトリのグローバル管理者アカウントを使用して、[https://portal.azure.com](https://portal.azure.com) にアクセスし、サインインします。
 
-2. ポータル メニューを開き、**[Azure Active Directory]** を選択します。
+2. ポータル メニューを開いてから、 **[Azure Active Directory]** を選択します。
 
 3. [Azure Active Directory] ページで、 **[管理]** の下にある **[セキュリティ]** を選択します。
 
 4. [セキュリティ] ページの左側のナビゲーションで **[条件付きアクセス]** を選択します。
 
-5. 上部のメニューで、ドロップダウンから **[+ 新しいポリシー]** を選択し、 **[新しいポリシーの作成]** を選択します。
+5. **[概要 (プレビュー)]** で、 **[+ 新しいポリシーの作成]** をクリックします。
 
    ![[新しいポリシー] が強調表示されている [条件付きアクセス] ページを表示している画面イメージ](./media/lp2-mod1-conditional-access-new-policy.png)
 
@@ -78,7 +73,7 @@ Azure Active Directory 条件付きアクセスは Azure AD の高度な機能�
 
    ![ポリシー設定が強調表示された新しい条件付きアクセス ポリシーを表示している画面イメージ](./media/lp2-mod3-create-conditional-access-policy.png)
 
-#### <a name="task-3---test-the-conditional-access-policy"></a>タスク 3 - 条件付きアクセス ポリシーをテストする
+#### タスク 3 - 条件付きアクセス ポリシーをテストする
 
 条件付きアクセス ポリシーをテストして、想定どおりに動作することを確認する必要があります。
 
@@ -104,15 +99,17 @@ Azure Active Directory 条件付きアクセスは Azure AD の高度な機能�
 
 6. **[ポリシーを有効にする]** で **[オン]** を選択し、**[保存]** を選択します。
 
-### <a name="exercise-2---test-conditional-access-policies-with-what-if"></a>演習 2 - "What If" を使用して条件付きアクセス ポリシーをテストする
+### 演習 2 - "What If" を使用して条件付きアクセス ポリシーをテストする
 
-#### <a name="task---use-what-if-to-test-conditional-access-policies"></a>タスク - What If を使用して条件付きアクセス ポリシーをテストする
+#### タスク - What If を使用して条件付きアクセス ポリシーをテストする
 
-1. ポータル メニューを開き、**[Azure Active Directory]** を選択します。
+1. ポータル メニューを開いてから、 **[Azure Active Directory]** を選択します。
 
 1. [Azure Active Directory] ページで、 **[管理]** の下にある **[セキュリティ]** を選択します。
 
 1. [セキュリティ] ページの左側のナビゲーションで **[条件付きアクセス]** を選択します。
+
+1. ナビゲーション ウィンドウで、 **[ポリシー]** を選択します。
 
 1. **[What If]** を選択します。
 
@@ -126,15 +123,15 @@ Azure Active Directory 条件付きアクセスは Azure AD の高度な機能�
 
 これにより、ポリシーを有効にする前に、ポリシーとその影響をテストできます。
 
-### <a name="exercise-3---configure-sign-in-frequency-controls-using-a-conditional-access-policy"></a>演習 3 - 条件付きアクセス ポリシーを使用してサインイン頻度の制御を構成する
+### 演習 3 - 条件付きアクセス ポリシーを使用してサインイン頻度の制御を構成する
 
-#### <a name="task---user-the-azure-portal-to-configure-conditional-access"></a>タスク - Azure portal を使用して条件付きアクセスを構成する
+#### タスク - Azure portal を使用して条件付きアクセスを構成する
 
 会社の大規模なセキュリティ構成の一部として、サインインの頻度を制御するために使用できる条件付きアクセス ポリシーをテストする必要があります
 
 1. ディレクトリのグローバル管理者アカウントを使用して、[https://portal.azure.com](https://portal.azure.com) にアクセスし、サインインします。
 
-2. ポータル メニューを開き、**[Azure Active Directory]** を選択します。
+2. ポータル メニューを開いてから、 **[Azure Active Directory]** を選択します。
 
 3. [Azure Active Directory] ページで、 **[管理]** の下にある **[セキュリティ]** を選択します。
 

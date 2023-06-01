@@ -1,26 +1,21 @@
 ---
 lab:
   title: 02 - テナントのプロパティを操作する
-  learning path: "01"
+  learning path: '01'
   module: Module 01 - Implement an Identity Management Solution
-ms.openlocfilehash: f43e996adefddcf01f7feb5e01056582faab35eb
-ms.sourcegitcommit: bc5c47a39782e94c249ec4bce01ba0da9249ec61
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "146822631"
 ---
-# <a name="lab-02-working-with-tenant-properties"></a>ラボ 02: テナントのプロパティを操作する
 
-## <a name="lab-scenario"></a>ラボのシナリオ
+# ラボ 02: テナントのプロパティを操作する
+
+## ラボのシナリオ
 
 テナントに関連付けられているさまざまなプロパティを特定し、更新する必要があります。
 
-#### <a name="estimated-time-15-minutes"></a>推定時間:15 分
+#### 推定時間:15 分
 
-### <a name="exercise-1---create-a-custom-subdomains"></a>演習 1 - カスタム サブドメインを作成する 
+### 演習 1 - カスタム サブドメインを作成する 
 
-#### <a name="task-1---create-a-custom-subdomain-name"></a>タスク 1 - カスタム サブドメイン名を作成する
+#### タスク 1 - カスタム サブドメイン名を作成する
 
 1. ディレクトリのグローバル管理者アカウントを使用して、[https://portal.azure.com](https://portal.azure.com) にアクセスし、サインインします。
 
@@ -41,9 +36,9 @@ ms.locfileid: "146822631"
 1. **[ドメインの追加]** を選択して、サブドメインを追加します。
 
 
-### <a name="exercise-2---changing-the-tenant-display-name"></a>演習 2 - テナントの表示名を変更する
+### 演習 2 - テナントの表示名を変更する
 
-#### <a name="task-1---set-the-tenant-name-and-technical-contact"></a>タスク 1 - テナント名と技術部連絡先を設定する
+#### タスク 1 - テナント名と技術部連絡先を設定する
 
 1. Azure Active Directory 内から、左側のナビゲーションの **[管理]** セクションで **[プロパティ]** を選択します。
 
@@ -58,7 +53,7 @@ ms.locfileid: "146822631"
 
    **保存が完了するとすぐに名前が変更されます。**
 
-#### <a name="task-2---review-the-country-or-region-and-other-values-associated-with-your-tenant"></a>タスク 2 - テナントに関連付けられている国または地域およびその他の値を確認する
+#### タスク 2 - テナントに関連付けられている国または地域およびその他の値を確認する
 
 1. **[Azure Active Directory]** ページの [管理] セクションで、 **[プロパティ]** を選択します。
 
@@ -70,7 +65,7 @@ ms.locfileid: "146822631"
 
     ![[国または地域] と [場所] の設定が強調表示されている Azure Active Directory の [プロパティ] ページを表示する画面イメージ](./media/azure-active-directory-properties-country-location.png)
 
-#### <a name="task-3---finding-the-tenant-id"></a>タスク3 - テナント ID を見つける
+#### タスク3 - テナント ID を見つける
 
 Azure サブスクリプションには、Azure Active Directory (Azure AD) との信頼関係があります。 サブスクリプションでは、ユーザー、サービス、デバイスを認証するために Azure AD が信頼されます。 各サブスクリプションには、それに関連付けられているテナント ID があり、いくつかの方法で、お使いのサブスクリプションのテナント ID を見つけることができます。
 
@@ -80,15 +75,15 @@ Azure サブスクリプションには、Azure Active Directory (Azure AD) と�
 
     ![[テナント ID] ボックスが強調表示されている [テナントのプロパティ] ページを表示する画面イメージ](./media/portal-tenant-id.png)
 
-### <a name="exercise-3---setting-your-privacy-information"></a>演習 3 - プライバシー情報を設定する
+### 演習 3 - プライバシー情報を設定する
 
-#### <a name="task-1---adding-your-privacy-info-on-azure-ad-including-global-privacy-contact-and-privacy-statement-url"></a>タスク 1 - グローバル プライバシー連絡先、プライバシーに関する声明の URL など、Azure AD にプライバシー情報を追加する
+#### タスク 1 - グローバル プライバシー連絡先、プライバシーに関する声明の URL など、Azure AD にプライバシー情報を追加する
 
 Microsoft では、社内の従業員と外部のゲストがポリシーを確認できるように、グローバル プライバシー連絡先と組織のプライバシーに関する声明の両方を追加することを強くお勧めします。 プライバシーに関する声明はそれぞれの会社に合わせて独自に作成､変更されるため､弁護士に相談することを強くお勧めします｡
 
    **注** - 個人データの表示または削除については、[https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure) を参照してください。 GDPR の詳細については、[https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted) を参照してください。
 
-組織のプライバシー情報は、Azure AD の **[Properties]** エリアで追加します。 [Properties] エリアにアクセスしてプライバシー情報を追加するには:
+Azure AD の **[プロパティ]**  領域で組織のプライバシー情報を追加します。 [Properties] エリアにアクセスしてプライバシー情報を追加するには:
 
 1. **[Azure Active Directory]** ページの [管理] セクションで、 **[プロパティ]** を選択します。
 
@@ -103,15 +98,15 @@ Microsoft では、社内の従業員と外部のゲストがポリシーを確�
 - **プライバシーに関する声明の URL** -  <https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator/blob/master/Allfiles/Labs/Lab2/SC-300-Lab_ContosoPrivacySample.pdf>
 
      - サンプルのプライバシー PDF は、ラボのディレクトリにあります。
-     - 組織が社内と外部のゲストの両方のデータのプライバシーをどのように処理するかを説明している組織のドキュメントへのリンクを入力します。
+     \- 組織が社内と外部のゲストの両方のデータのプライバシーをどのように扱うかを説明している組織のドキュメントへのリンクを入力します。
 
-    **重要** - プライバシーに関する独自の声明とプライバシー連絡先のどちらも含めていない場合は、外部のゲストの [アクセス許可の確認] ボックスに、 **<組織名\>** は、ユーザーが確認する使用条件へのリンクを提供していませんというテキストが表示されます。 たとえば､このメッセージは､B2B コラボレーションでゲスト ユーザーが組織にアクセスするための招待を受けたときに表示されます｡
+    **重要** - プライバシーに関する独自の声明とプライバシー連絡先のどちらも含めていない場合は、外部のゲストの [アクセス許可の確認] ボックスに、 **<組織名\>** はユーザーが確認する使用条件へのリンクを提供していませんというテキストが表示されます。 たとえば､このメッセージは､B2B コラボレーションでゲスト ユーザーが組織にアクセスするための招待を受けたときに表示されます｡
 
     ![B2B Collaboration Review Permissions ボックスとメッセージ](./media/active-directory-no-privacy-statement-or-contact.png)
 
 3. **[保存]** を選択します。
 
-#### <a name="task-2---check-your-privacy-statement"></a>タスク 2 - プライバシーに関する声明を確認する
+#### タスク 2 - プライバシーに関する声明を確認する
 
 1. Azure ホーム画面 - ダッシュボードに戻ります。
 2. UI の右上隅で、ご利用のユーザー名を選択します。

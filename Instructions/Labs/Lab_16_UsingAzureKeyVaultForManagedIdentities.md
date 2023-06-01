@@ -1,46 +1,41 @@
 ---
 lab:
   title: 16 - マネージド ID に Azure Key Vault を使用する
-  learning path: "02"
+  learning path: '02'
   module: Module 02 - Implement an Authentication and Access Management Solution
-ms.openlocfilehash: 8be1dddef68268c7da2dccc5e6e8e6830b311fb4
-ms.sourcegitcommit: 80c5c0ef60c1d74fcc58c034fe6be67623013cc0
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "146823203"
 ---
-# <a name="lab-16---using-azure-key-vault-for-managed-identities"></a>ラボ 16 - マネージド ID に Azure Key Vault を使用する
+
+# ラボ 16 - マネージド ID に Azure Key Vault を使用する
 
 **注** - このラボでは Azure Pass が必要です。 手順については、ラボ 00 を参照してください。
 
-## <a name="lab-scenario"></a>ラボのシナリオ
+## ラボのシナリオ
 
 Azure リソースのマネージド ID を使用するとき、Azure AD 認証をサポートするリソースに対して認証するためのアクセス トークンをコードで取得できます。ただし、すべての Azure サービスが Azure AD 認証をサポートしているわけではありません。 Azure リソースのマネージド ID をこれらのサービスと共に使用するには、Azure Key Vault にサービス資格情報を保存し、マネージド ID を使用して Key Vault にアクセスして、資格情報を取得します。
 
-#### <a name="estimated-time-20-minutes"></a>推定時間:20 分
+#### 推定時間:20 分
 
-### <a name="exercise-1---use-azure-key-vault-to-manage-virtual-machine-identities"></a>演習 1 - Azure Key Vault を使用して仮想マシン ID を管理する
+### 演習 1 - Azure Key Vault を使用して仮想マシン ID を管理する
 
-#### <a name="task-1---create-a-windows-virtual-machine"></a>タスク 1 - Windows 仮想マシンを作成する
+#### タスク 1 - Windows 仮想マシンを作成する
 
 1. [https://portal.azure.com](https://portal.azure.com) を参照します
 
 1. **[+ リソースの作成]** を選択します。
 
-1. [マーケットプレースを検索] 検索バーに「**Windows Server**」と入力します。
+1. [マーケットプレースを検索] 検索バーに「**Windows クライアント**」と入力します。
 
-1. **[Windows Server]** を選択して、次に [ソフトウェア プランの選択] ドロップダウンから **[Windows Server 2019 Datacenter]** を選択します。
+1. **[Windows クライアント]** を選択し、プランのドロップダウンから **[Windows 10 Enterprise N (x65)]** を選びます。 次に、 **[作成]** を選択します。
 
 1. [基本] タブで VM 用の管理者ユーザー名とパスワードを作成する必要があります。
 
-1. **[管理]** タブで、[Azure AD] セクションの [Azure AD でログインする] のチェックボックスをオンにします。
+1. **[管理]** タブで、 **[システム割り当てマネージド ID を有効にする]** ボックスをオンにします。
 
 1. 仮想マシンの作成エクスペリエンスの残りの部分に移動します。 
 
 1. [作成] を選択します。
 
-#### <a name="task-2---create-a-key-vault"></a>タスク 2: キー コンテナーを作成する
+#### タスク 2: キー コンテナーを作成する
 
 1. グローバル管理者アカウントを使用して、[https://portal.azure.com]( https://portal.azure.com) にサインインします。
 
@@ -53,16 +48,17 @@ Azure リソースのマネージド ID を使用するとき、Azure AD 認証�
 1. **［作成］** を選択します
 
 1. 次に示すように、必要なすべての情報を入力します。 このラボで使用しているサブスクリプションを選択していることを確認してください。
+    **注** キー コンテナー名は一意である必要があります。 フィールドの右側にある緑色のチェックマークを探します。
 
  - **リソース グループ** - sc300KeyVaultrg
- - **キー コンテナー名** - sc300keyvault
+ - **キー コンテナー名** - *anyuniquevalue*
 
 1. **[Review + create](レビュー + 作成)** を選択します。
 
 1. **［作成］** を選択します
 
 
-#### <a name="task-3---create-a-secret"></a>タスク 3 - シークレットを作成する
+#### タスク 3 - シークレットを作成する
 
 1. 新しく作成した Key Vault に移動します。
 
@@ -78,13 +74,13 @@ Azure リソースのマネージド ID を使用するとき、Azure AD 認証�
 
 1. **[作成]** を選択して、シークレットを作成します。
 
-#### <a name="task-4---grant-access-to-key-vault"></a>タスク 4 - Key Vault へのアクセス許可を付与する
+#### タスク 4 - Key Vault へのアクセス許可を付与する
 
 1. 新しく作成した Key Vault に移動します。
 
 1. 左側のメニューで、 **[アクセス ポリシー]** を選択します。
 
-1. **[アクセス ポリシーの追加]** を選択します。
+1. **[+ 作成]** を選択します。
 
 1. [アクセス ポリシーの追加] セクションで、[テンプレートからの構成 (省略可能)] のプルダウン メニューから [シークレットの管理] を選択します。
 
@@ -94,7 +90,7 @@ Azure リソースのマネージド ID を使用するとき、Azure AD 認証�
 
 1. **[保存]** を選択します。
 
-#### <a name="task-5---access-data-with-key-vault-secret-with-powershell"></a>タスク 5 - PowerShell を使用して Key Vault シークレットを使用してデータにアクセスする
+#### タスク 5 - PowerShell を使用して Key Vault シークレットを使用してデータにアクセスする
 
 1. ラボの仮想マシンから PowerShell を開きます。  
 
@@ -110,10 +106,10 @@ Azure リソースのマネージド ID を使用するとき、Azure AD 認証�
     $KeyVaultToken = $Response.access_token
     ```
 
-1. PowerShell の Invoke-WebRequest コマンドを使用して、Key Vault で以前に作成したシークレットを取得し、Authorization ヘッダーにアクセス トークンを渡します。  Key Vault の [概要] ページの [要点] セクションにある Key Vault の URL が必要です。  
+1. PowerShell の Invoke-WebRequest コマンドを使用して、Key Vault で以前に作成したシークレットを取得し、Authorization ヘッダーにアクセス トークンを渡します。  Key Vault の [概要] ページの [要点] セクションにある Key Vault の URL が必要です。  リマインダー - Key Vault の URI は、[概要] タブにあります。
 
     ```
-    Invoke-RestMethod -Uri https://<your-key-vault-URL>/secrets/<secret-name>?api-version=2016-10-01 -Method GET -Headers @{Authorization="Bearer $KeyVaultToken"}
+    Invoke-RestMethod -Uri https://<your-key-vault-URI>/secrets/<secret-name>?api-version=2016-10-01 -Method GET -Headers @{Authorization="Bearer $KeyVaultToken"}
     ```
 1. 次のような応答を受け取ります。 
     ```
