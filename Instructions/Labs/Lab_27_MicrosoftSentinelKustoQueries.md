@@ -1,30 +1,25 @@
 ---
 lab:
   title: 27 - Azure AD データ ソースの Microsoft Sentinel Kusto クエリ
-  learning path: "04"
+  learning path: '04'
   module: Module 04 - Plan and Implement and Identity Governance Strategy
-ms.openlocfilehash: eac2b28212e21982e38208936be912ebd1f22f85
-ms.sourcegitcommit: 80c5c0ef60c1d74fcc58c034fe6be67623013cc0
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "146823233"
 ---
-# <a name="lab-27---microsoft-sentinel-kusto-queries-for-azure-ad-data-sources"></a>ラボ 27 - Azure AD データ ソースの Microsoft Sentinel Kusto クエリ
+
+# ラボ 27 - Azure AD データ ソースの Microsoft Sentinel Kusto クエリ
 
 **注** - このラボでは Azure Pass が必要です。 手順については、ラボ 00 を参照してください。
 
-## <a name="lab-scenario"></a>ラボのシナリオ
+## ラボのシナリオ
 
 Microsoft Sentinel は、スケーラブルでクラウドネイティブの SIEM および SOAR ソリューションです。  Microsoft とサードパーティのセキュリティ ソリューションからデータ ソースを接続すると、セキュリティ操作タスクを実行できます。  このラボ演習では、Kusto 照会言語 (KQL) を使用してハンティング クエリを実行するための Azure AD へのデータ コネクタを備えた Microsoft Sentinel ワークスペースを作成します。 
 
-#### <a name="estimated-time-30-minutes"></a>予想所要時間: 30 分
+#### 予想所要時間: 30 分
 
-### <a name="exercise-1---configure-microsoft-sentinel-for-kusto-queries"></a>演習 1 - Kusto クエリ用に Microsoft Sentinel を構成する
+### 演習 1 - Kusto クエリ用に Microsoft Sentinel を構成する
 
-#### <a name="task-1---create-a-microsoft-sentinel-workspace"></a>タスク 1 - Microsoft Sentinel ワークスペースを作成する
+#### タスク 1 - Microsoft Sentinel ワークスペースを作成する
 
-1. グローバル管理者として [https://portal.azure.com](https://portal.azure.com) にサインインします。
+1. グローバル管理者として、 [https://portal.azure.com](https://portal.azure.com)  にサインインします。
 
 1. **Microsoft Sentinel** を検索して選択します。 
 
@@ -40,21 +35,21 @@ Microsoft Sentinel は、スケーラブルでクラウドネイティブの SIE
 
 1. **[確認および作成]** 、 **[作成]** の順に選択します。
 
-1. Log Analytics ワークスペースのデプロイが完了したら、ワークスペースを選択し、 **[追加]** を選択します。  これにより、ワークスペースが Microsoft Sentinel に追加され、Microsoft Sentinel が開きます。
+1. Log Analytics ワークスペースのデプロイが完了した後、 **[更新]** ボタンを選択します。 その後、お使いのワークスペースを選び、 **[追加]** を選択します。  これにより、ワークスペースが Microsoft Sentinel に追加され、Microsoft Sentinel が開きます。
 
 1. ダイアログが表示されたら、 **[OK]** を選択して Microsoft Sentinel の無料試用版をアクティブにします。
 
-#### <a name="task-2---add-azure-ad-as-a-data-source"></a>タスク 2 - Azure AD をデータ ソースとして追加する
+#### タスク 2 - Azure AD をデータ ソースとして追加する
 
 1. **Microsoft Sentinel** で、メニューの **[構成]** に移動し、 **[データ コネクタ]** を選択します。
 
 1. データ コネクタのリストで、**Azure Active Directory** を見つけて選択します。
 
-1. 右側にプレビュー タイルが開きます。  **[Open connector page]\(コネクタ ページを開く\)** を選択します。
+1. 右側にプレビュー タイルが開きます。  **[Open connector page](コネクタ ページを開く)** を選択します。
 
-1. コネクタ ページに、データ コネクタの手順と次のステップが提供されます。 **構成** を続行するための各 **前提条件** の横にチェック マークがあることを確認します。
+1. コネクタ ページに、データ コネクタの手順と次のステップが提供されます。 **構成**を続行するための各**前提条件**の横にチェック マークがあることを確認します。
 
-1. **[構成]** で、 **[サインイン ログ]** と **[監査ログ]** のチェック ボックスをオンにします。 追加のログ ソースを利用できますが、現在 **プレビュー** 段階であり、このコースの対象外です。
+1. **[構成]** で、 **[サインイン ログ]** と **[監査ログ]** のチェック ボックスをオンにします。 追加のログ ソースを利用できますが、現在**プレビュー**段階であり、このコースの対象外です。
 
 1. **[変更の適用]** を選択します。 
 
@@ -64,7 +59,7 @@ Microsoft Sentinel は、スケーラブルでクラウドネイティブの SIE
 
    **注** - Azure AD データ コネクタがアクティブな数で表示されるまでに数分かかる場合があります。 
 
-#### <a name="task-3---run-kusto-query-on-user-activity"></a>タスク 3 - ユーザー アクティビティで Kusto クエリを実行する
+#### タスク 3 - ユーザー アクティビティで Kusto クエリを実行する
 
 1. **Microsoft Sentinel** で、 **[全般]** メニュー見出しの下にある **[ログ]** に移動します。
 

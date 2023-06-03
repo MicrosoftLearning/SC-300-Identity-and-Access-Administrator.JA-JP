@@ -1,28 +1,23 @@
 ---
 lab:
   title: 08 - Azure AD の多要素認証を有効にする
-  learning path: "02"
+  learning path: '02'
   module: Module 02 - Implement an Authentication and Access Management Solution
-ms.openlocfilehash: c03626519eec91f5b2f12779f5023e7d06f3c6ec
-ms.sourcegitcommit: 80c5c0ef60c1d74fcc58c034fe6be67623013cc0
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "146823215"
 ---
-# <a name="lab-08---enable-azure-ad-multi-factor-authentication"></a>ラボ 08 - Azure AD の多要素認証を有効にする
 
-## <a name="lab-scenario"></a>ラボのシナリオ
+# ラボ 08 - Azure AD の多要素認証を有効にする
+
+## ラボのシナリオ
 
 組織のセキュリティを向上させるために、Azure Active Directory の多要素認証を有効にするよう指示されています。
 
-#### <a name="estimated-time-15-minutes"></a>推定時間:15 分
+#### 推定時間:15 分
 
 **重要** - この演習には Azure AD Premium ライセンスが必要です。
 
-### <a name="exercise-1---review-and-enable-multi-factor-authentication-in-azure"></a>演習 1 - Azure で多要素認証を確認して有効にする
+### 演習 1 - Azure で多要素認証を確認して有効にする
 
-#### <a name="task-1---review-azure-multi-factor-authentication-options"></a>タスク1 - Azure Multi-Factor Authentication オプションを確認する
+#### タスク1 - Azure Multi-Factor Authentication オプションを確認する
 
 1. ディレクトリのグローバル管理者アカウントを使用して、[https://portal.azure.com](https://portal.azure.com) にアクセスし、サインインします。
 
@@ -42,7 +37,7 @@ ms.locfileid: "146823215"
 
     ここでは "アプリ パスワード" の有効/無効を切り替えることもできます。これにより、多要素認証がサポートされないアプリに対して一意のアカウント パスワードを作成できます。 この機能を使うと、ユーザーはそのアプリに固有となる別のパスワードを利用し、Azure AD の ID で認証することができます。
 
-#### <a name="task-2---setup-conditional-access-rules-for-mfa-for-delia-dennis"></a>タスク 2 - Delia Dennis の MFA の条件付きアクセス ルールを設定する
+#### タスク 2 - Delia Dennis の MFA の条件付きアクセス ルールを設定する
 
 次に、ネットワークにある特定のアプリにアクセスするゲスト ユーザーに MFA を強制する条件付きアクセス ポリシー ルールを設定する方法を確認してみましょう。
 
@@ -58,7 +53,7 @@ ms.locfileid: "146823215"
 
     - **[ユーザーまたはワークロード ID が選択されていません]** を選択します  
     - 右側の画面で、**[構成するユーザーとグループを選択する]** チェックボックスをオンにします。
-    - **ユーザーとグループ** を確認します (使用可能なユーザーは右側に表示されます)
+    - **ユーザーとグループ**を確認します (使用可能なユーザーは右側に表示されます)
     - ユーザーのリストから **[Delia Dennis]** を選択し、**[選択]** ボタンを選択します。
 
 5. **[クラウド アプリまたは操作]** を選択します。
@@ -90,7 +85,7 @@ ms.locfileid: "146823215"
 
     これで、選択したユーザーとアプリケーションに対して MFA が有効になりました。 次回、ゲストがそのアプリにサインインしようとすると、MFA の登録が求められます。
 
-#### <a name="task-3---test-delias-login"></a>タスク 3 - Delia のログインをテストする
+#### タスク 3 - Delia のログインをテストする
 
 1. 新しい InPrivate ブラウジング ウィンドウを開きます。
 2. https://www.office.comに接続します。
@@ -100,11 +95,11 @@ ms.locfileid: "146823215"
 
 **注** - この時点で、2 つのことのうちの 1 つが起こります。  Authenticator アプリをセットアップして MFA に登録する必要があるというメッセージが表示されます。  プロンプトに従って、個人の電話を使用して完了します。  注 - 続行する方法に関するいくつかのオプションを含むログイン失敗メッセージが表示される可能性があります。  この場合、 **[再試行]** オプションを選択します。
 
-Delia 用に作成した条件付きアクセス ルールのため、MFA は Office 365 ホーム ページを起動する必要があることがわかります。
+Delia 用に作成した条件付きアクセス ルールのため、MFA は Office 365 ホーム ページを起動するために必要であることがわかります。
 
-### <a name="exercise-2---configure-mfa-to-be-required-for-login"></a>演習 2 - ログインを必要とするように MFA を構成する
+### 演習 2 - ログインを必要とするように MFA を構成する
 
-#### <a name="task-1---configure-azure-ad-per-user-mfa"></a>タスク 1 - Azure AD のユーザーごとの MFA を構成する
+#### タスク 1 - Azure AD のユーザーごとの MFA を構成する
 
 最後に、ユーザー アカウントに対して MFA を構成する方法を見ていきましょう これは多要素認証設定にアクセスするもう 1 つの方法です。
 
@@ -126,10 +121,10 @@ Delia 用に作成した条件付きアクセス ルールのため、MFA は Of
 6. クイック手順で、**[有効化]** オプションを選択します。
 7. 通知ポップアップが表示されたらそれを読み、**[多要素認証を有効にする]** ボタンを選択します。
 8. **[閉じる]** を選びます。
-9. Adele が MFA ステータスとして **有効になっている** ことに注意してください。
+9. Adele が MFA ステータスとして**有効になっている**ことに注意してください。
 10. **[サービス設定]** を選択して、ラボの前半で見た MFA 設定画面を表示できます。
 11. [MFA 設定] タブを閉じます。
 
-#### <a name="task-2----try-logging-in-as-adele"></a>タスク 2 -- Adele としてログインを試みる
+#### タスク 2 -- Adele としてログインを試みる
 
 1. MFA ログイン プロセスの別の例を見たい場合は、Adele にログインしてみてください。

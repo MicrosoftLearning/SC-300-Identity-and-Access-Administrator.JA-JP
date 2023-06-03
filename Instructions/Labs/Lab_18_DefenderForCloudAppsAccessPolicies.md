@@ -1,53 +1,72 @@
 ---
 lab:
   title: 18 - Defender for Cloud Apps アクセス ポリシー
-  learning path: "03"
+  learning path: '03'
   module: Module 03 - Implement Access Management for Apps
-ms.openlocfilehash: 96c7c24c45e155c80a6e8c44852fb930c36aa876
-ms.sourcegitcommit: 80c5c0ef60c1d74fcc58c034fe6be67623013cc0
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "146823209"
 ---
-# <a name="18---defender-for-cloud-apps-access-and-session-policies"></a>18 - Defender for Cloud Apps アクセスとセッション ポリシー
 
-## <a name="lab-scenario"></a>ラボのシナリオ
+# 18 - Defender for Cloud Apps アクセスとセッション ポリシー
+
+## ラボのシナリオ
 
 Microsoft Defender for Cloud Apps では、監視しているクラウド アプリに固有の追加の条件付きアクセス ポリシーを作成できます。  これらのポリシーの作成は、Microsoft Defender for Cloud Apps ポータル内の [制御] メニューから行うことができます。
 
-#### <a name="estimated-time-20-minutes"></a>推定時間:20 分
+#### 推定時間:20 分
 
-### <a name="exercise-1---create-a-defender-for-cloud-apps-access-policy"></a>演習 1 - Defender for Cloud Apps アクセス ポリシーを作成する
+### 演習 1 - アプリの条件付きアクセス制御ポリシーを作成してテストする
 
-#### <a name="task-1---configure-azure-ad-to-work-with-defender-for-cloud-apps"></a>タスク 1: Defender for Cloud Apps と連動するように Azure AD を構成する
+#### タスク 1 - PradeepG が FORMS への無条件アクセス権を持っていることを確認する
+
+1. 新しい **[InPrivate 閲覧]** ウィンドウを起動します。
+2. [https://forms.microsoft.com](https://forms.microsoft.com) に接続します。
+3. ページの右上隅にある [ログイン] を選択します。
+4. Pradeep Gupta としてログインします。
+   - ユーザー名 = PradeepG@<<<your lab hoster provided domain>>>
+   - パスワード = [リソース] タブのパスワード
+5. Microsoft Forms が開き、警告メッセージが表示されないことを確認します。
+6. [InPrivate 閲覧] ウィンドウを閉じます。
+
+#### タスク 2: Defender for Cloud Apps と連動するように Azure AD を構成する
 
 1. [portal.azure.com](portal.azure.com) に移動して、Azure Active Directory にアクセスします。
 
-1. **[管理]** で、 **[セキュリティ]** を選択します。
+2. **[管理]** で、 **[セキュリティ]** を選択します。
 
-1. **[保護]** で、 **[条件付きアクセス]** を選択します。
+3. **[保護]** で、 **[条件付きアクセス]** を選択します。
 
-1. **[+ 新しいポリシー]** ドロップダウンを選択し、 **[新しいポリシーの作成]** を選択します。
+4. **[+ 新しいポリシー]** ドロップダウンを選択し、 **[新しいポリシーの作成]** を選択します。
 
-1. "**Defender for Cloud Apps コントロール**" などのポリシー名を入力します。
+5. **Forms を使用して Pradeep を監視する**などのポリシー名を入力します。
 
-1. **[ユーザーまたはワークロード ID]** で、 **[users or workload identities selected]\(選択されているユーザーまたはワークロード ID\)** を選択し、 **[ユーザーとグループの選択]** と **[ユーザーとグループ]** を選択します。
+6. **[ユーザーまたはワークロード ID]** で、 **[組み込まれた特定のユーザー]** 、 **[ユーザーとグループの選択]** の順に選択し、 **[ユーザーとグループ]** をマークします。
 
-1. ラボ テナントの管理者ユーザー アカウントを選択し、 **[選択]** を選択します。
+7. ラボ テナントに対して **Pradeep Gupta** アカウントを選び、 **[選択]** を選択します。
 
-1. **[クラウド* アプリ*またはアクション*]** で、 **[No cloud apps, action, or authentication contexts selected](クラウド* アプリ*、アクション*、または認証*コンテキスト*が選択されません)** を選択します。
+8. **[クラウド* アプリ*またはアクション*]** で、 **[No cloud apps, action, or authentication contexts selected](クラウド* アプリ*、アクション*、または認証*コンテキスト*が選択されません)** を選択します。
 
-1. **[アプリを選択]** を選択し、 **[Microsoft Cloud App Security]** 、 **[Office 365 Exchange Online]** 、 **[Office 365]** を選択して **[選択]** を選択します。 
+9. **[アプリの選択]** を選択してから、 **[Microsoft Forms]** を選び、 **[選択]** を選択します。 
 
-1. **[アクセスの制御]** で、 **[セッション]** と **[個のコントロールが選択されました]** を選択します。
+10. **[アクセスの制御]** で、 **[セッション]** と [0 個のコントロールが選択されました] を選択します。
 
-1. **[アプリの条件付きアクセス制御を使う]** ボックスを選択し、既定の **[監視のみ]** のままにして、 **[選択]** を選択します。
+11. **[アプリの条件付きアクセス制御を使う]** ボックスを選択し、既定の **[監視のみ]** のままにして、 **[選択]** を選択します。
 
-1. **[ポリシーの有効化]** で、 **[オン]** を選択してから **[作成]** を選択します。
+12. **[ポリシーの有効化]** で、 **[オン]** を選択してから **[作成]** を選択します。
 
+#### タスク 3 - Forms にログインし、条件付きアクセスが監視されていることを検証する
 
-#### <a name="task-2---access-microsoft-defender-for-cloud-apps-and-create-conditional-access-app-control"></a>タスク 2 - Microsoft Defender for Cloud Apps にアクセスし、アプリの条件付きアクセス制御を作成する
+1. 新しい **[InPrivate 閲覧]** ウィンドウを起動します。
+2. [https://forms.microsoft.com](https://forms.microsoft.com) に接続します。
+3. ページの右上隅にある [ログイン] を選択します。
+4. Pradeep Gupta としてログインします。
+   - ユーザー名 = PradeepG@<<<your lab hoster provided domain>>>
+   - パスワード = [リソース] タブのパスワード
+5. Pradeep にアクセス権があり、新しいメッセージが表示されることを確認します。
+   - あなたの会社は、このアプリケーションの使用状況を監視しています。
+6. [InPrivate 閲覧] ウィンドウを閉じます。
+
+### 演習 2 - Microsoft Defender for Cloud Apps で DLP アラートを設定する
+
+#### タスク 1 - Microsoft Defender for Cloud Apps にアクセスし、アプリの条件付きアクセス制御を作成する
 
 アプリケーションを登録すると、アプリケーションと Microsoft ID プラットフォームとの間の信頼関係が確立されます。 この信頼は一方向です。つまり、アプリは Microsoft ID プラットフォームを信頼しますが、その逆はありません。
 
@@ -61,30 +80,38 @@ Microsoft Defender for Cloud Apps では、監視しているクラウド アプ
 
 1. **[+ ポリシーの作成]** を選びます。 **[アクセス ポリシー]** を選択します。
 
-1. "**管理されていないデバイスからのアクセスをブロックする**" など、ポリシーの名前を入力します。
+1. ポリシーの名前 (**Microsoft Forms アクセスを監視する**など) を入力します。
 
 1. **[カテゴリ]** は **[アクセス制御]** のままにします。
 
-1. **[Activities matching all of the following]\(次のすべてに一致するアクティビティ\)** で、 **[Intune compliant, Hybrid Azure AD joined]\(Intune 準拠、ハイブリッド Azure AD 参加済み\)** のドロップダウンを選択し、 **[Hybrid Azure AD 参加済み]** の選択を解除します。
+1. **[Activities matching all of the following](次のすべてに一致するアクティビティ)** で、 **[Intune compliant, Hybrid Azure AD joined](Intune 準拠、ハイブリッド Azure AD 参加済み)** のドロップダウンを選択し、 **[Hybrid Azure AD 参加済み]** の選択を解除します。
 
-1. **[アプリを選択]** のドロップダウンを選択します。  **[Microsoft OneDrive for Business]** を選択します。
+1. **[アプリを選択]** のドロップダウンを選択します。  **[Microsoft Forms]** を選択します。
 
 1. **[アクション]** を **[テスト]** のままにします。
 
-1. **[通知]** で、 **[通知の作成]** をオンのままにして、 **[Sent alert as email]\(電子メールとして送信済みの通知\)** を選択します。
+1. **[通知]** で、 **[通知の作成]** をオンのままにして、 **[Sent alert as email](電子メールとして送信済みの通知)** を選択します。
 
 1. ラボ管理者の電子メール アドレスを入力し、キーボードで **Enter** キーを押します。
 
 1. **[作成]** を選択してアクセス ポリシーを作成します。
 
-1. 別のブラウザー タブで <login.microsoftonline.com> に移動し、ページの右上にあるアプリの選択から **[OneDrive]** を選択します。
+#### タスク 2 - Pradeep として Forms にログインしてアクティビティをトリガーする
 
-    ![OneDrive アプリを選択してアクセス ポリシーをテストする](media/selectonedrive.png)
+1. 新しい **[InPrivate 閲覧]** ウィンドウを起動します。
+2. [https://forms.microsoft.com](https://forms.microsoft.com) に接続します。
+3. ページの右上隅にある [ログイン] を選択します。
+4. Pradeep Gupta としてログインします。
+   - ユーザー名 = PradeepG@<<<your lab hoster provided domain>>>
+   - パスワード = [リソース] タブのパスワード
+5. Pradeep にアクセス権があり、新しいメッセージが表示されることを確認します。
+   - あなたの会社は、このアプリケーションの使用状況を監視しています。
+6. [InPrivate 閲覧] ウィンドウを閉じます。
 
-1. **Microsoft Defender for Cloud Apps** で、メニューの **[通知]** を選択します。  これにより、組み込みとカスタムの両方のポリシーから通知のダッシュボードが表示されます。 
+#### タスク 3 - Defender for Cloud Apps のアクティビティを確認する
 
-1. **[フィルター]** で、 **[アプリ: アプリを選択]** の **[OneDrive for Business]** と、 **[ポリシー: ポリシーの選択]** で作成したポリシーを選択します。 このポリシーの通知は、ここに表示されます。
-
-1. <login.microsoftonline.com> から **Outlook** に移動して、通知の **[受信トレイ]** を表示します。 選択すると、 **[Access to Microsoft Exchange Online is monitored]\(Microsoft Exchange Online へのアクセスが監視されます\)** が表示されます。 これは、ラボ プロバイダーから設定される条件付きアクセス ポリシーに基づいています。
-
-   **注** - このポリシーが反映され、アラートが提供されるまで遅延が生じる場合があります。
+1. Defender for Cloud Apps を実行しているブラウザーに戻ります。
+2. ブラウザーを更新して、最新のデータがダウンロードされていることを確かめます。
+3. **[調査]** メニューから **[アクティビティ ログ]** を選択します。
+4. **[アプリ: フィルター]** を使用して、リストから **[Microsoft Forms]** を選びます。
+5. Pradeep のサインオン レコードに注目してください。
