@@ -33,7 +33,7 @@ lab:
 
 4. 上部のメニューで **[+ 新しいカタログ]** を選択します。
 
-    ![[新しいカタログ] メニューが強調表示された Identity Governance カタログ ページが表示されている画面イメージ  ](./media/lp4-mod1-identity-governance-new-catalog.png)
+    ![[新しいカタログ] メニューが強調表示された Identity Governance カタログ ページが表示されている画面イメージ ](./media/lp4-mod1-identity-governance-new-catalog.png)
 
 5. [新しいカタログ] ペインで、**[名前]** ボックスに「**Marketing**」と入力します。
 
