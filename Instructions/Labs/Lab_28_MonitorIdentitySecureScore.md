@@ -9,7 +9,7 @@ lab:
 
 ## ラボのシナリオ
 
-Azure AD Identity Protection では、ID ベースのリスクに対する自動検出と修復を提供し、潜在的なリスクを調査するためのデータをポータルに提供します。 Azure AD Identity Protection には、ID セキュリティ体制を監視および改善するための ID セキュリティ スコアも用意されています。  ID セキュリティ スコアでは、Microsoft 365 Defender や Microsoft Defender for Cloud と同じ方法で、改善処置および推奨事項を提供することで、Azure Active Directory における ID の全体的なセキュリティ態勢を改善できるようにしています。  このラボでは、この機能について説明します。 
+Microsoft Entra ID 保護では、ID ベースのリスクに対する自動検出と修復を提供し、潜在的なリスクを調査するためのデータをポータルに提供します。 Microsoft Entra ID 保護には、ID セキュリティ ポスチャを監視および改善するための ID セキュリティ スコアも用意されています。  ID セキュリティ スコアでは、Microsoft 365 Defender や Microsoft Defender for Cloud と同じ方法で、改善処置および推奨事項を提供することで、Microsoft Entra ID における全体的な ID のセキュリティ ポスチャを改善できます。  このラボでは、この機能について説明します。 
 
 #### 推定時間:15 分
 
@@ -17,9 +17,9 @@ Azure AD Identity Protection では、ID ベースのリスクに対する自動
 
 #### タスク 1 - ID のセキュリティ スコアと改善処置を確認する
 
-1. グローバル管理者として、 [https://portal.azure.com](https://portal.azure.com)  にサインインします。
+1. グローバル管理者として、 [https://entra.microsoft.com](https://entra.microsoft.com)  にサインインします。
 
-2. **[Azure AD Identity Protection]** を検索してから選択します。
+2. **[保護]** メニューを開き、**[ID セキュリティ スコア]** を選択します。
 
 3. **[概要]** タイルには、 **[ID セキュリティ スコア]** が表示されます。
 
