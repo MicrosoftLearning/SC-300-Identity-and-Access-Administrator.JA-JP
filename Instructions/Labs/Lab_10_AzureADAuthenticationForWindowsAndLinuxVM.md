@@ -5,7 +5,7 @@ lab:
   module: Module 02 - Implement an Authentication and Access Management Solution
 ---
 
-# ラボ 10 - Windows および Linux Virtual Machines に対する Azure AD Authentication
+# ラボ 10 - Windows および Linux Virtual Machines に対する Microsoft Entra 認証
 
 **注** - このラボでは Azure Pass が必要です。 手順については、ラボ 00 を参照してください。
 
@@ -23,16 +23,18 @@ lab:
 
 1. **[+ リソースの作成]** を選択します。
 
-1. [マーケットプレースを検索] 検索バーに「**Windows Server**」と入力します。
+1. [Marketplace を検索] 検索バーに「**Windows 11**」と入力します。
 
-1. **[Windows Server]** を選択し、[ソフトウェア プランの選択] ドロップダウンから **[Windows Server 2022 Datacenter]** を選びます。
+1. **[Windows 11]** ボックスで、[ソフトウェア プランの選択] ドロップダウンから **[Windows 11 Enterprise 22H2]** を選択します。
 
 1. [基本] タブで VM 用の管理者ユーザー名とパスワードを作成する必要があります。
    - ユーザー名 (覚えておく必要があります) とセキュリティで保護されたパスワードを使用します。
 
-1. **[管理]** タブで、[Azure AD] セクションの [Azure AD でログインする] のチェックボックスをオンにします。
+1. **[管理]** タブで、[Azure AD] セクションの **[Azure AD でログインする]** のチェックボックスをオンにします。
 
-1. [ID] セクションの **[システム割り当てマネージド ID]** のチェック ボックスが自動的にオンになり、灰色に変わることがわかります。 Azure AD を使用してログインを有効にすると、この操作は自動的に行われます。
+    注: 2023 年 11 月 1 日の時点で、この UI は Microsoft Entra ID を表示するように更新されておらず、Azure AD を引き続き参照しています。
+
+    注 2: [ID] セクションの **[システム割り当てマネージド ID]** のチェックボックスが自動的にオンになり、灰色に変わることがわかります。 Azure AD を使用してログインを有効にすると、この操作は自動的に行われます。
 
 1. 仮想マシンの作成エクスペリエンスの残りの部分に移動します。 
 

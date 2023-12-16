@@ -22,20 +22,18 @@ lab:
 
 #### タスク 1 - 新しいユーザーを追加する
 
-1. グローバル管理者として、 [https://portal.azure.com](https://portal.azure.com)  にサインインします
+1. グローバル管理者として、 [https://entra.microsoft.com](https://entra.microsoft.com)  にサインインします
 
-2. **[Azure Active Directory]** を検索して選択します。
+2. 左側のメニューで [**ID**] を選択します。
 
-3. 左側のナビゲーション メニューの **[管理]** で、 **[ユーザー]** を選んでから、 **[+ 新しいユーザー]** と **[新しいユーザーの作成]** を選択します。
+3. 左側のナビゲーション メニューで、[**ユーザー**] の下にある [**すべてのユーザー**] を選択し、次に [**+ 新しいユーザー**] と [**新しいユーザーの作成**] を選択します。
 
 4. **[ユーザーの作成]** ボタンをマークします。 その後、次の情報を使用してユーザーを作成します。
 
     | **設定**| **Value**|
     | :--- | :--- |
-    | ユーザー名| ChrisG|
-    | 名前| Chris Green|
-    | 名| Chris|
-    | 姓| [緑]|
+    | ユーザー プリンシパル名| ChrisG|
+    | Display Name| Chris Green|
 
 5. **[パスワードの自動生成]** オプションをマークします。
 
@@ -43,12 +41,12 @@ lab:
 
      *このアカウントに最初にログインするときにパスワードを変更する必要があります*
 
-7. **[作成]** を選択します。 これでユーザーが作成され、組織に登録されました。
+7. **[確認および作成]** を選択します。 次に、レビュー画面で、[**作成**] を選択します。 これでユーザーが作成され、組織に登録されました。
 
 #### タスク 2 - ログインしてアプリを作成する
 
 1. 新しい InPrivate ブラウザー ウィンドウを開きます。
-2. Azure portal [https://portal.azure.com](https://portal.azure.com) を Chris Green として開きます。
+2. Chris Green として Microsoft Entra 管理センター [https://entra.microsoft.com](https://entra.microsoft.com) を開きます。
 
     | **設定**| **Value**|
     | :--- | :--- |
@@ -63,7 +61,7 @@ lab:
     | 新しいパスワード| 一意のセキュリティで保護されたパスワードを入力します |
     | パスワードの確認| 一意のセキュリティで保護されたパスワードを再入力します |
 
-4. **[Microsoft Azure ツアーへようこそ]** ダイアログが表示された場合は、 **[後で]** ボタンをクリックします。
+4. **ツアー ダイアログ** が表示された場合は、[**後で**] ボタンを選択します。
 
 5. 画面の上部にある検索ダイアログで、**エンタープライズ アプリケーション**を検索して選択します。
 7. **[新しいアプリケーション]** を選択します。 **[+ 独自のアプリケーションの作成]** は使用できないことに注意してください。
@@ -76,11 +74,11 @@ lab:
 
 #### タスク1 - ユーザーにロールを割り当てる
 
-Azure Active Directory (Azure AD) を使用して、特権が低いロールで ID のタスクを管理する限定された管理者を指定できます。 ユーザーの追加または変更、管理ロールの割り当て、ユーザーのパスワードのリセット、ユーザーのライセンスの管理、ドメイン名の管理などの目的で管理者を割り当てることができます。
+Microsoft Entra ID を使用すると、特権の低いロールで ID タスクを管理するための制限付き管理者を指定できます。 ユーザーの追加または変更、管理ロールの割り当て、ユーザーのパスワードのリセット、ユーザーのライセンスの管理、ドメイン名の管理などの目的で管理者を割り当てることができます。
 
-1. グローバル管理者のロールとしてまだログインしていない場合は、Azure portal を開いてログインします。
-2. Azure Active Directory に移動します。
-3. メニューの [管理] セクションで **[ユーザー]** をクリックします。
+1. グローバル管理者ロールとしてまだログインしていない場合は、Microsoft Entra 管理センターを開いてログインします。
+2. [ID] に移動し、[ユーザー] ページを選択します。
+3. メニューの [管理] セクションで [**すべてのユーザー**] をクリックします。
 4. **Chris Green** のアカウントを選択します。
 5. [管理] メニューから **[割り当てられたロール]** を選択します。
 6. **[+ 割り当ての追加]** を選択し、`Application administrator` ロールをマークします。
@@ -88,16 +86,16 @@ Azure Active Directory (Azure AD) を使用して、特権が低いロールで 
 
     ![[割り当てられたロール] ページ - 選択されたロールを表示中](./media/directory-role-select-role.png)
 
-**注**: ラボ環境で既に Azure AD Premium P2 がアクティブ化されている場合は、Privileged Identity Management (PIM) が有効になり、 **[次へ]** を選択し、このユーザーに永続的なロールを割り当てる必要があります。
+**注** - ラボ環境で既に Microsoft Entra ID Premium P2 がアクティブ化されている場合は、Privileged Identity Management (PIM) が有効になるため、[**次へ**] を選択し、このユーザーに永続的なロールを割り当てる必要があります。
 
-8. **[更新]** ボタンを選択します。
+9. [**更新**] ボタンを選択します。
 
 **注 - 新しく割り当てられたアプリケーション管理者ロールが、ユーザーの [割り当てられたロール] ページに表示されます。**
 
 #### タスク 2 - アプリケーションのアクセス許可を確認する
 
 1. 新しい InPrivate ブラウザー ウィンドウを開きます。
-2. Azure portal [https://portal.azure.com](https://portal.azure.com) を Chris Green として開きます。
+2. Chris Green として Microsoft Entra 管理センター [https://entra.microsoftcom](https://entra.microsoft.com) を開きます。
 
     | **設定**| **Value**|
     | :--- | :--- |
@@ -108,6 +106,7 @@ Azure Active Directory (Azure AD) を使用して、特権が低いロールで 
 4. 画面の上部にある検索ダイアログで、**エンタープライズ アプリケーション**を検索して選択します。
 5. **[+ 新しいアプリケーション]** が利用可能になったことに注意してください。
 6. **[+ 新しいアプリケーション]** を選択します。
+7. [**+ 独自のアプリケーションの作成**] が淡色表示されていないことを確認します。ギャラリー アプリを選択すると、[**作成**] ボタンが表示されます。
 
    **注 - このロールには、テナントにアプリケーションを追加する権限があります。この権限については、後のラボでさらに実験します。**
 
@@ -119,23 +118,20 @@ Azure Active Directory (Azure AD) を使用して、特権が低いロールで 
 
 このタスクでは、別の方法を使用して、割り当てられたロールを削除します。Azure AD の **[ロールと管理者]** オプションを使用します。
 
-1. グローバル管理者としてまだログインしていない場合は、Azure portal を起動して今すぐログインしてください。
-2. 検索ボックスに「**Azure Active Directory**」と入力し、Azure AD を起動します。
-3.  **Azure Active Directory** で **[ロールと管理者]** を選択して、リストから **[アプリケーション管理者]** ロールを選びます。
-
-**注**: ラボ環境で既に Azure AD Premium P2 がアクティブ化されている場合は、Privileged Identity Management (PIM) が有効になり、 **[次へ]** を選択し、このユーザーに永続的なロールを割り当てる必要があります。
-
+1. グローバル管理者としてまだログインしていない場合は、Microsoft Entra 管理センターを起動して今すぐログインしてください。
+2. 検索ボックスに「**ロールと管理**」と入力し、Microsoft Entra ID のロールと管理を起動します。
+3. [ **ロールと管理者**] の**</bpt>"> [ **すべてのロール**] で、一覧から**アプリケーション管理者**ロールを選択します。
 4. **[アプリケーション管理者 | 割り当て]** ページの一覧に Chris Green の名前が表示されます。
 5. Chris Green の横にあるボックスにチェックを入れます。
 6. ダイアログの上部にあるオプションから **[X 割り当ての削除]** をクリックします。
 7. 確認ボックスが開いたら、**[はい]** と答えます。
-8. [Azure Active Directory] を閉じます。
+8. 画面を閉じます。
 
 ### 演習 4 - ユーザーの一括インポート
 
 #### タスク 1 - .csv ファイルを使用してユーザーを作成するための一括操作
 
-1. Azure AD メニューの **[管理]** で **[ユーザー]** を選択します。
+1. Microsoft Entra ID メニューで、まず [**ID**] を開き、[**ユーザー**] を選択してから、[**すべてのユーザー**] を選択します。
 
 2. **[ユーザー |すべてのユーザー]** タイルで、 **[一括操作]** ドロップダウン矢印を選択し、 **[一括作成]** を選択します。
 
@@ -170,68 +166,72 @@ Azure Active Directory (Azure AD) を使用して、特権が低いロールで 
 
 1. PowerShell を管理者として開きます。これを行うには、Windows で PowerShell を検索し、[管理者として実行] を選択します。 
 
-**注**: PowerShell ISE ではなく PowerShell を選択します。
+**注** - このラボを機能させるためには、PowerShell バージョン 7.2 以降が必要です。  PowerShell を開くと、画面の上部にバージョンが表示されます。古いバージョンを実行している場合は、画面の指示に従って https://aka.ms/PowerShell-Release?tag=7.3.9 に移動してください。 [アセット] セクションまで下にスクロールし、powershell-7.3.1-win-x64.msi を選択します。 ダウンロードが完了したら、[ファイルを開く] を選択します。 すべての既定値を使用してインストールします。
 
-2. 以前に使用していない場合は、Azure AD PowerShell モジュールを追加してインポートする必要があります。  次の 2 つのコマンドを実行し、確認を求められたら Y キーを押します。
-
-    ```
-    Install-Module AzureAD
-    Import-Module AzureAD
-    ```
-
-3. 次のコマンドを実行して、モジュールが正しくインストールされていることを確認します。  
+2. 以前に使用したことがない場合は、Microsoft.Graph PowerShell モジュールをインストールする必要があります。  次の 2 つのコマンドを実行し、確認を求められたら Y キーを押します。
 
     ```
-    Get-Module AzureAD 
+    Install-Module Microsoft.Graph
     ```
+3. Microsoft.Graph モジュールがインストールされていることを確認します。
+
+    ```
+    Get-InstalledModule Microsoft.Graph
+    ```
+    
 
 4. 次に、次を実行して Azure にログインする必要があります。  
 
     ```
-    Connect-AzureAD 
+    Connect-MgGraph -Scopes "User.ReadWrite.All"
     ``` 
+    Edge ブラウザーが開き、サインインするように求められます。  MOD 管理者アカウントを使用して接続します。  アクセス許可リクエストに同意して、ブラウザー ウィンドウを閉じます。
 
-5. Azure AD にログインするための Microsoft ログイン ウィンドウが表示されます。  
-
-6. 接続されていることを確認し、既存のユーザーを表示するには、次を実行します。  
+5. 接続されていることを確認し、既存のユーザーを表示するには、次を実行します。  
 
     ``` 
-    Get-AzureADUser 
+    Get-MgUser 
     ```
     
-7. すべての新しいユーザーに共通の一時パスワードを割り当てるには、次のコマンドを実行し、TempPW をユーザーに提供するパスワードに置き換えます。  
+7. すべての新規ユーザーに共通の一時パスワードを割り当てるには、次のコマンドを実行し、<Enter a complex Password> をユーザーに提供するパスワードに置き換えます。  
 
     ``` 
-    $PasswordProfile = New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
-    ```
-
-    ```
-    $PasswordProfile.Password = "<<enter a secure password you will remember>>" 
+    $PWProfile = @{
+        Password = "<Enter a complex password you will>";
+        ForceChangePasswordNextSignIn = $false
+    }
     ```
 
 8. これで、新しいユーザーの作成に取りかかることができます。  次のコマンドにユーザー情報が入力され、実行されます。  追加するユーザーが複数ある場合は、メモ帳の txt ファイルを使用してユーザー情報を追加し、PowerShell にコピーして貼り付けることができます。 
 
     ```
-    New-AzureADUser -DisplayName "New User" -PasswordProfile $PasswordProfile -UserPrincipalName "NewUser@labtenantname.com" -AccountEnabled $true -MailNickName "Newuser"
+    New-MgUser `
+        -DisplayName "New PW User" `
+        -GivenName "New" -Surname "User" `
+        -MailNickname "newuser" `
+        -UsageLocation "USA" `
+        -UserPrincipalName "newuser@<labtenantname.com>" `
+        -PasswordProfile $PWProfile -AccountEnabled `
+        -Department "Research" -JobTitle "Trainer"
     ```
 **注**: **labtenantname.com** は、ラボ テナントによって割り当てられた **onmicrosoft.com** 名に置き換えます。
 
 ## ユーザーの管理を試す
 
-Azure AD ページを使用して、ユーザーを追加および削除できます。  ただし、スクリプトを使用してユーザーを作成し、ロールを割り当てることができます。  スクリプトを使用して、Chris Green のユーザー アカウントに別のロールを与えてみます。 
+Microsoft Entra ID ページを使用してユーザーを追加および削除できます。  ただし、スクリプトを使用してユーザーを作成し、ロールを割り当てることができます。  スクリプトを使用して、Chris Green のユーザー アカウントに別のロールを与えてみます。 
  
 
-### 演習 5 - Azure Active Directory からユーザーを削除する
+### 演習 5 - Microsoft Entra ID からユーザーを削除する
 
 #### タスク 1 - ユーザーを削除する
 
 アカウントを削除した後、復元する必要がある場合があります。 最近削除されたアカウントを復元できるかどうかを確認する必要があります。
 
-1. [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview) にアクセスします。
+1. [https://entra.micrososft.com](Microsoft Entra admin center) にアクセスします。
 
-2. 左側のナビゲーション メニューの **[管理]** で、**[ユーザー]** を選択します。
+2. 左側のナビゲーション内の **[ID]** の下にある **[ユーザー]** を選択します。
 
-3. **[ユーザー]** リストで、削除するユーザーのチェック ボックスをオンにします。 たとえば、**Chris Green** を選択します。
+3. [**すべてのユーザー**] リストで、削除するユーザーのチェック ボックスをオンにします。 たとえば、**Chris Green** を選択します。
 
     **ヒント** - リストからユーザーを選択すると、複数のユーザーを同時に管理できます。 ユーザーを選択し、そのユーザーのページを開いている場合は、その個別のユーザーのみを管理します。
 
@@ -243,7 +243,7 @@ Azure AD ページを使用して、ユーザーを追加および削除でき�
 
 #### タスク 2 - 削除済みユーザーを復元する
 
-1. [ユーザー] ページの左側のナビゲーションで、**[削除済みのユーザー]** を選択します。
+1. [ユーザー] ページで、左側のナビゲーションから [**すべてのユーザー**] を選択し、[**削除済みのユーザー**] を選択します。
 
 2. 削除されたユーザーの一覧を確認し、 **[Chris Green]** を選択します。
 
@@ -264,9 +264,9 @@ Azure AD ページを使用して、ユーザーを追加および削除でき�
 
 組織内の一部のユーザー アカウントには、割り当てられたライセンスで利用可能なすべての製品が提供されない場合や、ライセンス割り当ての更新または追加が必要な場合があります。 Azure AD でユーザー アカウントのライセンス割り当てを更新できるようにする必要があります。
 
-1. [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview) にアクセスします。
+1. [https://entra.microsoft.com]( https://entra.microsoft.com) にアクセスします。
 
-2. 左側のナビゲーションの **[管理]** で、**[ユーザー]** を選択します。
+2. 左側のナビゲーションで、[**ID**] の下にある [**ユーザー**] を選択し、[**すべてのユーザー**] を選択します。
 
 3. [ユーザー] ページで、検索ボックスに「**Raul**」と入力します。
 
@@ -280,22 +280,20 @@ Azure AD ページを使用して、ユーザーを追加および削除でき�
 
 7. Raul に "ライセンスの割り当てが見つかりません" と表示されていることを確認します。
 
-8. [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview) にアクセスします。
+8. 左側のナビゲーションの [**すべてのユーザー**] に戻り、[**ID**] で [**ユーザー**] を選択します。
 
-9. 左側のナビゲーションの **[管理]** で、**[ユーザー]** を選択します
+9. [ユーザー] ページで、 **[Raul Razo]** を選択します。
 
-10. [ユーザー] ページで、 **[Raul Razo]** を選択します。
+10. 左側のナビゲーションで、**[ライセンス]** を選択します。
 
-11. 左側のナビゲーションで、**[ライセンス]** を選択します。
+11. **[+ 割り当て]** ボタンを選択します。 
 
-12. **[+ 割り当て]** ボタンを選択します。 
-
-13. [ライセンス割り当ての更新] ページで、**Windows 10/11 Enterprise E3** ライセンスのチェック ボックスをオンにします。
+12. [ライセンス割り当ての更新] ページで、**Windows 10/11 Enterprise E3** ライセンスのチェック ボックスをオンにします。
 
     ![[ライセンス割り当ての更新] ページとライセンス オプションが強調表示されている画面イメージ](./media/lp1-mod2-assign-user-license-options.png)
 
-14. 完了したら、**[保存]** を選択します。
+13. 完了したら、**[保存]** を選択します。
 
-15. 画面の上部にある **[ホーム]** を選択し、 **[Contoso]** を選択し、 **[ユーザー]** を選択し、 **[Raul Razo]** を選択します。
+14. 画面の上部にある **[ホーム]** を選択し、 **[Contoso]** を選択し、 **[ユーザー]** を選択し、 **[Raul Razo]** を選択します。
 
-16. ライセンスが割り当てられていることに注目してください。
+15. ライセンスが割り当てられていることに注目してください。

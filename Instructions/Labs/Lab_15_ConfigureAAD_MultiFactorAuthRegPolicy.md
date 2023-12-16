@@ -1,15 +1,15 @@
 ---
 lab:
-  title: 15 - Azure AD の多要素認証登録ポリシーを構成する
+  title: 15 - 多要素認証登録ポリシーを構成する
   learning path: '02'
   module: Module 02 - Implement an Authentication and Access Management Solution
 ---
 
-# ラボ 15 - Azure AD の多要素認証登録ポリシーを構成する
+# ラボ 15 - 多要素認証登録ポリシーを構成する
 
 ## ラボのシナリオ
 
-Azure AD Multi-Factor Authentication は、ユーザー名とパスワードに加えて、その他の要素を使用することでユーザーを確認する手段を提供します。 ユーザーのサインインに第 2 のセキュリティ層を提供します。ユーザーが MFA プロンプトに応答できるようにするには、まず Azure AD Multi-Factor Authentication に登録する必要があります。 Azure AD 組織の MFA 登録ポリシーがすべてのユーザーに割り当てられるように構成する必要があります。
+多要素認証は、ユーザー名とパスワードに加えて、その他の要素を使用することでユーザーを確認する手段を提供します。 ユーザーのサインインに第 2 のセキュリティ層を提供します。ユーザーが MFA プロンプトに応答できるようにするには、まず Microsoft Entra 多要素認証に登録する必要があります。 Microsoft Entra 組織の MFA 登録ポリシーが、すべてのユーザーに割り当てられるように構成する必要があります。
 
 #### 推定時間:10 分
 
@@ -17,11 +17,11 @@ Azure AD Multi-Factor Authentication は、ユーザー名とパスワードに�
 
 #### タスク 1 - ポリシーの構成
 
-1. グローバル管理者アカウントを使用して、[https://portal.azure.com]( https://portal.azure.com) にサインインします。
+1. グローバル管理者アカウントを使用して、[https://entra.microsoft.com]( https://entra.microsoft.com) にサインインします。
 
-2. ポータル メニューを開いてから、 **[Azure Active Directory]** を選択します。
+2. ポータル メニューを開き、 **[Microsoft Entra ID]** を選択します。
 
-3. [Azure Active Directory] ページで、 **[管理]** の下にある **[セキュリティ]** を選択します。
+3. 左側のメニューの **[ID]** で、**[保護]** を選択します。
 
 4. [セキュリティ] ページの左側のナビゲーションで **[Identity Protection]** を選択します。
 
@@ -37,16 +37,16 @@ Azure AD Multi-Factor Authentication は、ユーザー名とパスワードに�
 
 9. また、ポリシーからユーザーを除外することもできます。
 
-10. **[コントロール]** で、**[Require Azure AD MFA registration](Azure AD MFA の登録が必要)** が選択されていて、変更できないことに注意してください。
+10. **[コントロール]** の **[Require Microsoft Entra ID multifactor authentication registration] (Microsoft Entra ID 多要素認証の登録を必須にする)** がオンであり、変更できないことに注目してください。
 
 
-#### タスク 2 - MFA 登録用に Azure AD Identity Protection ポリシーを構成する
+#### タスク 2 - MFA 登録用に Microsoft Entra Identity Protection ポリシーを構成する
 
-**注**:Azure AD Identity Protection では、Azure AD Premium P2 をアクティブにする必要があります。 
+**注**: Microsoft Entra Identity Protection では、Microsoft Entra ID Premium P2 をアクティブ化する必要があります。 
 
-1. Azure portal で、検索バーで **[Azure AD Identity Protection]** に移動します。
+1. Microsoft Entra 管理センターで、検索バーの **[Microsoft Entra Identity Protection]** に移動します。
 
-1. メニューの **[保護]** で、 **[MFA 登録ポリシー]** を選択します。
+1. メニューの **[保護]** で、**[多要素認証登録ポリシー]** を選択します。
 
 1. **[割り当て]** で、[ユーザー] の下にある **[すべてのユーザー]** を選択し、MFA を適用するユーザーを選択します。
 

@@ -1,15 +1,22 @@
 ---
 lab:
-  title: 07 - Azure AD Connect を使用してハイブリッド ID を追加する
+  title: 07 - 省略可能 --- Microsoft Entra Connect を使用してハイブリッド ID を追加する
   learning path: '01'
   module: Module 01 - Implement an identity management solution
 ---
 
-# ラボ 07: 省略可能 --- Azure AD Connect を使用してハイブリッド ID を追加する
+# ラボ 07: 省略可能 --- Microsoft Entra Connect を使用してハイブリッド ID を追加する
+
+
+
+# このラボは、現在使用できません。  Microsoft Entra ID のライセンス変更により、ラボが失敗しています。  現在、ラボのトラブルシューティングと更新を行っており、1 週間以内にオンラインに戻る予定です。  次のラボに移動してください。
+
+
+
 
 **注** - このラボでは Azure Pass が必要です。 手順については、ラボ 00 を参照してください。
 
-**注 2** - このラボには、省略可能というタイトルが付いています。  完了には少なくとも 1 時間かかります。ラボの手順で詳しく説明する必要があります。  時間の許す限り、自由に行ってください。  会社でハイブリッド構成を既に設定している場合、または Azure AD Connect を使用する予定がない場合は、このラボを飛ばしてください。
+**注 2** - このラボには、省略可能というタイトルが付いています。  完了には少なくとも 1 時間かかります。ラボの手順で詳しく説明する必要があります。  時間の許す限り、自由に行ってください。  会社でハイブリッド構成を既に設定している場合、または Microsoft Entra Connect を使用する予定がない場合は、このラボを省略してください。
 
 ## ラボのシナリオ
 
@@ -68,7 +75,7 @@ lab:
    -   ユーザー名: **demouser**
    -   パスワード: **タスク 1 で作成したセキュリティで保護されたパスワードを使用します**
 
-2.  **DC1** へのリモート デスクトップ セッション内で、**Windows PowerShell ISE** を起動し、スクリプト ペインに次のスクリプトを追加し、それを実行して **DC1** と **APP1** の両方の Azure VM で Internet Explorer セキュリティ強化の構成とユーザー アクセス制御を無効にします。
+2.  **DC1** へのリモート デスクトップ セッション内で、**Windows PowerShell ISE** を起動し、[スクリプト] ウィンドウを開きます。  次に、[スクリプト] ウィンドウに次のスクリプトを追加して実行し、**DC1** と **APP1** の両方の Azure VM で、Internet Explorer セキュリティ強化の構成とユーザー アクセス制御を無効にします。
 
     ```pwsh
 
@@ -139,7 +146,7 @@ lab:
 2.  **DC1** へのリモート デスクトップ セッション内で、Internet Explorer を起動して、以下のリンクに移動します。
 
     ```
-    https://github.com/microsoft/MCW-Hybrid-identity/tree/main/Hands-on%20lab/studentfiles
+    https://github.com/microsoft/MCW-Hybrid-identity/tree/main/Archive/Hands-on%20lab/studentfiles
     ```
 
 3. **[Active Directory デモ/テスト環境のユーザー/グループの作成]** ページで、 **[CreateDemoUsers.ps1]** リンクを選択し、ライセンス条項に同意して、対応するスクリプトをローカル ファイル システムに保存します。
@@ -323,9 +330,9 @@ lab:
     }
     ```
 
-### タスク 6:Azure AD Connect をインストールします。
+### タスク 6: Microsoft Entra Connect をインストールする
 
-このタスクでは、Azure AD Connect をインストールします。
+このタスクでは、Microsoft Entra Connect をインストールします。
 
 1. **DC1** へのリモート デスクトップ セッション内で、[サーバー マネージャー] の **[ローカル サーバー]** を選択し、 **[IE セキュリティ強化の構成]** が無効になっていることを確かめます。 そうでない場合は、 **[IE セキュリティ強化の構成]** の横にある **[オン]** リンクを選択し、 **[管理者]** 設定を **[オフ]** に設定し、 **[OK]** を選択します。
 
@@ -337,7 +344,7 @@ lab:
 
 2. **DC1** へのリモート デスクトップ セッション内で、Chrome ブラウザーを起動し、Azure portal (<https://portal.azure.com>) に移動します。
 
-3. サインインを求められたら、この演習で先ほどメモ帳にコピーした **john.doe** Azure AD ユーザー アカウントの資格情報を入力します。
+3. サインインを求められたら、この演習で先ほどメモ帳にコピーした **john.doe** Microsoft Entra ユーザー アカウントの資格情報を入力します。
 
 4. メッセージが表示されたら、**john.doe** ユーザー アカウントのパスワードを変更します。 
   
@@ -347,13 +354,13 @@ lab:
 
 6. **[Microsoft Azure へようこそ]** ダイアログ ボックスが表示された場合は、 **[後で]** を選択します。 
 
-7. Azure portal で、ポータルの左側のナビゲーションにある **[Azure Active Directory]** を選択し、 **[Contoso - 概要]** ページに移動します。
+7. Azure portal で、**Microsoft Entra Connect** を検索します。
 
-8. **[Contoso - 概要]** ページで、左側の **[管理]** の下にある **[Azure AD Connect]** を選択します。
+8. 検索結果ページで、**[Microsoft Entra Connect]** を選択します。
 
-9.  **[Azure AD Connect]** ページで、 **[Azure AD Connect をダウンロードする]** リンクを選択します。  その後、メニューから **[Connect 同期]** を選びます。
+9.  **[Microsoft Entra Connect]** ページで、**[Microsoft Entra Connect のダウンロード]** リンクを選択します。  その後、メニューから **[Connect 同期]** を選びます。
 
-10. Microsoft ダウンロード サイトの **[Microsoft Azure Active Directory Connect]** Web ページで、 **[ダウンロード]** を選択します。
+10. Microsoft ダウンロード サイトの **[Microsoft Azure Active Directory Connect V2]** Web ページで、**[ダウンロード]** を選択します。
 
 11. **AzureADConnect.msi** を実行するか保存するかを確認するメッセージが表示されたら、 **[実行]** を選択します。 これにより、ファイルがダウンロードされ、 **[Microsoft Azure Active Directory Connect]** ウィザードが自動的に起動します。 
 

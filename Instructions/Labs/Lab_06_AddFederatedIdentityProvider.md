@@ -52,7 +52,7 @@ lab:
 
 14. **[認証情報の作成]** を選択してから、 **[OAuth クライアント ID]** を選択します。
 
-15. [アプリケーションの種類] メニューの [Web アプリケーション] を選択します。 アプリケーションの適切な名前を指定します (Azure AD B2B など)。 **[Authorized redirect URIs](承認されたリダイレクト URI)** に、次の URI を追加します。
+15. [アプリケーションの種類] メニューの [Web アプリケーション] を選択します。 アプリケーションに適切な名前 (Microsoft Entra B2B など) を付けます。 **[Authorized redirect URIs](承認されたリダイレクト URI)** に、次の URI を追加します。
 
    ```
       https://login.microsoftonline.com
@@ -79,12 +79,12 @@ lab:
 
 ### 演習 2 - 外部 ID プロバイダーと連携するように Azure を構成する
 
-#### タスク 1 - Google フェデレーション用に Azure AD を構成する
-1. 管理者として、 [https://portal.azure.com](https://portal.azure.com)  にサインインします。
+#### ステップ 2: Microsoft Entra ID で Google フェデレーションを構成する
+1. 管理者として、 [https://entra.microsoft.com](https://entra.microsoft.com)  にサインインします。
 
-2.  **[Azure Active Directory]** を選択します。
+2.  **[Microsoft Entra ID]** を選択します
 
-3.  **[管理]** で、 **[External Identities]** を選択します。
+3. [ID] ** で [** 外部 ID] を選択 **します**。
 
 4. 左側のメニューから **[すべての ID プロバイダー]** を選びます。
 
@@ -101,9 +101,9 @@ lab:
 #### タスク 2 - テスト ユーザー アカウントを招待する
 9. 既存の Gmail アカウントを使用している場合は、忘れずに、 **[External Identities | すべての ID プロバイダー]** でアカウントを削除してください。 Google 開発者コンソールに戻り、作成したプロジェクトを削除することもできます。
 
-10. Azure Active Directory (Azure AD) を開きます。
+10. Microsoft Entra ID を開きます。
 
-11. [Users] に移動します。
+11. [ユーザー] に移動し、 [すべてのユーザー] を選択します。
 
 12. **[+ 新しいユーザー]** を選択します。
 

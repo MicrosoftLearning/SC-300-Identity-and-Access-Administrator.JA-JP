@@ -1,11 +1,11 @@
 ---
 lab:
-  title: 12 - Azure AD スマート ロックアウト値を管理する
+  title: Microsoft Entra スマート ロックアウトの値を管理します。
   learning path: '02'
   module: Module 02 - Implement an Authentication and Access Management Solution
 ---
 
-# ラボ 12 - Azure AD スマート ロックアウトの値を管理する
+# ラボ 3.5:Microsoft Entra スマート ロックアウトの値を管理する
 
 ## ラボのシナリオ
 
@@ -13,21 +13,21 @@ lab:
 
 #### 推定時間:5 分
 
-### 演習 1 - Azure AD スマート ロックアウトの値を管理する
+### 演習 - Microsoft Entra スマート ロックアウトの値を管理する
 
 #### タスク - スマート ロックアウトを追加する
 
-組織の要件に基づいて、Azure AD スマート ロックアウトの値をカスタマイズできます。 スマート ロックアウト設定を組織固有の値にカスタマイズするには、ユーザーに Azure AD Premium P1 以上のライセンスが必要です。
+組織の要件に基づいて、Microsoft Entra スマート ロックアウトの値をカスタマイズできます。 スマート ロックアウト設定を組織固有の値にカスタマイズするには、ユーザーに Microsoft Entra ID Premium P1 以上のライセンスが必要です。
 
-1. ディレクトリのグローバル管理者アカウントを使用して、[https://portal.azure.com](https://portal.azure.com) にアクセスし、サインインします。
+1. ディレクトリのグローバル管理者アカウントを使用して、[https://entra.microsoft.com](https://entra.microsoft.com) にアクセスし、サインインします。
 
-2. ポータル メニューを開いてから、 **[Azure Active Directory]** を選択します。
+2. ポータル メニューを開き、 **[ID]** を選択してください。
 
-3. [Azure Active Directory] ページで、 **[管理]** の下にある **[セキュリティ]** を選択します。
+3. [ID] メニューの [保護 **] メニューを**開きます。
 
-4. [セキュリティ] ページの左側のナビゲーションで **[認証方法]** を選択します。
+4. 左ナビゲーション ウィンドウで、**[認証方法]** を選択します。
 
-5. 左側のナビゲーションで、**[パスワード保護]** を選択します。
+5. **[パスワード保護]** を選びます。
 
     ![[認証方法] ページと、[パスワード認証] を参照するために選択されて強調表示された項目を表示している画面イメージ](./media/lp2-mod3-browse-to-password-protection.png)
 

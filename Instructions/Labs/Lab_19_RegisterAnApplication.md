@@ -15,19 +15,19 @@ lab:
 
 アプリケーションを登録すると、アプリケーションと Microsoft ID プラットフォームとの間の信頼関係が確立されます。 この信頼は一方向です。つまり、アプリは Microsoft ID プラットフォームを信頼しますが、その逆はありません。
 
-1. グローバル管理者アカウントを使用して、[https://portal.azure.com](https://portal.azure.com)  にサインインします。
+1. グローバル管理者アカウントを使用して、[https://entra.microsoft.com](https://entra.microsoft.com)  にサインインします。
 
-2. ポータル メニューを開いてから、 **[Azure Active Directory]** を選択します。
+2. ポータル メニューを開き、 **[Microsoft Entra ID]** を選択します。
 
-3. **[Azure Active Directory]** ブレードの **[管理]** の下にある **[アプリの登録]** を選択します。
+3. **[ID]** メニューの **[アプリケーション]** で **[アプリの登録]** を選択します。
 
 4. **[アプリの登録]** ページで、**[+ 新規登録]** を選択します。
 
 5. **[アプリケーションの登録]** ブレードで既定値を使用して、"**デモ アプリ**" という名前のアプリを登録します。 リダイレクト URI を入力する必要はありません。
 
-    ![[アプリケーションの登録] ブレードで名前と既定の設定が強調表示されている画面イメージ](./media/lp3-mod3-register-an-application.png)
+    ![[アプリケーションの登録] ページで名前と既定の設定が強調表示されている画面イメージ](./media/lp3-mod3-register-an-application.png)
 
-6. 完了すると、**[デモ アプリ]** ブレードが表示されます。
+6. 完了すると、**[デモ アプリ]** ページが表示されます。
 
 
 #### タスク 2 - プラットフォーム設定を構成する
@@ -36,10 +36,9 @@ lab:
 
 ターゲットのプラットフォームまたはデバイスに基づいてアプリケーション設定を構成するには、次の手順を行います。
 
+そのプラットフォーム設定を構成して、登録済みのアプリケーションのリダイレクト URI を追加および変更します。
 
-1. そのプラットフォーム設定を構成して、登録済みのアプリケーションのリダイレクト URI を追加および変更します。
-
-1. Azure portal の **[アプリの登録]** でアプリケーションを選択します。
+1. Microsoft Entra 管理センターの  **[アプリの登録]** で、アプリケーションを選択します。
 
 2.  **[管理]** で、 **[認証]** を選択します。
 
@@ -67,11 +66,10 @@ lab:
 
 ![アプリの登録の [証明書およびシークレット] ウィンドウを示す Azure portal のスクリーンショット](./media/portal-05-app-reg-04-credentials.png)
 
+    **Note**: Sometimes called a *public key*, certificates are the recommended credential type, because as they provide a higher level of assurance than a client secret. When using a trusted public certificate, you can add the certificate using the Certificates & secrets feature. Your certificate must be one of the following file types: .cer, .pem, .crt.
 
->**注**: 証明書は、"公開キー" とも呼ばれ、クライアント シークレットよりも高いレベルの保証を提供するため、推奨される資格情報の種類です。 ** 信頼された公開証明書を使用する場合は、証明書とシークレット機能を使用して証明書を追加できます。 証明書ファイルの種類は .cer、.pem、.crt のいずれかである必要があります。
 
-
->**注**: クライアント シークレットは、"アプリケーション パスワード" とも呼ばれ、アプリで自身を識別するために証明書の代わりに使用できる文字列値です。 ** 2 種類の資格情報のうち、使いやすい方です。 多くの場合は開発時に使用されますが、証明書より安全性が低いと見なされています。 運用環境で実行するアプリケーションでは、証明書を使用する必要があります。
+    **Note**: The client secret, also known as an *application password*, is a string value your app can use in place of a certificate to identity itself. It's the easier of the two credential types to use. It's often used during development, but is considered less secure than a certificate. You should use certificates in your applications running in production.
 
 1. Azure portal の **[アプリの登録]**  でアプリケーションを選択します。
 
@@ -85,9 +83,9 @@ lab:
 
 6. クライアント アプリケーション コードで使用する**シークレットの値をメモ帳に保存します** 。[証明書とシークレット] ページに新しいシークレット値が表示されます。 この値は一度だけ表示されるため、これをコピーすることが重要です。ページを更新して戻ると、マスクされた値としてのみ表示されます。
 
-1.  **[リダイレクト URI の追加]**  と **[プラットフォーム設定の構成]**  セクションをスキップします。 ユーザーは対話的にログインしないため、Web API のリダイレクト URI を構成する必要はありません。
+7.  **[リダイレクト URI の追加]**  と **[プラットフォーム設定の構成]**  セクションをスキップします。 ユーザーは対話的にログインしないため、Web API のリダイレクト URI を構成する必要はありません。
 
-1. ここでは、 **[資格情報の追加]**  セクションをスキップします。 API からダウンストリームにアクセスする場合にのみ、独自の資格情報が必要になりますが、この記事では取り上げません。
+8. ここでは、 **[資格情報の追加]**  セクションをスキップします。 API からダウンストリームにアクセスする場合にのみ、独自の資格情報が必要になりますが、この記事では取り上げません。
 
 Web API を登録すると、スコープを追加する準備は完了です。これを API のコードに使って、API のコンシューマーにきめ細かなアクセス許可を付与することができます。
 
@@ -98,11 +96,11 @@ Web API を登録すると、スコープを追加する準備は完了です。
 
 まず、次の手順で Employees.Read.All という名前のスコープの例を作成します。
 
-1. Azure portal にサインインします。
+1. Microsoft Entra 管理センターにサインインします。
 
 2. 複数のテナントにアクセスできる場合は、上部のメニューの  **[ディレクトリ + サブスクリプション]**  フィルターを使用して、クライアント アプリの登録を含むテナントを選択します。
 
-3.  **[Azure Active Directory]**  > **[アプリの登録]** を選択してから、API のアプリの登録を選びます。
+3.  **[ID]**、**[アプリケーション]** 、 **[アプリの登録]** の順に選択してから、API のアプリの登録を選択します。
 
 4.  **[API の公開]** 、 **[+ スコープの追加]** の順に選択します。
 
@@ -156,14 +154,11 @@ Web API を登録すると、スコープを追加する準備は完了です。
 
     この画像に示すように、スコープの完全な文字列は、Web API の **[アプリケーション ID URI]**  とスコープの **[スコープ名]** を連結したものです。
 
-1. URI の末尾に "/Employees.Read.All" が追加された **アプリケーション ID URI** を使用して API をテストします。
-
-    >**注**: たとえば、Web API のアプリケーション ID URI が `https://contoso.com/api` で、スコープ名が Employees.Read.All である場合、完全なスコープは `https://contoso.com/api/Employees.Read.All` になります
+        **Note**: For example, if your web API's application ID URI is `https://contoso.com/api` and the scope name is Employees.Read.All, the full scope is: `https://contoso.com/api/Employees.Read.All`
 
 
-    >**注**:次に、上記の手順に従って定義した Web API へのアクセスとスコープを使用して、クライアント アプリの登録を構成します。
-    クライアント アプリの登録に Web API へのアクセス許可が付与されると、Microsoft ID プラットフォームによってクライアントに OAuth 2.0 アクセス トークンが発行されます。 クライアントから Web API を呼び出すと、アクセス トークンが表示されます。そのスコープ (scp) 要求は、クライアントのアプリ登録で指定したアクセス許可に設定されています。
-    公開するスコープは、必要に応じて後から追加することもできます。 Web API を使用すると、複数の操作に関連付けられた複数のスコープを公開できることを考慮してください。 リソースは、受け取った OAuth 2.0 アクセス トークンのスコープ (scp) 要求を評価することによって、実行時に Web API へのアクセスを制御します。
+        **Note**: Next, you will configure a client app's registration with access to your web API and the scopes you defined by following the steps above.
+    クライアント アプリの登録に Web API へのアクセス許可が付与されると、Microsoft ID プラットフォームによってクライアントに OAuth 2.0 アクセス トークンが発行されます。 クライアントから Web API を呼び出すと、アクセス トークンが表示されます。そのスコープ (scp) 要求は、クライアントのアプリ登録で指定したアクセス許可に設定されています。 公開するスコープは、必要に応じて後から追加することもできます。 Web API を使用すると、複数の操作に関連付けられた複数のスコープを公開できることを考慮してください。 リソースは、受け取った OAuth 2.0 アクセス トークンのスコープ (scp) 要求を評価することによって、実行時に Web API へのアクセスを制御します。
 
 
 ### 演習 2 - カスタム ロールを使用してアプリの登録を管理する
@@ -172,17 +167,17 @@ Web API を登録すると、スコープを追加する準備は完了です。
 
 アプリ管理用の新しいカスタム ロールを作成する必要があります。 この新しいロールは、資格情報管理の実行に必要な特定の権限のみに限定する必要があります。
 
-1. グローバル管理者アカウントを使用して、 [https://portal.azure.com](https://portal.azure.com)  にサインインします。
+1. グローバル管理者アカウントを使用して、 [https://entra.microsoft.com](https://entra.microsoft.com)  にサインインします。
 
-2. ポータル メニューを開いてから、 **[Azure Active Directory]** を選択します。
+2. ポータル メニューを開き、 **[Microsoft Entra ID]** を選択します。
 
-3. [Azure Active Directory] ブレードの **[管理]** で **[ロールと管理者]** を選択します。
+3. 左側のメニューの **[ID]** で、**[ロールと管理者]** を選択します。
 
-4. [ロールと管理者] ブレードで、メニューから **[+ 新しいカスタム ロール]** を選択します。
+4. 次に、**[ロールと管理者]** 項目を選択して、**[+ 新しいカスタム ロール]** を選択します。
 
     ![[新しいカスタム ロール] メニュー オプションが強調表示されている [ロールと管理者] ブレードを表示している画面イメージ](./media/lp3-mod1-new-custom-role.png)
 
-5. [新しいカスタム ロール] ブレードの [基本] タブで [名前] ボックスに「**マイ カスタム アプリ ロール**」と入力します。
+5. [新しいカスタム ロール] ダイアログの [基本] タブで、[名前] ボックスに「**マイ カスタム アプリ ロール**」と入力します。
 
 6. 残りのオプションを確認してから、**[次へ]** を選択します。
 

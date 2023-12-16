@@ -1,33 +1,33 @@
 ---
 lab:
-  title: 26 - Azure AD ロール用に Privileged Identity Management を構成する
+  title: 26 - Microsoft Entra ロール用に Privileged Identity Management を構成する
   learning path: '04'
   module: Module 04 - Plan and Implement and Identity Governance Strategy
 ---
 
-# ラボ 26: Azure AD ロール用に Privileged Identity Management を構成する
+# ラボ 26: Microsoft Entra ロール用に Privileged Identity Management を構成する
 
 ## ラボのシナリオ
 
-特権ロール管理者は、ロール候補の割り当てをアクティブ化しているユーザーの操作性を変更するなど、Azure Active Directory (Azure AD) 組織の Privileged Identity Management (PIM) をカスタマイズできます。 PIM の構成について理解する必要があります。
+特権ロール管理者は、ロール候補の割り当てをアクティブ化しているユーザーの操作性を変更するなど、Microsoft Entra 組織の Privileged Identity Management (PIM) をカスタマイズできます。 PIM の構成について理解する必要があります。
 
 #### 予想所要時間: 30 分
 
-### 演習 1 - Azure AD ロールの設定を構成する
+### 演習 1 - Microsoft Entra ロールの設定を構成する
 
 #### タスク 1 - ロールの設定を開く
 
-次の手順を実行して、Azure AD ロールの設定を開きます。
+以下の手順に従って、Microsoft Entra ロールの設定を開きます。
 
-1. グローバル管理者として、 [https://portal.azure.com](https://portal.azure.com)  にサインインします。
+1. グローバル管理者として、 [https://entra.microsoft.com](https://entra.microsoft.com)  にサインインします。
 
-2. **[Azure AD Privileged Identity Management]** を検索してから選択します。
+2. **[Privileged Identity Management]** を検索してから選択します。
 
-3. [Privileged Identity Management] ページの左側のナビゲーションで **[Azure AD ロール]** を選択します。
+3. [Privileged Identity Management] ページの左側のナビゲーションで **[Microsoft Entra ロール]** を選択します。
 
 4. [クイック スタート] ページの左側のナビゲーションで **[設定]** を選択します。
 
-    ![[設定] メニューが強調表示された [Azure AD ロール] ページを表示している画面イメージ](./media/lp3-mod3-pim-ad-roles-settings.png)
+    ![[設定] メニューが強調表示された [Microsoft Entra ロール] ページを表示している画面イメージ](./media/lp3-mod3-pim-ad-roles-settings.png)
 
 5. ロールの一覧を確認してから、**[ロール名で検索]** に「**コンプライアンス**」と入力します。
 
@@ -53,27 +53,29 @@ lab:
 
 5. ロール設定を構成したら、 **[更新]** を選択して変更を保存します。
 
-### 演習 2 - Azure AD ロールを使用した PIM
+### 演習 2 - Microsoft Entra ロールを使用した PIM
 
 #### タスク 1 - ロールを割り当てる
 
-全体管理者は、Azure Active Directory (Azure AD) を使用して、永続的な Azure AD 管理者ロールの割り当てを行うことができます。 こうしたロールの割り当ては、Azure portal または PowerShell のコマンド を使用して作成できます。
+Microsoft Entra ID を使用すると、グローバル管理者は永続的な Microsoft Entra 管理者ロールの割り当てを行うことができます。 これらのロールの割り当ては、Microsoft Entra 管理センター、Azure portal または PowerShell コマンドを使用して作成できます。
 
-永続的な管理ロールの割り当ては、特権ロール管理者が Azure AD Privileged Identity Management (PIM) サービスを使用して行うこともできます。 さらに、特権ロール管理者は、ユーザーを Azure AD 管理者ロールの候補にすることもできます。 管理者候補は必要なときにロールをアクティブ化できます。作業が完了すると、そのアクセス許可は期限切れになります。
+常任管理者ロールの割り当ては、特権ロール管理者が Privileged Identity Management (PIM) サービスを使用して行うこともできます。 さらに、特権ロール管理者は、ユーザーを Microsoft Entra 管理者ロールの候補にすることもできます。 管理者候補は必要なときにロールをアクティブ化できます。作業が完了すると、そのアクセス許可は期限切れになります。
 
-ユーザーを Azure AD 管理者ロールの候補にするには、次の手順を実行します。
+ユーザーを Microsoft Entra 管理者ロールの候補にするには、次の手順を実行します。
 
-1. グローバル管理者アカウントを使用して、[https://portal.azure.com](https://portal.azure.com) にサインインします。
+1. グローバル管理者アカウントを使用して、[https://entra.microsoft.com](https://entra.microsoft.com) にサインインします。
 
-2. **[Azure AD Privileged Identity Management]** を検索してから選択します。
+2. **[Privileged Identity Management]** を検索してから選択します。
 
-3. [Privileged Identity Management] ページの左側のナビゲーションで **[Azure AD ロール]** を選択します。
+    **注** - メニューで [ID]、[ID ガバナンス]、[Privileged Identity Management] の順に選択して確認できます。
+
+3. [Privileged Identity Management] ページの左側のナビゲーションで **[Microsoft Entra ロール]** を選択します。
 
 4. [クイック スタート] ページの左側のナビゲーションで **[ロール]** を選択します。
 
 5. 上部のメニューで **[+ 割り当ての追加]** を選択します。
 
-    ![[割り当ての追加] メニューが強調表示された Azure AD ロールを表示している画面イメージ](./media/lp4-mod3-pim-assign-role.png)
+    ![[割り当ての追加] メニューが強調表示された Microsoft Entra ロールを表示している画面イメージ](./media/lp4-mod3-pim-assign-role.png)
 
 6. [割り当ての追加] ページの **[メンバーシップ]** タブで、設定を確認します。
 
@@ -99,31 +101,30 @@ lab:
 #### タスク 2 - Miriam でログインする
 
 1. InPrivate ブラウザー ウィンドウを開きます。
-2. Azure portal (https://portal.azure.com) に接続します。
-3. ユーザーがログインした状態で開いた場合は、右上隅にあるユーザーの名前を選択し、 **[別のアカウントとしてサインイン]** を選択します。
-4. Miriam でログインします。
+2. Microsoft Entra 管理センターに接続します (https://entra.microsoft.com)。
+    **注** - ユーザーがログインした状態で開いた場合は、右上隅にあるユーザーの名前を選択し、**[別のアカウントとしてサインイン]** を選択します。
+3. Miriam でログインします。
 
    | フィールド | 値 |
    | :--- | :--- |
    | ユーザー名 | **MiriamG@** `<<your domain.onmicrosoft.com>>` |
    | パスワード |  テナントの管理者パスワードを入力します (テナントの管理者パスワードを取得するには、[ラボ リソース] タブを参照してください) |
 
-5. **[Azure へようこそ] ダイアログ**を閉じます。
-6. **[リソース、サービス、ドキュメントの検索]** バーから、Azure Active Directory を探し、ページを開きます。
-7. **[概要]** ページで、**[自分のフィード]** を探します。
-8. Miriam Graham の名前の下で **[プロフィールを表示する]** を選択します。これにより、Miriam のプロフィール ページが開きます。
-9. **[割り当てられたロール]** を選択してから、**[適格な割り当て]** を選択します。
-10. Miriam が**コンプライアンス管理者**のロールを利用できるようになったことに注意してください。
+4. **[ID]** メニューから **[ユーザー]** を開き、**[すべてのユーザー]** を選択します。
+5. ユーザーの一覧で **[Miriam]** を検索します。
+6. **[概要]** ページで、**[割り当てられたロール]** を探します。
+7. **[資格のある割り当て]** を選択します。
+1. Miriam が**コンプライアンス管理者**のロールを利用できるようになったことに注意してください。
 
-#### タスク 3 - Azure AD ロールをアクティブにする
+#### タスク 3 - Microsoft Entra ロールをアクティブにする
 
-Azure AD ロールを想定する必要がある場合は、Privileged Identity Management で **[自分のロール]** を開いてアクティブ化を要求できます。
+Microsoft Entra ロールを想定する必要がある場合は、Privileged Identity Management で **[自分のロール]** を開いてアクティブ化を要求できます。
 
 1. **[検索、リソース、サービス、ドキュメント]** バーから、特権を探します。
-2. **[Azure AD Privileged Identity Management]** ページを開きます。
+2. **[Privileged Identity Management]** ページを開きます。
 3. [Privileged Identity Management] ページの左側のナビゲーションで **[自分のロール]** を選択します。
 
-4. [自分のロール] ページで、資格のある割り当ての一覧を確認します。
+4. [自分のロール] ページで、**[資格のある割り当て]** の一覧を確認します。
 
     ![資格のあるロールの割り当てが強調表示されている [自分のロール] を表示している画面イメージ](./media/lp4-mod3-my-roles.png)
 
@@ -145,8 +146,8 @@ Azure AD ロールを想定する必要がある場合は、Privileged Identity 
 
 特定のロールでは、付与されるアクセス許可の範囲を 1 つの管理単位、サービス プリンシパル、またはアプリケーションに制限することができます。 この手順は、管理単位のスコープを持つロールを割り当てる場合の例です。
 
-1. MiriamG のブラウザー ウィンドウを閉じてから、管理者アカウントとして Azure portal を開くことを忘れないでください。
-2. [Privileged Identity Management] ページに移動し、左側のナビゲーション メニューで **[Azure AD ロール]** を選択します。
+1. 必ず MiriamG のブラウザー ウィンドウを閉じてから、管理者アカウントとして Microsoft Entra 管理センターを開いてください。
+2. [Privileged Identity Management] ページに移動し、左側のナビゲーション メニューで Azure **[Microsoft Entra ロール]** を選択します。
 3. **[役割]** を選びます。
 4. [ロール] ページの上部のメニューで、 **[+ 割り当ての追加]** を選択します。
 
@@ -162,7 +163,7 @@ Azure AD ロールを想定する必要がある場合は、Privileged Identity 
 
 既存のロールの割り当てを更新または削除するには、次の手順を実行します。
 
-1. [Privileged Identity Management を開く] の [Azure AD ロール] ページの左側のナビゲーションで **[割り当て]** を選択します。
+1. [Privileged Identity Management を開く] の [Microsoft Entra ロール] ページにおける左側のナビゲーションで、**[割り当て]** を選択します。
 
 2. **[割り当て]** リストで、[コンプライアンス管理者] の **[操作]** 列のオプションを確認します。
 
