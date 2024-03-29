@@ -1,6 +1,6 @@
 ---
 lab:
-  title: 10 - Windows および Linux Virtual Machines に対する Azure AD Authentication
+  title: 10 - Windows および Linux Virtual Machines に対する Microsoft Entra ID 認証
   learning path: '02'
   module: Module 02 - Implement an Authentication and Access Management Solution
 ---
@@ -11,13 +11,13 @@ lab:
 
 ## ラボのシナリオ
 
-会社は、リモート アクセス用の仮想マシンへのログインに Azure Active Directory を使用することを決定しました。  このラボでは、Windows および Linux 仮想マシンに対してこれをセットアップする方法について示します。
+会社は、リモート アクセス用の仮想マシンへのログインに Microsoft Entra ID を使用することを決定しました。  このラボでは、Windows および Linux 仮想マシンに対してこれをセットアップする方法について示します。
 
 #### 予想所要時間: 30 分
 
-### 演習 1 - Azure AD を使用して Azure の Windows Virtual Machines にログインする
+### 演習 1 - Microsoft Entra ID を使用して Azure の Windows Virtual Machines にログインする
 
-#### タスク 1 - Azure AD ログインを有効にして Windows 仮想マシンを作成する
+#### タスク 1 - Microsoft Entra ID ログインを有効にして Windows 仮想マシンを作成する
 
 1. [https://portal.azure.com](https://portal.azure.com) を参照します
 
@@ -30,17 +30,15 @@ lab:
 1. [基本] タブで VM 用の管理者ユーザー名とパスワードを作成する必要があります。
    - ユーザー名 (覚えておく必要があります) とセキュリティで保護されたパスワードを使用します。
 
-1. **[管理]** タブで、[Azure AD] セクションの **[Azure AD でログインする]** のチェックボックスをオンにします。
+1. **[管理]** タブで、[Microsoft Entra ID] セクションの **[Microsoft Entra ID でログイン]** のボックスをオンにします。
 
-    注: 2023 年 11 月 1 日の時点で、この UI は Microsoft Entra ID を表示するように更新されておらず、Azure AD を引き続き参照しています。
-
-    注 2: [ID] セクションの **[システム割り当てマネージド ID]** のチェックボックスが自動的にオンになり、灰色に変わることがわかります。 Azure AD を使用してログインを有効にすると、この操作は自動的に行われます。
+        NOTE: You will notice that the **System assigned managed identity** under the Identity section is automatically checked and turned grey. This action should happen automatically once you enable Login with Microsoft Entra ID.
 
 1. 仮想マシンの作成エクスペリエンスの残りの部分に移動します。 
 
-1. [作成] を選択します。
+1. ［作成］ を選択します
 
-#### タスク 2 - 既存の Azure Virtual Machines に対する Azure AD ログイン
+#### タスク 2 - 既存の Azure Virtual Machines に対して Microsoft Entra ID でログインする
 
 1. [https://portal.azure.com](https://portal.azure.com) で **[Virtual Machines]** を参照します。
 
@@ -57,7 +55,7 @@ lab:
 
 1. **[確認と割り当て]** を選択して、プロセスを完了します
 
-#### タスク 3 - Azure AD ログインをサポートするようにサーバー VM を更新する
+#### タスク 3 - Microsoft Entra ID ログインをサポートするようにサーバー VM を更新する
 
 1. **[接続]** メニュー項目を選択します。
 
@@ -89,7 +87,6 @@ lab:
 1. **[Apply](適用)** 、 **[OK]** の順に選択します。
 
 1. 仮想マシンの RDP セッションを**終了**します。
-
 
 #### タスク 4 - Microsoft Entra ID ログインをサポートするように RDP ファイルを変更する
 
