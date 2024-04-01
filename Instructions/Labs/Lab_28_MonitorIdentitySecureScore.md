@@ -9,7 +9,7 @@ lab:
 
 ## ラボのシナリオ
 
-Microsoft Entra ID 保護では、ID ベースのリスクに対する自動検出と修復を提供し、潜在的なリスクを調査するためのデータをポータルに提供します。 Microsoft Entra ID 保護には、ID セキュリティ ポスチャを監視および改善するための ID セキュリティ スコアも用意されています。  ID セキュリティ スコアでは、Microsoft 365 Defender や Microsoft Defender for Cloud と同じ方法で、改善処置および推奨事項を提供することで、Microsoft Entra ID における全体的な ID のセキュリティ ポスチャを改善できます。  このラボでは、この機能について説明します。 
+Microsoft Entra ID 保護では、ID ベースのリスクに対する自動検出と修復を提供し、潜在的なリスクを調査するためのデータをポータルに提供します。 Microsoft Entra Identity Protection には、ID セキュリティ ポスチャを監視および改善するための ID セキュリティ スコアも用意されています。  ID セキュリティ スコアでは、Microsoft Defender XDR や Microsoft Defender for Cloud と同じ方法で、改善処置および推奨事項を提供することで、Microsoft Entra ID における ID の全体的なセキュリティ態勢を改善できるようにしています。  このラボでは、この機能について説明します。 
 
 #### 推定時間:15 分
 
@@ -27,7 +27,7 @@ Microsoft Entra ID 保護では、ID ベースのリスクに対する自動検�
 
 5. 下にスクロールして、 **[改善処置]** を表示します。
 
-6. これらの改善処置は、Microsoft Defender for Cloud および Microsoft 365 Defender での改善処置とは対照的であり、ID に固有のものとなります。  これにより、セキュリティ態勢管理に対する潜在的な処置に焦点を絞った一覧が提供されます。  この一覧から開始された改善処置は、テナントの全体的なセキュリティ態勢にも影響します。 
+6. これらの改善処置は、Microsoft Defender for Cloud および Microsoft Defender XDR での改善処置とは対照的であり、ID に固有のものとなります。  これにより、セキュリティ態勢管理に対する潜在的な処置に焦点を絞った一覧が提供されます。  この一覧から開始された改善処置は、テナントの全体的なセキュリティ態勢にも影響します。 
 
 #### タスク 2 - 改善処置を実行する
 
