@@ -11,7 +11,7 @@ lab:
 
 ## ラボのシナリオ
 
-Microsoft Sentinel は、スケーラブルでクラウドネイティブの SIEM および SOAR ソリューションです。  Microsoft とサードパーティのセキュリティ ソリューションからデータ ソースを接続すると、セキュリティ操作タスクを実行できます。  このラボ演習では、Kusto 照会言語 (KQL) を使用してハンティング クエリを実行するための Azure AD へのデータ コネクタを備えた Microsoft Sentinel ワークスペースを作成します。 
+Microsoft Sentinel は、スケーラブルでクラウドネイティブの SIEM および SOAR ソリューションです。  Microsoft とサードパーティのセキュリティ ソリューションからデータ ソースを接続すると、セキュリティ操作タスクを実行できます。  このラボ演習では、Kusto 照会言語 (KQL) を使用してハンティング クエリを実行するための Microsoft Entra ID へのデータ コネクタを備えた Microsoft Sentinel ワークスペースを作成します。 
 
 #### 予想所要時間: 30 分
 
@@ -39,7 +39,7 @@ Microsoft Sentinel は、スケーラブルでクラウドネイティブの SIE
 
 1. ダイアログが表示されたら、 **[OK]** を選択して Microsoft Sentinel の無料試用版をアクティブにします。
 
-#### タスク 2 - Azure AD をデータ ソースとして追加する
+#### タスク 2 - Microsoft Entra ID をデータ ソースとして追加する
     **Note** - As of 2/8/2024, the data source is now Microsoft Entra ID.
 
 1. **Microsoft Sentinel** で、メニューの **[コンテンツ管理]** に移動し、**[コンテンツ ハブ]** を選択します。
