@@ -1,6 +1,6 @@
 ---
 lab:
-  title: 10 - Windows および Linux Virtual Machines に対する Microsoft Entra ID 認証
+  title: 10 - Windows および Linux 仮想マシンに対する Microsoft Entra ID 認証
   learning path: '02'
   module: Module 02 - Implement an Authentication and Access Management Solution
 ---
@@ -15,7 +15,7 @@ lab:
 
 #### 予想所要時間: 30 分
 
-### 演習 1 - Microsoft Entra ID を使用して Azure の Windows Virtual Machines にログインする
+### 演習 1 - Microsoft Entra ID を使用して Azure の Windows 仮想マシンにログインする
 
 #### タスク 1 - Microsoft Entra ID ログインを有効にして Windows 仮想マシンを作成する
 
@@ -38,7 +38,7 @@ lab:
 
 1. ［作成］ を選択します
 
-#### タスク 2 - 既存の Azure Virtual Machines に対して Microsoft Entra ID でログインする
+#### タスク 2 - 既存の Azure 仮想マシンに対する Microsoft Entra ID ログイン
 
 1. [https://portal.azure.com](https://portal.azure.com) で **[Virtual Machines]** を参照します。
 
