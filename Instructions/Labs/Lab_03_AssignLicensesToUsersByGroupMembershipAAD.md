@@ -34,7 +34,7 @@ lab:
 
 #### タスク 2 - Microsoft Entra ID でセキュリティ グループを作成する
 
-1. [https://entra.microsoft.com](https://entra.microsoft.com) を参照します。
+1. [https://entra.microsoft.com](https://entra.microsoft.com) にアクセスします。
 
 2. 左側のナビゲーションの **[ID]** で、**[グループ]**、**[すべてのグループ]** の順に選択します。
 3. [グループ] ページのメニューで、 **[新しいグループ]** を選択します。
@@ -86,7 +86,7 @@ lab:
     
 5. ブラウザー ウィンドウを閉じます。 
 
-### 演習 2 - Microsoft Entra ID で Microsoft 365 グループを作成する
+### 演習 2: Microsoft Entra ID で Microsoft 365 グループを作成する
 
 #### タスク 1 - グループを作成する
 
