@@ -1,6 +1,6 @@
 ---
 lab:
-  title: 10 - Windows および Linux 仮想マシンに対する Microsoft Entra ID 認証
+  title: 10 - Windows および Linux Virtual Machines に対する Microsoft Entra ID 認証
   learning path: '02'
   module: Module 02 - Implement an Authentication and Access Management Solution
 ---
@@ -15,7 +15,7 @@ lab:
 
 #### 予想所要時間: 30 分
 
-### 演習 1 - Microsoft Entra ID を使用して Azure の Windows 仮想マシンにログインする
+### 演習 1 - Microsoft Entra ID を使用して Azure の Windows Virtual Machines にログインする
 
 #### タスク 1 - Microsoft Entra ID ログインを有効にして Windows 仮想マシンを作成する
 
@@ -38,7 +38,7 @@ lab:
 
 1. ［作成］ を選択します
 
-#### タスク 2 - 既存の Azure 仮想マシンに対する Microsoft Entra ID ログイン
+#### タスク 2 - 既存の Azure Virtual Machines に対して Microsoft Entra ID でログインする
 
 1. [https://portal.azure.com](https://portal.azure.com) で **[Virtual Machines]** を参照します。
 
@@ -146,7 +146,7 @@ lab:
 
 1. これらの各ユーザーのアクセスが拒否されていることがわかるはずです。
 
-### 省略可能な演習 2 - Azure AD を使用して Azure の Linux Virtual Machines にログインする
+### 省略可能な演習 2 - Microsoft Entra ID を使用して Azure の Linux Virtual Machines にログインする
 
 #### タスク 1 - システム割り当てマネージド ID を使用して Linux VM を作成する
 
@@ -158,13 +158,13 @@ lab:
 
 1. **[Ubuntu Server 22.04 LTS]** の **[作成]** を選びます。 このテスト ラボには他の Linux サーバーを使うこともできます。
 
-1. **[管理]** タブで、チェック ボックスをオンにして、 **[Azure Active Directory でログインする (プレビュー)]** を有効にします。
+1. **[管理]** タブで、チェックボックスをオンにして、**[Microsoft Entra ID でログインする]** を有効にします。
 
 1. **システム割り当てマネージド ID** がオンにされていることを確認します。
 
 1. 仮想マシンの作成エクスペリエンスの残りの部分に移動します。 このプレビュー期間中は、ユーザー名とパスワードまたは SSH 公開キーで管理者アカウントを作成する必要があります。
 
-#### タスク 2 - 既存の Azure Virtual Machines に対する Azure AD ログイン
+#### タスク 2 - 既存の Azure Virtual Machines に対して Microsoft Entra ID でログインする
 
 1. [https://portal.azure.com](https://portal.azure.com) で **[Virtual Machines]** を参照します。
 
