@@ -61,7 +61,7 @@ Microsoft Defender for Cloud Apps では、監視しているクラウド アプ
    - ユーザー名 = PradeepG@<<<your lab hoster provided domain>>>
    - パスワード = [リソース] タブのパスワード
 5. Pradeep にアクセス権があり、新しいメッセージが表示されることを確認します。
-   - あなたの会社は、このアプリケーションの使用状況を監視しています。
+   - Microsoft Forms へのアクセスが監視されています。
 6. [InPrivate 閲覧] ウィンドウを閉じます。
 
 ### 演習 2 - Microsoft Defender for Cloud Apps で DLP アラートを設定する
@@ -72,11 +72,9 @@ Microsoft Defender for Cloud Apps では、監視しているクラウド アプ
 
 1. グローバル管理者アカウントを使用して、[https://security.microsoft.com](https://security.microsoft.com) にサインインします。
 
-1. 左側のメニューで、一番下までスクロールし、 **[その他のリソース]** を選択します。
+1. 左側のメニューで、左側のメニューの **[クラウド アプリ]** セクションで **[ポリシー]** までスクロールして選択します。
 
-1. **[その他のリソース]** ウィンドウの **[Microsoft Defender for Cloud Apps]** で **[開く]** を見つけて選択します。  Microsoft 365 アカウント内で **Microsoft Defender for Cloud Apps** ポータルに異動します。
-
-1. **Microsoft Defender for Cloud Apps** ポータル メニューで、 **[制御]** のドロップダウン矢印を選択し、 **[ポリシー]** を選択します。
+1. **[ポリシー]** メニューで、**[ポリシーの管理]** を見つけて選択します。
 
 1. **[+ ポリシーの作成]** を選びます。 **[アクセス ポリシー]** を選択します。
 
@@ -90,7 +88,7 @@ Microsoft Defender for Cloud Apps では、監視しているクラウド アプ
 
 1. **[アクション]** を **[テスト]** のままにします。
 
-1. **[通知]** で、 **[通知の作成]** をオンのままにして、 **[Sent alert as email](電子メールとして送信済みの通知)** を選択します。
+1. **[アラート]** で、**[アラートの作成]** をオンのままにして、**[アラートをメールで送信]** を選択します。
 
 1. ラボ管理者の電子メール アドレスを入力し、キーボードで **Enter** キーを押します。
 
@@ -105,7 +103,7 @@ Microsoft Defender for Cloud Apps では、監視しているクラウド アプ
    - ユーザー名 = PradeepG@<<<your lab hoster provided domain>>>
    - パスワード = [リソース] タブのパスワード
 5. Pradeep にアクセス権があり、新しいメッセージが表示されることを確認します。
-   - あなたの会社は、このアプリケーションの使用状況を監視しています。
+   - Microsoft Forms へのアクセスが監視されています。
 6. [InPrivate 閲覧] ウィンドウを閉じます。
 
 #### タスク 3 - Defender for Cloud Apps のアクティビティを確認する
