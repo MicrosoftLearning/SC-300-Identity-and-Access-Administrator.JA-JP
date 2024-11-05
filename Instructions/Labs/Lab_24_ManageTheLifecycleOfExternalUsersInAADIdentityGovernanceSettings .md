@@ -1,11 +1,11 @@
 ---
 lab:
-  title: Microsoft Entra Identity Governance の設定で外部ユーザーのライフサイクルを管理します。
+  title: 24 - Microsoft Entra ID ガバナンスの設定で外部ユーザーのライフサイクルを管理する
   learning path: '04'
   module: Module 04 - Plan and Implement and Identity Governance Strategy
 ---
 
-# Microsoft Entra Identity Governance の設定で外部ユーザーのライフサイクルを管理します。  
+# ラボ 24: Microsoft Entra ID ガバナンスの設定で外部ユーザーのライフサイクルを管理する  
 
 ## ラボのシナリオ
 
@@ -13,13 +13,13 @@ lab:
 
 #### 推定時間:5 分
 
-### ID ガバナンス - Microsoft Entra
+### 演習 1 - Microsoft Entra ID ガバナンスの設定
 
-#### Microsoft Entra Identity Governance の設定で外部ユーザーのライフサイクルを管理します。
+#### タスク 1 - Microsoft Entra ID ガバナンスの設定で外部ユーザーのライフサイクルを管理する
 
 1. グローバル管理者として、 [https://entra.microsoft.com](https://entra.microsoft.com)  にサインインします。
 
-2. Microsoft Entra ID を開き、 **[ID ガバナンス]** を選択します。
+2. [Microsoft Entra ID] 項目を開き、 **[ID ガバナンス]** を選択します。
 
 3. 左側のナビゲーション メニューの **[エンタイトルメント管理]** で、**[設定]** を選択します。
 
