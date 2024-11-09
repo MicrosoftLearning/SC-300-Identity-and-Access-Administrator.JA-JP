@@ -14,8 +14,8 @@ lab:
 Microsoft Entra Privileged Identity Management (PIM) は、組み込みの Azure リソース ロールと、以下を含むカスタム ロール (ただしこれらに限定されません) を管理できます。
 
 - 所有者
-- User Access Administrator
-- Contributor
+- ユーザー アクセス管理者
+- 共同作成者
 - セキュリティ管理者
 - Security Manager
 
@@ -30,17 +30,17 @@ Microsoft Entra Privileged Identity Management (PIM) は、組み込みの Azure
 
 1. 全体管理者アカウントを使用して、[https://entra.microsoft.com](https://entra.microsoft.com) にサインインします。
 
-2. **[Azure AD Privileged Identity Management]** を検索してから選択します。
+2. **[Privileged Identity Management]** を検索してから選択します。
 
 3. [Privileged Identity Management] ページの左側のナビゲーションで **[Azure リソース]** を選択します。
 
 4. 上部のメニューで **[リソースの探索]** を選択します。
 
-5. [Azure リソース] ページで、サブスクリプションを選びます。
+5. [Azure リソース - 検出] ページで、サブスクリプションを選択します。
 
    ![サブスクリプションとリソースの管理が強調表示されている [Azure リソース - 検出] ページを表示している画面イメージ](./media/lp4-mod3-pim-azure-resource-management.png)
 
-6. [概要 **] **ページで、情報を確認します。
+6. **[概要]** ページで、情報を確認します。
 
    ![最近追加された Azure リソースを表示している画面イメージ](./media/lp4-mod3-pim-az-resource-overview.png)
 
@@ -80,7 +80,7 @@ Microsoft Entra Privileged Identity Management (PIM) は、組み込みの Azure
 
 4. **[管理]** で、 **[割り当て]** を選択します。
 
-5. **[対象ロール]** タブの [操作] 列で、使用可能なオプションを確認します。
+5. **[資格のある割り当て]** タブの [アクション] 列で、使用できるオプションを確認します。
 
 6. **[削除]** を選択します。
 
