@@ -7,7 +7,7 @@ lab:
 
 # ラボ 27 - Microsoft Entra データ ソースの Microsoft Sentinel Kusto クエリ
 
-**注** - このラボでは Azure Pass が必要です。 手順については、ラボ 00 を参照してください。
+### ログインの種類 = Azure リソース ログイン
 
 ## ラボのシナリオ
 
@@ -40,7 +40,6 @@ Microsoft Sentinel は、スケーラブルでクラウドネイティブの SIE
 1. ダイアログが表示されたら、 **[OK]** を選択して Microsoft Sentinel の無料試用版をアクティブにします。
 
 #### タスク 2 - Microsoft Entra ID をデータ ソースとして追加する
-    **Note** - As of 2/8/2024, the data source is now Microsoft Entra ID.
 
 1. **Microsoft Sentinel** で、メニューの **[コンテンツ管理]** に移動し、**[コンテンツ ハブ]** を選択します。
 

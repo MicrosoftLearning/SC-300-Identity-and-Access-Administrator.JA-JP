@@ -7,6 +7,8 @@ lab:
 
 # ラボ 26: Microsoft Entra ロール用に Privileged Identity Management を構成する
 
+### ログインの種類 = Microsoft 365 管理
+
 ## ラボのシナリオ
 
 特権ロール管理者は、ロール候補の割り当てをアクティブ化しているユーザーの操作性を変更するなど、Microsoft Entra 組織の Privileged Identity Management (PIM) をカスタマイズできます。 PIM の構成について理解する必要があります。
@@ -55,7 +57,7 @@ lab:
 
 5. ロール設定を構成したら、 **[更新]** を選択して変更を保存します。
 
-### 演習 2 - Microsoft Entra ロールを使用した PIM
+### 演習 2: PIM を使用して Microsoft Entra ロールを割り当てる
 
 #### タスク 1 - ロールを割り当てる
 
