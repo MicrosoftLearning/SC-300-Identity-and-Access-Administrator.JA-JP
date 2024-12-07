@@ -7,6 +7,8 @@ lab:
 
 # ラボ 11 - Privileged Identity Management で Azure リソース ロールを割り当てる
 
+### ログインの種類 = Azure リソース ログイン
+
 **注** - このラボでは Azure Pass が必要です。 手順については、ラボ 00 を参照してください。
 
 ## ラボのシナリオ
@@ -21,7 +23,6 @@ Microsoft Entra Privileged Identity Management (PIM) は、組み込みの Azure
 
 ユーザーを Azure リソース ロールの候補にする必要があります。
 
-
 #### 推定時間:10 分
 
 ### 演習 1 - Azure AD リソースを使用した PIM
@@ -34,11 +35,9 @@ Microsoft Entra Privileged Identity Management (PIM) は、組み込みの Azure
 
 3. [Privileged Identity Management] ページの左側のナビゲーションで **[Azure リソース]** を選択します。
 
-4. 上部のメニューで **[リソースの探索]** を選択します。
+4. [サブスクリプション] ドロップダウンで、MOC Subscription##### という項目を選択します。 次に、画面の下部にある **[リソースの管理]** を選択します。
 
 5. [Azure リソース - 検出] ページで、サブスクリプションを選択します。
-
-   ![サブスクリプションとリソースの管理が強調表示されている [Azure リソース - 検出] ページを表示している画面イメージ](./media/lp4-mod3-pim-azure-resource-management.png)
 
 6. **[概要]** ページで、情報を確認します。
 
@@ -52,7 +51,7 @@ Microsoft Entra Privileged Identity Management (PIM) は、組み込みの Azure
 
 10. **[メンバーの選択]** で **[メンバーが選択されていません]** を選択します。
 
-11. ロールを割り当てる組織から **[Miriam Graham]** を選択します。  次に、**[選択]** を選択します。
+11. [メンバーまたはグループの選択] で、ロールが割り当てられる組織の管理者ロール **User1-######@LODSPRODMCA.onmicrosoft.com** を検索します。  次に、**[選択]** を選択します。
 
 12. **[次へ]** を選択します。
 

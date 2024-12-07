@@ -7,6 +7,8 @@ lab:
 
 # 18 - Defender for Cloud Apps アクセスとセッション ポリシー
 
+### ログインの種類 = Microsoft 365 管理
+
 ## ラボのシナリオ
 
 Microsoft Defender for Cloud Apps では、監視しているクラウド アプリに固有の追加の条件付きアクセス ポリシーを作成できます。  これらのポリシーの作成は、Microsoft Defender for Cloud Apps ポータル内の [制御] メニューから行うことができます。
@@ -61,7 +63,7 @@ Microsoft Defender for Cloud Apps では、監視しているクラウド アプ
    - ユーザー名 = PradeepG@<<<your lab hoster provided domain>>>
    - パスワード = [リソース] タブのパスワード
 5. Pradeep にアクセス権があり、新しいメッセージが表示されることを確認します。
-   - Microsoft Forms へのアクセスが監視されています。
+   - あなたの会社は、このアプリケーションの使用状況を監視しています。
 6. [InPrivate 閲覧] ウィンドウを閉じます。
 
 ### 演習 2 - Microsoft Defender for Cloud Apps で DLP アラートを設定する
@@ -103,7 +105,7 @@ Microsoft Defender for Cloud Apps では、監視しているクラウド アプ
    - ユーザー名 = PradeepG@<<<your lab hoster provided domain>>>
    - パスワード = [リソース] タブのパスワード
 5. Pradeep にアクセス権があり、新しいメッセージが表示されることを確認します。
-   - Microsoft Forms へのアクセスが監視されています。
+   - あなたの会社は、このアプリケーションの使用状況を監視しています。
 6. [InPrivate 閲覧] ウィンドウを閉じます。
 
 #### タスク 3 - Defender for Cloud Apps のアクティビティを確認する
