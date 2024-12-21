@@ -109,7 +109,7 @@ Microsoft 365 管理センターを使用してライセンスを追加および
 
    ![画面イメージ: Delia Dennis がログインしている Office.com の Web サイト。ライセンスが割り当てられているため、Office アプリケーションが利用できます。](./media/delia-office-license.png)
     
-5. ブラウザー ウィンドウを閉じます。 
+5. ブラウザー ウィンドウを閉じます。
 
 ### 演習 2: Microsoft Entra ID で Microsoft 365 グループを作成する
 
