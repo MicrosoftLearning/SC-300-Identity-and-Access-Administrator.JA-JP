@@ -5,7 +5,9 @@ lab:
   module: Module 04 - Plan and Implement and Identity Governance Strategy
 ---
 
-# ラボ 27 - Microsoft Entra データ ソースの Microsoft Sentinel Kusto クエリ
+# ラボ 27 オプション - Microsoft Entra データ ソースの Microsoft Sentinel Kusto クエリ
+
+**注** - このラボは、現時点で提供されているトレーニング ラボ環境では完了できません。  ここではラボの手順を終了するので、必要に応じて Bring You Own サブスクリプション (BYOS) 環境で試すことができます。  可能な内容を確認するには、手順を読んでください。  このラボの更新に積極的に取り組んでおり、ラボ環境での回避策を見つけ出して、まもなく更新します。
 
 ### ログインの種類 = Azure リソース ログイン
 
