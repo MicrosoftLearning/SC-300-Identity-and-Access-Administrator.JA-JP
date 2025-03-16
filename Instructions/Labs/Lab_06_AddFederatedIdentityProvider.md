@@ -65,6 +65,13 @@ lab:
        (where <tenant name> is your tenant name)
    ```
 
+**ラボのヒント**: 結果は、テナント ID とテナント名で、次のようになるはずです。
+| URI # | リンク |
+| :--- | :--- |
+| URI 1 | https://login.microsoftonline.com |
+| URI 2 | https://login.microsoftonline.com/te/aaaa1111bbbb2222cccc |
+| URI 3 | https://login.microsoftonline.com/te/MyTenantName.onmicrosoft.com/oauth |
+
 16. **［作成］** を選択します ご自分の**クライアント ID** と**クライアント シークレット**をコピーします。 これらは、Azure portal で ID プロバイダーを追加するときに使用します。
 
 17. テストの発行状態でプロジェクトを終了できます。
