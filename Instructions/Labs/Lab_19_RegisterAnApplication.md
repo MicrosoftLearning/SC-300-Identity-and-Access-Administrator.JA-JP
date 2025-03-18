@@ -17,7 +17,7 @@ lab:
 
 アプリケーションを登録すると、アプリケーションと Microsoft ID プラットフォームとの間の信頼関係が確立されます。 この信頼は一方向です。つまり、アプリは Microsoft ID プラットフォームを信頼しますが、その逆はありません。
 
-1. グローバル管理者アカウントを使用して、[https://entra.microsoft.com](https://entra.microsoft.com)  にサインインします。
+1. 指定された管理者アカウントを使用して [https://entra.microsoft.com](https://entra.microsoft.com)  にサインインします。
 
 2. ポータル メニューを開き、 **[Microsoft Entra ID]** を選択します。
 

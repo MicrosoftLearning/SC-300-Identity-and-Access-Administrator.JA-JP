@@ -19,9 +19,9 @@ lab:
 
 #### タスク 1 - Microsoft Entra テナントにアプリを追加する
 
-1. グローバル管理者アカウントを使用して、 [https://entra.microsoft.com](https://entra.microsoft.com)  にサインインします。
+1. 指定された管理者アカウントを使用して  [https://entra.microsoft.com](https://entra.microsoft.com)  にサインインします。
 
-2. ポータル メニューを開き、 **[Microsoft Entra ID]** を選択します。
+2. 画面の左側にあるメニューに注目します。
 
 3. [ID] メニューの **[アプリケーション]** で、**[エンタープライズ アプリケーション]** を選択します。
 

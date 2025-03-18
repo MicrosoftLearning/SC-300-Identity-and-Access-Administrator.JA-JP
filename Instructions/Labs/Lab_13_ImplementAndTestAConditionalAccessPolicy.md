@@ -29,7 +29,7 @@ lab:
   | 設定 | 値 |
   | :--- | :--- |
   | ユーザー名 | **DebraB@** `<<your lab domain>>.onmicrosoft.com` |
-  | パスワード | テナント管理者のパスワードを入力します (テナントの管理者のパスワードを取得するには、[ラボ リソース] タブを参照してください)。 |
+  | Password | 指定されたパスワードを入力します |
     
 4. ようこそ画面と導入画面をバイパスします。
 
@@ -83,13 +83,13 @@ Microsoft Entra 条件付きアクセスは、Microsoft Entra ID の高度な機
 
 条件付きアクセス ポリシーをテストして、想定どおりに動作することを確認する必要があります。
 
-1. 新しい [InPrivate] ブラウザー タブを開いて、[https://sway.office.com](https://sway.office.com) に移動します。
+1. 新しい [InPrivate] ブラウザー タブを開いて、[https://sway.cloud.microsoft](https://sway.cloud.microsoft) に移動します。
     - プロンプトが表示されたら、DebraB としてログインします。
 
    | 設定 | 値 |
    | :--- | :--- |
    | ユーザー名 | **DebraB@** `<<your lab domain>>.onmicrosoft.com` |
-   | パスワード | テナント管理者のパスワードを入力します (テナントの管理者のパスワードを取得するには、[ラボ リソース] タブを参照してください)。 |
+   | Password | 指定されたパスワードを入力します |
      
 2. Microsoft Sway に正常にアクセスできないことを確認します。
 
