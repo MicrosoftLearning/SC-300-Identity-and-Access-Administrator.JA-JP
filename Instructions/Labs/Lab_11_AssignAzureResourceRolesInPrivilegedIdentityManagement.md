@@ -9,8 +9,6 @@ lab:
 
 ### ログインの種類 = Azure リソース ログイン
 
-**注** - このラボでは Azure Pass が必要です。 手順については、ラボ 00 を参照してください。
-
 ## ラボのシナリオ
 
 Microsoft Entra Privileged Identity Management (PIM) は、組み込みの Azure リソース ロールと、以下を含むカスタム ロール (ただしこれらに限定されません) を管理できます。
@@ -29,11 +27,13 @@ Microsoft Entra Privileged Identity Management (PIM) は、組み込みの Azure
 
 #### タスク 1 - Azure リソース ロールを割り当てる
 
-1. 全体管理者アカウントを使用して、[https://entra.microsoft.com](https://entra.microsoft.com) にサインインします。
+1. 提供された管理者アカウントを使用して [https://entra.microsoft.com](https://entra.microsoft.com) にサインインします。
 
 2. **[Privileged Identity Management]** を検索してから選択します。
 
 3. [Privileged Identity Management] ページの左側のナビゲーションで **[Azure リソース]** を選択します。
+
+**ラボのヒント** - 次のいくつかの手順は、従来の Azure リソース エクスペリエンス用に記述されています。  画面の上部にある古いエクスペリエンスに切り替えることができます。 または、ステップバイステップなしで、新しいエクスペリエンスで演習を完了することもできます。
 
 4. [サブスクリプション] ドロップダウンで、MOC Subscription##### という項目を選択します。 次に、画面の下部にある **[リソースの管理]** を選択します。
 
@@ -42,6 +42,8 @@ Microsoft Entra Privileged Identity Management (PIM) は、組み込みの Azure
 6. **[概要]** ページで、情報を確認します。
 
    ![最近追加された Azure リソースを表示している画面イメージ](./media/lp4-mod3-pim-az-resource-overview.png)
+
+   **ラボのヒント** - ラボ環境の性質上、リソースは表示されません。 サンプルについては、画像を参照してください。
 
 7. 左側のナビゲーション メニューで、**[管理]** の下にある **[ロール]** を選択して、Azure リソースのロールの一覧を表示します。
 
@@ -68,6 +70,8 @@ Microsoft Entra Privileged Identity Management (PIM) は、組み込みの Azure
 16. 新しいロールの割り当てが作成されると、状態の通知が表示されます。
 
 #### タスク 2 - 既存のリソースのロールの割り当てを更新または削除する
+
+**注** - このラボ環境にセキュリティが適用されているため、これらの手順を完了できません。  ユーザー インターフェイスの手順を確認してください。ただし、変更を適用することはできません。  この問題に対する回避策の整備に鋭意取り組んでいるところです。
 
 既存のロールの割り当てを更新または削除するには、次の手順を実行します。
 
