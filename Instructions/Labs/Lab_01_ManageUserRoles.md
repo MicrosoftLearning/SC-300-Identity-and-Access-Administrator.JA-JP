@@ -180,7 +180,7 @@ Microsoft Entra ID を使用すると、特権の低いロールで ID タスク
 
 #### タスク 2 - PowerShell を使用したユーザーの一括追加
 
-1. PowerShell を管理者として開きます。これを行うには、Windows で PowerShell を検索し、[管理者として実行] を選択します。 
+1. PowerShell を開きます。それには、Windows で PowerShell を検索します。 
 
 **注** - このラボを機能させるためには、PowerShell バージョン 7.2 以降が必要です。  PowerShell を開くと、画面の上部にバージョンが表示されます。古いバージョンを実行している場合は、画面の指示に従って https://aka.ms/PowerShell-Release?tag=7.3.9 に移動してください。 [アセット] セクションまで下にスクロールし、powershell-7.3.1-win-x64.msi を選択します。 ダウンロードが完了したら、[ファイルを開く] を選択します。 すべての既定値を使用してインストールします。
 
@@ -189,7 +189,7 @@ Microsoft Entra ID を使用すると、特権の低いロールで ID タスク
 2. 以前に使用したことがない場合は、Microsoft.Graph PowerShell モジュールをインストールする必要があります。  次の 2 つのコマンドを実行し、確認を求められたら Y キーを押します。
 
     ```
-    Install-Module Microsoft.Graph
+    Install-Module Microsoft.Graph -Scope CurrentUser -Verbose
     ```
 3. Microsoft.Graph モジュールがインストールされていることを確認します。
 
@@ -211,7 +211,7 @@ Microsoft Entra ID を使用すると、特権の低いロールで ID タスク
     Get-MgUser 
     ```
     
-7. すべての新規ユーザーに共通の一時パスワードを割り当てるには、次のコマンドを実行し、<Enter a complex Password> をユーザーに提供するパスワードに置き換えます。  
+6. すべての新規ユーザーに共通の一時パスワードを割り当てるには、次のコマンドを実行し、<Enter a complex Password> をユーザーに提供するパスワードに置き換えます。  
 
     ``` 
     $PWProfile = @{
@@ -220,7 +220,7 @@ Microsoft Entra ID を使用すると、特権の低いロールで ID タスク
     }
     ```
 
-8. これで、新しいユーザーの作成に取りかかることができます。  次のコマンドにユーザー情報が入力され、実行されます。  追加するユーザーが複数ある場合は、メモ帳の txt ファイルを使用してユーザー情報を追加し、PowerShell にコピーして貼り付けることができます。 
+7. これで、新しいユーザーの作成に取りかかることができます。  次のコマンドにユーザー情報が入力され、実行されます。  追加するユーザーが複数ある場合は、メモ帳の txt ファイルを使用してユーザー情報を追加し、PowerShell にコピーして貼り付けることができます。 
 
     ```
     New-MgUser `
@@ -245,7 +245,7 @@ Microsoft Entra ID ページを使用してユーザーを追加および削除�
 
 アカウントを削除した後、復元する必要がある場合があります。 最近削除されたアカウントを復元できるかどうかを確認する必要があります。
 
-1. [https://entra.micrososft.com](Microsoft Entra admin center) にアクセスします。
+1. [https://entra.microsoft.com](Microsoft Entra admin center) にアクセスします。
 
 2. 左側のナビゲーション内の **[ID]** の下にある **[ユーザー]** を選択します。
 
