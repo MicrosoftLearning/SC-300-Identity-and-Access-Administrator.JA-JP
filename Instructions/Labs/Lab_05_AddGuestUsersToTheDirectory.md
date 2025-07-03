@@ -92,7 +92,7 @@ lab:
 
 #### タスク 2 - PowerShell を使用してゲスト ユーザーを招待する
 
-1. PowerShell を管理者として開きます。 これを行うには、Windows で PowerShell を検索し、[管理者として実行] を選択します。 
+1. PowerShell を開きます。 これを行うには、Windows で PowerShell を検索します。
 
 **注** - このラボを機能させるためには、PowerShell バージョン 7.2 以降が必要です。  PowerShell が開くと、画面の上部にバージョンが表示されます。古いバージョンを実行している場合は更新してください。そうしないと、ラボのこの部分が失敗します。
 
@@ -101,7 +101,7 @@ lab:
 2. 以前に使用したことがない場合は、Microsoft.Graph PowerShell モジュールをインストールする必要があります。  次の 2 つのコマンドを実行し、確認を求められたら Y キーを押します。
 
     ```
-    Install-Module Microsoft.Graph
+    Install-Module Microsoft.Graph -Scope CurrentUser -Verbose
     ```
 3. Microsoft.Graph モジュールがインストールされていることを確認します。
 
