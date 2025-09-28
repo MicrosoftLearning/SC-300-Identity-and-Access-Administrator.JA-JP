@@ -75,8 +75,8 @@ lab:
 | URI 番号 | リンク |
 | :--- | :--- |
 | URI 1 | https://login.microsoftonline.com |
-| URI 2 | https://login.microsoftonline.com/te/aaaa1111bbbb2222cccc |
-| URI 3 | https://login.microsoftonline.com/te/MyTenantName.onmicrosoft.com/oauth |
+| URI 2 | https://login.microsoftonline.com/te/aaaa1111bbbb2222cccc/oauth2/authresp |
+| URI 3 | https://login.microsoftonline.com/te/MyTenantName.onmicrosoft.com/oauth2/authresp |
 
 16. **[作成]** ボタンを選択します。
 
