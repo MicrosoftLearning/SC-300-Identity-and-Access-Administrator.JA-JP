@@ -92,7 +92,7 @@ lab:
 
 #### タスク 2 - PowerShell を使用してゲスト ユーザーを招待する
 
-1. PowerShell を開きます。 これを行うには、Windows で PowerShell を検索します。
+1. PowerShell を開きます。 それには、Windows で PowerShell を検索します。
 
 **注** - このラボを機能させるためには、PowerShell バージョン 7.2 以降が必要です。  PowerShell が開くと、画面の上部にバージョンが表示されます。古いバージョンを実行している場合は更新してください。そうしないと、ラボのこの部分が失敗します。
 

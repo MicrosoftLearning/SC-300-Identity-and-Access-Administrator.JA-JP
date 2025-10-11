@@ -29,7 +29,7 @@ Microsoft Entra Privileged Identity Management (PIM) は、組み込みの Azure
 
 1. 提供された管理者アカウントを使用して [https://entra.microsoft.com](https://entra.microsoft.com) にサインインします。
 
-2. **[Privileged Identity Management]** を検索してから選択します。
+2. 「**Microsoft Entra Privileged Identity Management**」を検索して選択します。
 
 3. [Privileged Identity Management] ページの左側のナビゲーションで **[Azure リソース]** を選択します。
 

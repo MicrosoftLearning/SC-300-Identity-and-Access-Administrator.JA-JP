@@ -21,11 +21,13 @@ lab:
 
 1. [https://portal.azure.com](https://portal.azure.com) を参照します
 
+**ラボのヒント** - 資格情報の保存を求めるダイアログが表示されたら、[保存しない] を選択します。  Azure portal を初めて使う場合を除き、ツアーをキャンセルします。
+
 1. **[+ リソースの作成]** を選択します。
 
 1. [Marketplace を検索] 検索バーに「**Windows 11**」と入力して、**Enter** キーを押します。
 
-1. **[Windows 11]** ボックスで、**[VM の作成]** を選択し、開いたメニューから **[Windows 11 Enterprise バージョン 22H2]** を選択します。
+1. **[Microsoft Windows 11]** ボックスを検索し、次に **[VM の作成]** を選択して、開いたメニューから **[Windows 11 Enterprise バージョン 22H2]** を選択します。
 
 1. **[基本]** タブで次の値を使用して VM を作成します。
 
@@ -35,7 +37,7 @@ lab:
   | リソース グループ | 新規作成 - rgEntraLogin |
   | 仮想マシン名 | vmEntraLogin |
   | リージョン | *default* |
-  | 可用性のオプション | インフラストラクチャ冗長は必要ありません |
+  | 可用性のオプション | インフラストラクチャの冗長性は必要ありません |
   | 証券の種類 | Standard |
   | サイズ | Standard DC1s_v3 - 1 vCPU、8 GiB メモリ |
   | 管理ユーザー名 | vmEntraAdmin |
