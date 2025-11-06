@@ -27,7 +27,7 @@ lab:
 
 1. [Marketplace を検索] 検索バーに「**Windows 11**」と入力して、**Enter** キーを押します。
 
-1. **[Microsoft Windows 11]** ボックスを検索し、次に **[VM の作成]** を選択して、開いたメニューから **[Windows 11 Enterprise バージョン 22H2]** を選択します。
+1. **[Microsoft Windows 11]** ボックスを検索し、次に **[VM の作成]** を選択して、開いたメニューから **[Windows 11 Enterprise バージョン 25H2]** を選択します。
 
 1. **[基本]** タブで次の値を使用して VM を作成します。
 
