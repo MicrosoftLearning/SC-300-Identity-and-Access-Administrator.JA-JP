@@ -3,6 +3,14 @@ lab:
   title: 10 - Windows および Linux Virtual Machines に対する Microsoft Entra ID 認証
   learning path: '02'
   module: Module 02 - Implement an Authentication and Access Management Solution
+  description: 会社は、リモート アクセス用の仮想マシンへのログインに Microsoft Entra ID を使用することを決定しました。  このラボでは、Windows および Linux 仮想マシンに対してこれをセットアップする方法について示します。
+  duration: 30 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Microsoft Entra
+    - Microsoft Entra ID
+    - Windows
 ---
 
 # ラボ 10 - Windows および Linux Virtual Machines に対する Microsoft Entra 認証

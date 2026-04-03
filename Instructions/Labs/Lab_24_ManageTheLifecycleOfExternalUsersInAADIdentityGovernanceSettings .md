@@ -3,6 +3,12 @@ lab:
   title: 24 - Microsoft Entra ID ガバナンスの設定で外部ユーザーのライフサイクルを管理する
   learning path: '04'
   module: Module 04 - Plan and Implement and Identity Governance Strategy
+  description: アクセス パッケージ要求が承認されることでディレクトリに招待された外部ユーザーが、アクセス パッケージの割り当てを失ったときに行われる処理を選択できます。 これは、ユーザーがアクセス パッケージの割り当てをすべて放棄した場合、または最後のアクセス パッケージの割り当てが期限切れになった場合に、行われる可能性があります。 既定では、アクセス パッケージの割り当てをすべて失った外部ユーザーは、ディレクトリへのサインインをブロックされます。 30 日後に、ゲスト ユーザー アカウントがディレクトリから削除されます。
+  duration: 5 minutes
+  level: 100
+  islab: true
+  primarytopics:
+    - Microsoft Entra
 ---
 
 # ラボ 24: Microsoft Entra ID ガバナンスの設定で外部ユーザーのライフサイクルを管理する

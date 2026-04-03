@@ -3,6 +3,12 @@ lab:
   title: 09 - Microsoft Entra セルフサービス パスワード リセットを有効にする
   learning path: '02'
   module: Module 02 - Implement an Authentication and Access Management Solution
+  description: 会社は従業員に権限を与え、セルフサービスによるパスワードのリセットを可能にすることを決定しました。 組織内でこの設定を構成する必要があります。
+  duration: 15 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Microsoft Entra
 ---
 
 # ラボ 09 - セルフサービス パスワード リセットを構成してデプロイする

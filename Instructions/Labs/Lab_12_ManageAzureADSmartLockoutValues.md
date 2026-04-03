@@ -3,6 +3,13 @@ lab:
   title: 12 - Microsoft Entra スマート ロックアウトの値を管理する
   learning path: '02'
   module: Module 02 - Implement an Authentication and Access Management Solution
+  description: 組織の要件に基づいて、Microsoft Entra スマート ロックアウトの値をカスタマイズできます。 スマート ロックアウト設定を組織固有の値にカスタマイズするには、ユーザーに Microsoft Entra ID Premium P1 以上のライセンスが必要です。
+  duration: 5 minutes
+  level: 100
+  islab: true
+  primarytopics:
+    - Microsoft Entra
+    - Microsoft Entra ID
 ---
 
 # ラボ 12 - Microsoft Entra スマート ロックアウトの値を管理する

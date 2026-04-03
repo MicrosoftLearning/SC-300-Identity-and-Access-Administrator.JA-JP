@@ -3,6 +3,12 @@ lab:
   title: 26 - Microsoft Entra ロール用に Privileged Identity Management を構成する
   learning path: '04'
   module: Module 04 - Plan and Implement and Identity Governance Strategy
+  description: 'Microsoft Entra ロールを想定する必要がある場合は、Privileged Identity Management で [自分のロール] を開いてアクティブ化を要求できます。'
+  duration: 30 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Microsoft Entra
 ---
 
 # ラボ 26: Microsoft Entra ロール用に Privileged Identity Management を構成する

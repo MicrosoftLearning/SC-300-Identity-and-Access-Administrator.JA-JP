@@ -3,6 +3,14 @@ lab:
   title: 27 - Microsoft Entra データ ソースの Microsoft Sentinel Kusto クエリ
   learning path: '04'
   module: Module 04 - Plan and Implement and Identity Governance Strategy
+  description: Microsoft Sentinel は、スケーラブルでクラウドネイティブの SIEM および SOAR ソリューションです。 Microsoft とサードパーティのセキュリティ ソリューションからデータ ソースを接続すると、セキュリティ操作タスクを実行できます。 このラボ演習では、Kusto 照会言語 (KQL) を使用してハンティング クエリを実行するための Microsoft Entra ID へのデータ コネクタを備えた Microsoft Sentinel ワークスペースを作成します。
+  duration: 30 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Microsoft Entra
+    - Microsoft Entra ID
+    - Microsoft Sentinel
 ---
 
 # ラボ 27 オプション - Microsoft Entra データ ソースの Microsoft Sentinel Kusto クエリ

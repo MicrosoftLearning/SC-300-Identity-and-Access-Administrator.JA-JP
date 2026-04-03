@@ -3,6 +3,12 @@ lab:
   title: 14 - サインインとユーザー リスク ポリシーを有効にする
   learning path: '02'
   module: Module 02 - Implement an Authentication and Access Management Solution
+  description: セキュリティの層を追加するために、Microsoft Entra 組織のサインイン ポリシーとユーザー リスク ポリシーを有効にして構成する必要があります。
+  duration: 10 minutes
+  level: 200
+  islab: true
+  primarytopics:
+    - Microsoft Entra
 ---
 
 # ラボ 14 - サインインとユーザー リスク ポリシーを有効にする
