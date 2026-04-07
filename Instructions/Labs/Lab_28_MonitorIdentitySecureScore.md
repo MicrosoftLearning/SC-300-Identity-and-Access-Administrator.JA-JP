@@ -3,6 +3,16 @@ lab:
   title: 28 - ID セキュリティ スコアを使用してセキュリティ態勢を監視および管理する
   learning path: '04'
   module: Module 04 - Plan and Implement and Identity Governance Strategy
+  description: Microsoft Entra ID 保護では、ID ベースのリスクに対する自動検出と修復を提供し、潜在的なリスクを調査するためのデータをポータルに提供します。 Microsoft Entra Identity Protection には、ID セキュリティ ポスチャを監視および改善するための ID セキュリティ スコアも用意されています。 改善のための処置を確認して実行します。
+  duration: 15 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Microsoft Defender
+    - Microsoft Defender for Cloud
+    - Microsoft Defender XDR
+    - Microsoft Entra
+    - Microsoft Entra ID
 ---
 
 # ラボ 28 - ID セキュリティ スコアを使用してセキュリティ態勢を監視および管理する

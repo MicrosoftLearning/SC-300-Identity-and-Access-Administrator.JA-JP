@@ -3,6 +3,12 @@ lab:
   title: 08 - 多要素認証を有効にする
   learning path: '02'
   module: Module 02 - Implement an Authentication and Access Management Solution
+  description: 多要素認証システムを Microsoft Entra テナントにロールアウトします。 会社のセキュリティ目標に基づいて、さまざまな認証方法を調べます。
+  duration: 15 minutes
+  level: 200
+  islab: true
+  primarytopics:
+    - Microsoft Entra
 ---
 
 # ラボ 08 - 多要素認証を有効にする

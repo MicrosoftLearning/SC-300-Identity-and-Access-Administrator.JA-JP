@@ -3,6 +3,10 @@ lab:
   title: 06 - フェデレーション ID プロバイダーを追加する
   learning path: '01'
   module: Module 01 - Implement an identity management solution
+  description: 追加すると外部フェデレーション ID は Microsoft Entra テナントに提供します。
+  duration: 25 minutes
+  level: 300
+  islab: true
 ---
 
 # ラボ 06:フェデレーション ID プロバイダーを追加する

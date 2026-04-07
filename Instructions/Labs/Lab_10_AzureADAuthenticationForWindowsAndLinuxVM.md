@@ -42,7 +42,7 @@ lab:
   | フィールド | 使用する値 |
   | :-- | :-- |
   | サブスクリプション | 既定値をそのまま使用します |
-  | リソース グループ | 新規作成 - rgEntraLogin |
+  | リソース グループ | 新規作成 - rgEL |
   | 仮想マシン名 | vmEntraLogin |
   | リージョン | *default* |
   | 可用性のオプション | インフラストラクチャの冗長性は必要ありません |
@@ -131,7 +131,7 @@ lab:
 
 #### タスク 5 - Microsoft Entra ID ログインを使って Windows 仮想マシンに接続する
 
-1. **<<virtual machine name>>-EntraID.RDP を開きます
+1. **<<virtual machine name>>-EntraID.RDP** を開きます
 
 1. ダイアログが開いたら、 **[接続]** を選択します。
 

@@ -3,6 +3,10 @@ lab:
   title: 25 - 内部および外部ユーザーのアクセス レビューの作成
   learning path: '04'
   module: Module 04 - Plan and Implement and Identity Governance Strategy
+  description: 特権ユーザー アクセスは、同様の方法で定期的に確認する必要があります。 Microsoft Entra のアクセス レビューを使って、アクセス権のこのレビューを自動化します。
+  duration: 5 minutes
+  level: 200
+  islab: true
 ---
 
 # ラボ 25 - 内部および外部ユーザーのアクセス レビューの作成

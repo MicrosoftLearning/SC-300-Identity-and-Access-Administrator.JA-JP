@@ -3,6 +3,12 @@ lab:
   title: 22 - Microsoft Entra エンタイトルメント管理でリソースのカタログを作成して管理する
   learning path: '04'
   module: Module 04 - Plan and Implement and Identity Governance Strategy
+  description: Microsoft Entra のエンタイトルメント管理を使って資格パッケージを作成して展開します。 その後、ユーザーとして作業し、エンタイトルメントを要求して使用します。
+  duration: 15 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Microsoft Entra
 ---
 
 # ラボ 22: Microsoft Entra エンタイトルメント管理でリソースのカタログを作成して管理する
