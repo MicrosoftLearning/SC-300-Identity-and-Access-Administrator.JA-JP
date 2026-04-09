@@ -3,6 +3,10 @@ lab:
   title: 01 - ユーザー ロールを管理する
   learning path: '01'
   module: Module 01 - Implement an Identity Management Solution
+  description: Microsoft Entra テナントで新しいユーザーに対するロールを作成、削除、追加するさまざまな方法を調べます。
+  duration: 30 minutes
+  level: 300
+  islab: true
 ---
 
 # WWL テナント - 使用条件

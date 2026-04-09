@@ -3,6 +3,13 @@ lab:
   title: 16 - マネージド ID に Azure Key Vault を使用する
   learning path: '02'
   module: Module 02 - Implement an Authentication and Access Management Solution
+  description: Azure Key Vault を作成して構成します。  その後、それを使って、クラウド環境で実行されているアプリケーションとリソースで使われるシークレット、パスワード、キーを格納します。
+  duration: 35 minutes
+  level: 400
+  islab: true
+  primarytopics:
+    - Azure Key Vault
+    - Microsoft Entra
 ---
 
 # ラボ 16 - マネージド ID に Azure Key Vault を使用する

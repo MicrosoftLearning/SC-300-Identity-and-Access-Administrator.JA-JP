@@ -3,6 +3,14 @@ lab:
   title: 10 - Windows および Linux Virtual Machines に対する Microsoft Entra ID 認証
   learning path: '02'
   module: Module 02 - Implement an Authentication and Access Management Solution
+  description: 会社は、リモート アクセス用の仮想マシンへのログインに Microsoft Entra ID を使用することを決定しました。  このラボでは、Windows および Linux 仮想マシンに対してこれをセットアップする方法について示します。
+  duration: 30 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Microsoft Entra
+    - Microsoft Entra ID
+    - Windows
 ---
 
 # ラボ 10 - Windows および Linux Virtual Machines に対する Microsoft Entra 認証
@@ -34,7 +42,7 @@ lab:
   | フィールド | 使用する値 |
   | :-- | :-- |
   | サブスクリプション | 既定値をそのまま使用します |
-  | リソース グループ | 新規作成 - rgEntraLogin |
+  | リソース グループ | 新規作成 - rgEL |
   | 仮想マシン名 | vmEntraLogin |
   | リージョン | *default* |
   | 可用性のオプション | インフラストラクチャの冗長性は必要ありません |
@@ -123,7 +131,7 @@ lab:
 
 #### タスク 5 - Microsoft Entra ID ログインを使って Windows 仮想マシンに接続する
 
-1. **<<virtual machine name>>-EntraID.RDP を開きます
+1. **<<virtual machine name>>-EntraID.RDP** を開きます
 
 1. ダイアログが開いたら、 **[接続]** を選択します。
 

@@ -3,6 +3,10 @@ lab:
   title: 23 - 利用規約と同意レポートを追加する
   learning path: '04'
   module: Module 04 - Plan and Implement and Identity Governance Strategy
+  description: ToU ポリシーを作成して組織に適用する必要があります。
+  duration: 20 minutes
+  level: 200
+  islab: true
 ---
 
 # ラボ 23: 利用規約と同意レポートを追加する

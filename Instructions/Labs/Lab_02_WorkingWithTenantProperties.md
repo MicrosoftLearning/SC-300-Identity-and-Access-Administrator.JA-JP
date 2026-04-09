@@ -3,6 +3,10 @@ lab:
   title: 02 - テナントのプロパティを操作する
   learning path: '01'
   module: Module 01 - Implement an Identity Management Solution
+  description: テナントに関連付けられているさまざまなプロパティを特定し、更新する必要があります。
+  duration: 15 minutes
+  level: 200
+  islab: true
 ---
 
 # ラボ 02: テナントのプロパティを操作する

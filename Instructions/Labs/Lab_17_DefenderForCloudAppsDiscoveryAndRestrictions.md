@@ -3,6 +3,13 @@ lab:
   title: 17 - Defender for Cloud Apps アプリケーション検出と制限適用
   learning path: '03'
   module: Module 03 - Implement Access Management for Apps
+  description: Microsoft Defender for Cloud Apps を使って承認されていないアプリをブロックします。 Defender ポータルの機能と使用方法を調べます。
+  duration: 10 minutes
+  level: 200
+  islab: true
+  primarytopics:
+    - Microsoft Defender for Cloud Apps
+    - Microsoft Entra
 ---
 
 # ラボ 17 - Defender for Cloud Apps アプリケーション検出と制限適用

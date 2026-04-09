@@ -3,6 +3,14 @@ lab:
   title: 18 - Defender for Cloud Apps アクセス ポリシー
   learning path: '03'
   module: Module 03 - Implement Access Management for Apps
+  description: 'Microsoft Defender for Cloud Apps では、監視しているクラウド アプリに固有の追加の条件付きアクセス ポリシーを作成できます。 これらのポリシーの作成は、Microsoft Defender for Cloud Apps ポータル内の [制御] メニューから行うことができます。'
+  duration: 20 minutes
+  level: 200
+  islab: true
+  primarytopics:
+    - Microsoft Defender
+    - Microsoft Defender for Cloud
+    - Microsoft Defender for Cloud Apps
 ---
 
 # 18 - Defender for Cloud Apps アクセスとセッション ポリシー

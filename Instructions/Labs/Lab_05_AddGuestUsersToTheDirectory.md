@@ -3,6 +3,10 @@ lab:
   title: 05 - ゲスト ユーザーをディレクトリに追加する
   learning path: '01'
   module: Module 01 - Implement an identity management solution
+  description: 複数の外部テナントから外部ユーザーを Microsoft Entra テナントに招待する方法を調べます。
+  duration: 20 minutes
+  level: 200
+  islab: true
 ---
 
 # ラボ 05:ゲスト ユーザーをディレクトリに追加する

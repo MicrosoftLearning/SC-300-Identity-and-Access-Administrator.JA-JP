@@ -3,6 +3,12 @@ lab:
   title: 15 - 多要素認証登録ポリシーを構成する
   learning path: '02'
   module: Module 02 - Implement an Authentication and Access Management Solution
+  description: 多要素認証レジストリ ポリシーを作成、構成、展開してから、組み込みのレポートを使って導入を追跡します。
+  duration: 10 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Microsoft Entra
 ---
 
 # ラボ 15 - 多要素認証登録ポリシーを構成する

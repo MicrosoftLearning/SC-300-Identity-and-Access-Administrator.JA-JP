@@ -3,6 +3,10 @@ lab:
   title: 04 - 外部コラボレーションの設定を構成する
   learning path: '01'
   module: Module 01 - Implement an identity management solution
+  description: 承認されたゲストがアクセスするには、組織の外部コラボレーション設定を有効にする必要があります。
+  duration: 5 minutes
+  level: 200
+  islab: true
 ---
 
 # ラボ 04: 外部コラボレーションの設定を構成する

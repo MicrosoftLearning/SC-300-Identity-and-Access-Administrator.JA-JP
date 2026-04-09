@@ -3,6 +3,12 @@ lab:
   title: 13 - 条件付きアクセス ポリシーの実装とテストを行う
   learning path: '02'
   module: Module 02 - Implement an Authentication and Access Management Solution
+  description: 組織では、内部アプリケーションへのユーザーのアクセスを制限する必要があります。 Microsoft Entra 条件付きアクセス ポリシーを展開する必要があります。
+  duration: 20 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Microsoft Entra
 ---
 
 # ラボ 13 - 条件付きアクセス ポリシーの実装とテストを行う

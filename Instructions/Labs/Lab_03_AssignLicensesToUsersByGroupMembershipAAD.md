@@ -3,6 +3,13 @@ lab:
   title: 03 - グループ メンバーシップを使用してライセンスを割り当てる
   learning path: '01'
   module: Module 01 - Implement an identity management solution
+  description: 組織は、Microsoft Entra ID のセキュリティ グループを使用して、ライセンスを管理することに決めました。 新しいセキュリティ グループを設定し、そのグループにライセンスを割り当て、グループ メンバーのライセンスが更新されたことを確認する必要があります。
+  duration: 25 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Microsoft Entra
+    - Microsoft Entra ID
 ---
 
 # ラボ 03:グループ メンバーシップを使用してライセンスを割り当てる

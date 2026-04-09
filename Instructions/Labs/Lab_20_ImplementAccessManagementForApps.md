@@ -3,6 +3,10 @@ lab:
   title: 20 - アプリのアクセス管理を実装する
   learning path: '03'
   module: Module 03 - Implement Access Management for Apps
+  description: 組織では、特定のユーザーまたはグループのみがエンタープライズ アプリケーションにアクセスできる必要があります。 ユーザーを特定のアプリケーションに割り当てる必要があります。
+  duration: 5 minutes
+  level: 100
+  islab: true
 ---
 
 # ラボ 20 - アプリのアクセス管理を実装する

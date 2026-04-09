@@ -3,6 +3,10 @@ lab:
   title: 21 - アプリケーションに対してテナント全体の管理者の同意を付与する
   learning path: '03'
   module: Module 03 - Implement Access Management for Apps
+  description: テナントでアプリケーションが既にプロビジョニングされている場合、"エンタープライズ アプリケーション" を通じて、テナント全体の管理者の同意を付与できます。
+  duration: 15 minutes
+  level: 300
+  islab: true
 ---
 
 # ラボ 21:アプリケーションに対してテナント全体の管理者の同意を付与する

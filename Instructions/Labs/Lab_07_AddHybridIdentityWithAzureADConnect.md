@@ -3,6 +3,12 @@ lab:
   title: 07 - 省略可能 --- Microsoft Entra Connect を使用してハイブリッド ID を追加する
   learning path: '01'
   module: Module 01 - Implement an identity management solution
+  description: ユーザー アカウントの同期を、UPN サフィックスがターゲットの Azure AD テナントのカスタム ドメイン名と一致するものに制限する、Azure AD Connect 属性レベルのフィルター処理を構成します。
+  duration: 60 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Microsoft Entra
 ---
 
 # ラボ 07: 省略可能 --- Microsoft Entra Connect を使用してハイブリッド ID を追加する

@@ -3,6 +3,13 @@ lab:
   title: 11 - Privileged Identity Management で Azure リソース ロールを割り当てる
   learning path: '02'
   module: Module 02 - Implement an authentication and access management solution
+  description: Privileged Identity Management (PIM) を使って、Azure リソースへの特権アクセスを割り当てます。
+  duration: 10 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Azure
+    - Microsoft Entra
 ---
 
 # ラボ 11 - Privileged Identity Management で Azure リソース ロールを割り当てる

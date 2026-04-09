@@ -3,6 +3,10 @@ lab:
   title: 19 - アプリケーションを登録する
   learning path: '03'
   module: Module 03 - Implement Access Management for Apps
+  description: アプリケーションの登録を使って、アプリケーションを Microsoft Entra テナントに登録します。
+  duration: 30 minutes
+  level: 300
+  islab: true
 ---
 
 # ラボ 19 - アプリケーションを登録する
