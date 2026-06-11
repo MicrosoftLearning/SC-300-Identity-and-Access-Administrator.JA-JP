@@ -14,7 +14,7 @@ lab:
 
 # ラボ 16 - マネージド ID に Azure Key Vault を使用する
 
-### ログインの種類 = Azure リソース ログイン
+### ログインの種類: Azure リソース ログイン
 
 ## ラボのシナリオ
 
@@ -26,7 +26,7 @@ Azure リソース用マネージド ID を使うとき、Microsoft Entra 認証
 
 #### タスク 1 - キー コンテナーを作成する
 
-1. グローバル管理者アカウントを使用して、[https://portal.azure.com]( https://portal.azure.com) にサインインします。
+1. `https://portal.azure.com` で全体管理者アカウントを使用して **Microsoft Azure** portal にサインインします。
 
 1. 左側のナビゲーション バーの上部で、**[+ リソースの作成]** を選択します。
 
@@ -37,11 +37,16 @@ Azure リソース用マネージド ID を使うとき、Microsoft Entra 認証
 1. **［作成］** を選択します
 
 1. 次に示すように、必要なすべての情報を入力します。 このラボで使用しているサブスクリプションを選択していることを確認してください。
-    **注** キー コンテナー名は一意である必要があります。 フィールドの右側にある緑色のチェックマークを探します。
 
- - **リソース グループ** - rgSC300KeyVault
+    >**注:** キー コンテナー名は一意である必要があります。 フィールドの右側にある緑色のチェックマークを探します。
+
+ - **リソース グループ** - **rgSC300KeyVault**
  - **キー コンテナー名** - *anyuniquevalue*
+
+ 1. [**次へ**] を選択します。
+
  - **[アクセスの構成]** ページで、 **[Vault Access Policy] (コンテナーのアクセス ポリシー)** ラジオ ボタンをオンにします。
+
 1. **[Review + create](レビュー + 作成)** を選択します。
 
 1. **［作成］** を選択します
@@ -52,13 +57,13 @@ Azure リソース用マネージド ID を使うとき、Microsoft Entra 認証
 
 1. [Marketplace を検索] 検索バーに「**Windows 11**」と入力します。
 
-1. **[Windows 11]** を選択し、プランのドロップダウンから **[Windows 11 Enterprise、バージョン 25H2]** またはそれ以降のバージョンを選択します。 次に、 **[作成]** を選択します。
+1. **[Windows 11]** を選択し、プランのドロップダウンから **[Windows 11 Enterprise、バージョン 25H2]** またはそれ以降のバージョンを選択します。 **[作成]** を選択します。
 
-  | フィールド | 値 |
+  | **フィールド** | **値** |
   | :--   | :--    |
-  | VM 名 | vmKeyVault |
+  | VM 名 | **vmKeyVault** |
   | 可用性のオプション | インフラストラクチャの冗長性は必要ありません |
-  | 管理ユーザー名 | adminKeyVault |
+  | 管理ユーザー名 | **adminKeyVault** |
   | Password | 忘れにくい安全なパスワードを設定してください |
   | ライセンス | 適格なライセンスがあることを確認してください |
 
@@ -108,32 +113,46 @@ Azure リソース用マネージド ID を使うとき、Microsoft Entra 認証
 
 #### タスク 5 - PowerShell を使用して Key Vault シークレットを使用してデータにアクセスする
 
-1. **vmKeyVault** に移動し、RDP を使用して **adminKeyVault** として仮想マシンに接続します。
+1. **vmKeyVault** 仮想マシンに移動して、**[接続]** を選択します。 **[RDP ファイルのダウンロード]** を選択し、ダウンロード ファイルを保持し、ファイルを開いて接続します。 次に、タスク 2 のパスワードを入力し、[リモート デスクトップ接続] で [はい] を選択します。 [デバイスのプライバシー設定の選択] で [次へ]、[同意する] の順に選択します。
 
 1. このラボで先ほどデプロイした **Windows 11 仮想マシン**を開きます。 ラボの仮想マシンから PowerShell を開きます。  
 
 1. PowerShell では、テナント上で Web 要求を呼び出し、VM の特定のポートでローカル ホストのトークンを取得します。  
 
-    ```
+    ```powershell
     $Response = Invoke-RestMethod -Uri 'http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&resource=https%3A%2F%2Fvault.azure.net' -Method GET -Headers @{Metadata="true"}
     ```
 
 1. 次に、アクセス トークンを応答から抽出します。  
 
-    ```
+    ```powershell
     $KeyVaultToken = $Response.access_token
     ```
 
-1. PowerShell の Invoke-WebRequest コマンドを使用して、Key Vault で以前に作成したシークレットを取得し、Authorization ヘッダーにアクセス トークンを渡します。  Key Vault の [概要] ページの [要点] セクションにある Key Vault の URL が必要です。  リマインダー - Key Vault の URI は、[概要] タブにあります。
+1. 次のコマンドを実行して、アクセス トークンを使ってキー コンテナーからシークレットを取得します。
 
-  - キー コンテナー URI -- Azure portal のキー コンテナーの [概要] ページから取得
-  - シークレット名 -- オブジェクトから取得 - キー コンテナーの [シークレット] ページ
+   > **注** 次のプレースホルダー値を置き換えます。
+   > - `<key-vault-name>`: Azure portal のキー コンテナーの **[概要]** ページから取得します。
+   > - `<secret-name>`: キー コンテナーの **[シークレット]** ページから取得します。
+  
+    ```powershell
+    Invoke-RestMethod -Uri https://<key-vault-name>.vault.azure.net/secrets/<secret-name>?api-version=2016-10-01 -Method GET -Headers @{Authorization="Bearer $KeyVaultToken"}
+    ```
 
-    ```
-    Invoke-RestMethod -Uri https://<your-key-vault-URI>/secrets/<secret-name>?api-version=2016-10-01 -Method GET -Headers @{Authorization="Bearer $KeyVaultToken"}
-    ```
 1. 次のような応答を受け取ります。 
+
+    ```powershell
+    'My Secret' https://mi-lab-vault.vault.azure.net/secrets/mi-test/50644e90b13249b584c44b9f712f2e51 @{enabled=True; created=16... }
     ```
-    'My Secret' https://mi-lab-vault.vault.azure.net/secrets/mi-test/50644e90b13249b584c44b9f712f2e51 @{enabled=True; created=16…
+
+1. 応答に次のようなシークレット値、その URI、属性 (例: enabled や created) が含まれていることを確認します。
+
+    ```powershell
+    'My Secret' https://mi-lab-vault.vault.azure.net/secrets/mi-test/<version-id> @{enabled=True; created=...}
     ```
+
 1. このシークレットは、名前とパスワードを必要とするサービスに対する認証に使用できます。
+
+### 演習の概要
+
+この演習では、キー コンテナーを作成し、システム割り当てマネージド ID を持つ仮想マシンをデプロイし、これにコンテナーへのアクセスを許可し、マネージド ID を使用してシークレットを取得しました。 この演習では、コードに認証情報を保存せずにシークレットにアクセスする方法を示しました。
