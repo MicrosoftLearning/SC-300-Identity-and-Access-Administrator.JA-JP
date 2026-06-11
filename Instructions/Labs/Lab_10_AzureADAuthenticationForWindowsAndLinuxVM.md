@@ -27,7 +27,7 @@ lab:
 
 #### タスク 1 - Microsoft Entra ID ログインを有効にして Windows 仮想マシンを作成する
 
-1. [https://portal.azure.com](https://portal.azure.com) を参照します
+1. Azure portal (`https://portal.azure.com`) を参照します。
 
 **ラボのヒント** - 資格情報の保存を求めるダイアログが表示されたら、[保存しない] を選択します。  Azure portal を初めて使う場合を除き、ツアーをキャンセルします。
 
@@ -41,31 +41,31 @@ lab:
 
   | フィールド | 使用する値 |
   | :-- | :-- |
-  | サブスクリプション | 既定値をそのまま使用します |
-  | リソース グループ | 新規作成 - rgEL |
-  | 仮想マシン名 | vmEntraLogin |
+  | サブスクリプション | 既定値を受け入れます |
+  | リソース グループ | **[rgEL]** を選択 |
+  | 仮想マシン名 | **vmEntraLogin** |
   | リージョン | *default* |
-  | 可用性のオプション | インフラストラクチャの冗長性は必要ありません |
-  | 証券の種類 | Standard |
-  | サイズ | Standard DC1s_v3 - 1 vCPU、8 GiB メモリ |
+  | 可用性のオプション | **インフラストラクチャ冗長は必要ありません** |
+  | 証券の種類 | **標準** |
+  | サイズ | **Standard DC1s_v3 - 1 vCPU、8 GiB メモリ** |
   | | **[ラボのヒント]** - 指定した正確なサイズがわからない場合は、同じ系列の同様のサイズを試してください。|
-  | 管理ユーザー名 | vmEntraAdmin |
+  | 管理ユーザー名 | **vmEntraAdmin** |
   | 管理者パスワード | ラボ環境から提供されるパスワードを使用するか、覚えておくことができる安全なパスワードを作成します |
   | ライセンス | ライセンスがあることを確認する |
 
 1. **[ディスク]** または **[ネットワーク]** タブでは何も変更する必要はなく、値を確認できます。
 
-1. **[管理]** タブで、[Microsoft Entra ID] セクションの **[Microsoft Entra ID でログイン]** のボックスをオンにします。
+1. **[管理]** タブで、**[Microsoft Entra ID]** セクションの下にある **[Microsoft Entra ID でログイン]** チェック ボックスをオンにします。
 
-        NOTE: You will notice that the **System assigned managed identity** under the Identity section is automatically checked and turned grey. This action should happen automatically once you enable Login with Microsoft Entra ID.
+      >**注:** [ID] セクションの **[システム割り当てマネージド ID]** チェック ボックスが自動的にオンになり、灰色に変わることがわかります。 [Microsoft Entra ID でログイン] を有効にすると、この操作は自動的に行われます。
 
 1. 仮想マシンの作成エクスペリエンスの残りの部分に移動します。 
 
-1. **[確認および作成]**、**[作成]** の順に選択します。
+1. **[確認および作成]** を選択し、**[作成]** を選択します。
 
-#### タスク 2 - 既存の Azure Virtual Machines に対して Microsoft Entra ID でログインする
+#### タスク 2 - 既存の Azure 仮想マシン に対して Microsoft Entra ID でログインする
 
-1. [https://portal.azure.com](https://portal.azure.com) で **[Virtual Machines]** を参照します。
+1. Azure portal で、**[仮想マシン]** に移動します。
 
 1. タスク 1 から新しく作成した仮想マシンを選びます。
 
@@ -82,13 +82,13 @@ lab:
 
 #### タスク 3 - Microsoft Entra ID ログインを許可するように仮想マシンを更新する
 
-1. **[接続]** メニュー項目を選択します。
+1. 仮想マシンのページで、上部のメニューから **[接続]**、**[接続]** の順に選択します。
 
-1. **[RDP]** タブで、 **[RDP ファイルのダウンロード]** を選択します。  メッセージが表示されたら、ファイルの **[保持]** オプションを選びます。  ダウンロード フォルダーに保存されます。
+1. **[接続]** ページで、**[ネイティブ RDP]** の下にある **[RDP ファイルのダウンロード]** を選択します。
 
-1. ファイル マネージャーで **[ダウンロード]** フォルダーを開きます。
+1. ブラウザー プロンプトで、**[保持]** を選択し、ダウンロードした RDP ファイルを開きます。
 
-1. RDP を開きます。
+1. **[リモート デスクトップ接続]** セキュリティ警告ダイアログ ボックスで、**[接続]** を選択します。
 
 1. 代替ユーザーとしてログインすることを選びます。
 
@@ -144,10 +144,10 @@ lab:
 1. **[OK]** を選択します。
 
 1. ログイン ダイアログで、次の情報を入力します。
-   - ユーザー名 = **AzureAD\User2@your domain name**
+   - ユーザー名 = `AzureAD\User2@<your domain name>`
    - パスワード = ラボ プロバイダーによって提供されるパスワードを入力します
 
-   注: User2 は、タスク 1 で管理者としてログインするためのアクセス権を付与したユーザーです。
+    >**注:** User2 は、タスク 1 で管理者としてログインするためのアクセス権を付与したユーザーです。
 
 1. Windows でログイン情報が確認され、通常のデスクトップが開きます。
 
@@ -175,7 +175,7 @@ lab:
 
 #### タスク 1 - システム割り当てマネージド ID を使用して Linux VM を作成する
 
-1. [https://portal.azure.com](https://portal.azure.com) を参照します
+1. **Microsoft Azure** portal (`https://portal.azure.com`) を参照します。
 
 1. **[+ リソースの作成]** を選択します。
 
@@ -189,9 +189,9 @@ lab:
 
 1. 仮想マシンの作成エクスペリエンスの残りの部分に移動します。 このプレビュー期間中は、ユーザー名とパスワードまたは SSH 公開キーで管理者アカウントを作成する必要があります。
 
-#### タスク 2 - 既存の Azure Virtual Machines に対して Microsoft Entra ID でログインする
+#### タスク 2 - 既存の Azure 仮想マシン に対して Microsoft Entra ID でログインする
 
-1. [https://portal.azure.com](https://portal.azure.com) で **[Virtual Machines]** を参照します。
+1. **Microsoft Azure** portal で、**[仮想マシン]** に移動します。
 
 1. **[アクセス制御 (IAM)]** を選択します。
 
@@ -205,3 +205,6 @@ lab:
 
 このラボの残りの部分は、独力で完了してみてください。 Windows バージョンとよく似ています。 詳細な手順については、Learn ドキュメントの「Azure portal を使用して Azure ロールを割り当てる」を参照してください。
 
+### 演習の概要
+
+この演習では、Microsoft Entra ID アカウントを使用して Azure VM にサインインし、Linux についても同等の機能を確認しました。 この演習では、ローカル アカウントなしで Microsoft Entra 認証が Azure コンピューティング リソースに対してどのように機能するかを示しました。
