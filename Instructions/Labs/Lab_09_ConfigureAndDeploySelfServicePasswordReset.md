@@ -106,7 +106,7 @@ SSPR の構成が完了したので、作成したユーザーの携帯電話番
 
     これは、ユーザー認証を求めるメッセージが表示されるようにするためです。
 
-1. 「`AlexW@<organization-domain-name>.onmicrosoft.com`」と入力し、**[次へ]** を選択します。
+1. 「`AllanD@<organization-domain-name>.onmicrosoft.com`」と入力し、**[次へ]** を選択します。
 
     >**注:** organization-domain-name を実際のドメイン名に置き換えます。
 

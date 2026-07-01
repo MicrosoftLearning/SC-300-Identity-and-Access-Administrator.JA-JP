@@ -11,7 +11,7 @@ lab:
 
 # ラボ 06:フェデレーション ID プロバイダーを追加する
 
-### ログインの種類 = Microsoft 365 管理
+### ログインの種類: Microsoft 365 管理
 
 ## ラボのシナリオ
 
@@ -29,7 +29,7 @@ lab:
 
 1. サービスの使用条件への同意を求めるメッセージが表示されたらそのようにします。
 
-**新しいプロジェクトを作成する:**
+   **新しいプロジェクトを作成する:**
 1. ページの上部にあるプロジェクト メニューを選択して、[プロジェクトの選択] ページを開きます。 **[新しいプロジェクト]** を選択します。  残りのフィールドは既定の設定のままにします。
 
 1. [新しいプロジェクト] ページで、プロジェクトに `MyB2BApp` という名前を付けて、**[作成]** を選択します。
@@ -42,17 +42,17 @@ lab:
 
 1. アプリケーション情報画面で、次の情報を入力します。
 
-| セクション | フィールド名 | 値 |
-| :---    | :---    | :---  |
-| 1 アプリ情報 | | |
-|            | アプリ名 | `Microsoft Entra ID` |
-|            | ユーザー サポートのメール | ドロップダウンからメール名を選択します。 |
-| 2 対象ユーザー | | |
-|            | 内部/外部 | **外部品目番号** |
-| 3 連絡先情報 | | |
-|            | 電子メール アドレス | 上記と同じメール アドレスを使用します |
-| 4 完了 | | |
-|            | 契約 | チェックボックスをオンにします |
+    | セクション | フィールド名 | 値 |
+    | :---    | :---    | :---  |
+    | 1 アプリ情報 | | |
+    |            | アプリ名 | `Microsoft Entra ID` |
+    |            | ユーザー サポートのメール | ドロップダウンからメール名を選択します。 |
+    | 2 対象ユーザー | | |
+    |            | 内部/外部 | **外部品目番号** |
+    | 3 連絡先情報 | | |
+    |            | 電子メール アドレス | 上記と同じメール アドレスを使用します |
+    | 4 完了 | | |
+    |            | 契約 | チェックボックスをオンにします |
 
 1. **[作成]** ボタンを選択し、続行します。
 
@@ -68,19 +68,19 @@ lab:
 
 1. **[承認済みのリダイレクト URI]** 内で、**[+ URI の追加]** ボタンを選択します。  このセクションでは、次の 3 つの異なる URI を追加する必要があります。
 
- - **最初の URI** = `https://login.microsoftonline.com`
- - **2 つ目の URI** = `https://login.microsoftonline.com/te/**tenant ID**/oauth2/authresp` (<tenant ID> がお使いのテナント ID)
- - **3 つ目の URI** = `https://login.microsoftonline.com/te/**tenant name**.onmicrosoft.com/oauth2/authresp` (<tenant name> がお使いのテナント名)
+    - **最初の URI** = `https://login.microsoftonline.com`
+    - **2 つ目の URI** = `https://login.microsoftonline.com/te/**tenant ID**/oauth2/authresp` (<tenant ID> がお使いのテナント ID)
+    - **3 つ目の URI** = `https://login.microsoftonline.com/te/**tenant name**.onmicrosoft.com/oauth2/authresp` (<tenant name> がお使いのテナント名)
 
-**ラボのヒント** - ラボ VM でメモ帳を使用してこれらの URI を作成したあと、そこからコピーして貼り付けると、この手順が簡単になる場合があります。
+    **ラボのヒント** - ラボ VM でメモ帳を使用してこれらの URI を作成したあと、そこからコピーして貼り付けると、この手順が簡単になる場合があります。
 
-**ラボのヒント 2**: 結果は、お使いのテナント ID とテナント名で、次のようになるはずです。
+    **ラボのヒント 2**: 結果は、お使いのテナント ID とテナント名で、次のようになるはずです。
 
-| URI 番号 | リンク |
-| :--- | :--- |
-| URI 1 | https://login.microsoftonline.com |
-| URI 2 | https://login.microsoftonline.com/te/aaaa1111bbbb2222cccc/oauth2/authresp |
-| URI 3 | https://login.microsoftonline.com/te/MyTenantName.onmicrosoft.com/oauth2/authresp |
+    | URI 番号 | リンク |
+    | :--- | :--- |
+    | URI 1 | https://login.microsoftonline.com |
+    | URI 2 | https://login.microsoftonline.com/te/aaaa1111bbbb2222cccc/oauth2/authresp |
+    | URI 3 | https://login.microsoftonline.com/te/MyTenantName.onmicrosoft.com/oauth2/authresp |
 
 1. **[作成]** ボタンを選択します。
 
@@ -152,9 +152,9 @@ lab:
 
 1. **[確認と招待]**、**[招待]** の順に選択します。
 
-| **セキュリティに関する注意** |
-| ----: |
-| パスキーが有効になっている既存の Gmail アカウントを使用している場合、ラボ環境内でログイン プロセスを完了することはできません。  パスキーを使用するには Bluetooth が必要ですが、これは VM を介して有効にすることはできません。  それでも、ラボは完了できます。ラボ環境の外部で動作している InPrivate ブラウザーで、これらの最後の数タスクを実行するだけです。 |
+    | **セキュリティに関する注意** |
+    | ----: |
+    | パスキーが有効になっている既存の Gmail アカウントを使用している場合、ラボ環境内でログイン プロセスを完了することはできません。  パスキーを使用するには Bluetooth が必要ですが、これは VM を介して有効にすることはできません。  それでも、ラボは完了できます。ラボ環境の外部で動作している InPrivate ブラウザーで、これらの最後の数タスクを実行するだけです。 |
 
 
 #### タスク 3 - 招待とログインを承諾する
