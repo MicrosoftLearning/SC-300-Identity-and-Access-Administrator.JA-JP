@@ -118,16 +118,16 @@ Microsoft では、社内の従業員と外部のゲストがポリシーを確�
 
 1. 従業員のプライバシー情報を追加します｡
 
-- **[グローバル プライバシー連絡先]** - `AllanD@<your Azure lab domain>`
-     - Allan Deyoung は、IT 管理者として働く Azure ラボ テナントの組み込みユーザーです。彼をプライバシー連絡先として使用します。
-     - この連絡先は､データに関する違反があった場合に Microsoft が問い合わせを行う連絡先でもあります｡ 問い合わせの記載がない場合､Microsoft はグローバル管理者に問い合わせます｡
+    - **[グローバル プライバシー連絡先]** - `AllanD@<your Azure lab domain>`
+        - Allan Deyoung は、IT 管理者として働く Azure ラボ テナントの組み込みユーザーです。彼をプライバシー連絡先として使用します。
+        - この連絡先は､データに関する違反があった場合に Microsoft が問い合わせを行う連絡先でもあります｡ 問い合わせの記載がない場合､Microsoft はグローバル管理者に問い合わせます｡
 
-- **プライバシーに関する声明の URL** -  <https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator/blob/master/Allfiles/Labs/Lab2/SC-300-Lab_ContosoPrivacySample.pdf>
+    - **プライバシーに関する声明の URL** -  <https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator/blob/master/Allfiles/Labs/Lab2/SC-300-Lab_ContosoPrivacySample.pdf>
 
-     - サンプルのプライバシー PDF は、ラボのディレクトリにあります。
-     \- 組織が社内と外部のゲストの両方のデータのプライバシーをどのように扱うかを説明している組織のドキュメントへのリンクを入力します。
+        - サンプルのプライバシー PDF は、ラボのディレクトリにあります。
+        \- 組織が社内と外部のゲストの両方のデータのプライバシーをどのように扱うかを説明している組織のドキュメントへのリンクを入力します。
 
-    **重要** - プライバシーに関する独自の声明とプライバシー連絡先のどちらも含めていない場合は、外部のゲストの [アクセス許可の確認] ボックスに、 **<組織名\>** はユーザーが確認する使用条件へのリンクを提供していませんというテキストが表示されます。 たとえば､このメッセージは､B2B コラボレーションでゲスト ユーザーが組織にアクセスするための招待を受けたときに表示されます｡
+    >**重要**: 独自のプライバシーに関する声明とプライバシーに関する連絡先のどちらも含めていない場合、外部のゲスト向けに [アクセス許可の確認] ボックス内に、" **<組織名\>** はユーザー向けに確認用の利用規約へのリンクを提供していません" というテキストが表示されます。 たとえば､このメッセージは､B2B コラボレーションでゲスト ユーザーが組織にアクセスするための招待を受けたときに表示されます｡
 
     ![B2B Collaboration Review Permissions ボックスとメッセージ](./media/active-directory-no-privacy-statement-or-contact.png)
 
